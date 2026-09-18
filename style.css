@@ -202,6 +202,14 @@ body {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.credit {
+  color: var(--ink);
 }
 
 /* ---------- Responsive ---------- */
