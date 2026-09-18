@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Signal</title>
 <meta name="description" content="A self-updating feed of AI and quantum computing news, research and releases.">
+<meta property="og:title" content="AI Signal">
+<meta property="og:description" content="A self-updating feed of AI and quantum computing news, research and releases.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AI Signal">
+<meta name="twitter:description" content="A self-updating feed of AI and quantum computing news, research and releases.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+<link rel="alternate" type="application/rss+xml" title="AI Signal RSS" href="feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -18,10 +26,12 @@
     <p class="tagline">a running feed of AI &amp; quantum engineering</p>
   </div>
   <div class="masthead-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">☾</button>
     <div class="status">
       <span class="dot" id="statusDot"></span>
       <span id="statusText">connecting…</span>
     </div>
+    <div class="views" id="viewsText"></div>
   </div>
 </header>
 
@@ -38,6 +48,7 @@
         <button class="cat-btn active" data-category="">All</button>
         <button class="cat-btn" data-category="AI">AI</button>
         <button class="cat-btn" data-category="Quantum">Quantum</button>
+        <button class="cat-btn" data-category="__bookmarked">★ Saved</button>
       </div>
     </div>
 
@@ -47,11 +58,17 @@
     </div>
 
     <div class="panel-block">
-  <p class="panel-label">Follow</p>
-  <a class="follow-link" href="https://www.linkedin.com/showcase/qu-bits/" target="_blank" rel="noopener">
-    LinkedIn — Qu-Bits ↗
-  </a>
-</div>
+      <p class="panel-label">Follow</p>
+      <a class="follow-link" href="https://www.linkedin.com/showcase/qu-bits/" target="_blank" rel="noopener">
+        LinkedIn — Qu-Bits ↗
+      </a>
+      <a class="follow-link" href="https://www.linkedin.com/showcase/agentic-ai-architect/" target="_blank" rel="noopener">
+        LinkedIn — Agentic AI Architect ↗
+      </a>
+      <a class="follow-link" href="feed.xml" target="_blank" rel="noopener">
+        RSS feed ↗
+      </a>
+    </div>
 
     <div class="panel-block panel-note">
       <p>This page rebuilds itself. A scheduled bot polls a set of RSS feeds several times a day and republishes here — nothing on this page is typed by hand.</p>
@@ -68,6 +85,7 @@
   <span class="credit">Built by Thillai Raj Thanam Jeya Veera Raj</span>
 </footer>
 
+<script data-goatcounter="https://trttech.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
