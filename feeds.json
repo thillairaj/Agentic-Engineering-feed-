@@ -1,9 +1,11 @@
 [
-  { "source": "arXiv cs.AI", "url": "http://export.arxiv.org/rss/cs.AI" },
-  { "source": "arXiv cs.CL", "url": "http://export.arxiv.org/rss/cs.CL" },
-  { "source": "Simon Willison", "url": "https://simonwillison.net/atom/everything/" },
-  { "source": "The Verge", "url": "https://www.theverge.com/rss/index.xml" },
-  { "source": "Latent Space", "url": "https://www.latent.space/feed" },
-  { "source": "The Gradient", "url": "https://thegradient.pub/rss/" },
-  { "source": "Ars Technica AI", "url": "https://arstechnica.com/ai/feed/" }
+  { "source": "arXiv cs.AI", "category": "AI", "url": "http://export.arxiv.org/rss/cs.AI" },
+  { "source": "arXiv cs.MA", "category": "AI", "url": "http://export.arxiv.org/rss/cs.MA" },
+  { "source": "Simon Willison", "category": "AI", "url": "https://simonwillison.net/atom/everything/" },
+  { "source": "The Verge", "category": "AI", "url": "https://www.theverge.com/rss/index.xml" },
+  { "source": "Latent Space", "category": "AI", "url": "https://www.latent.space/feed" },
+  { "source": "The Gradient", "category": "AI", "url": "https://thegradient.pub/rss/" },
+  { "source": "Ars Technica AI", "category": "AI", "url": "https://arstechnica.com/ai/feed/" },
+  { "source": "InfoQ Quantum", "category": "Quantum", "url": "https://feed.infoq.com/quantumcomputing/news/" },
+  { "source": "arXiv quant-ph", "category": "Quantum", "url": "http://export.arxiv.org/rss/quant-ph" }
 ]
