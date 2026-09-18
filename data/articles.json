@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T12:59:19.167762+00:00",
+  "generated_at": "2026-09-18T14:52:23.142116+00:00",
   "sources_polled": [
     "The Verge \u2014 AI",
     "Simon Willison",
@@ -12,6 +12,24 @@
     "arXiv quant-ph"
   ],
   "articles": [
+    {
+      "id": "fc55e6480f4ee645",
+      "title": "The Creative Spirit of Who Framed Roger Rabbit",
+      "link": "https://simonwillison.net/2026/Sep/18/the-creative-spirit-of-who-framed-roger-rabbit/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "The Creative Spirit of Who Framed Roger Rabbit I love Who Framed Roger Rabbit , the 1988 movie by Robert Zemeckis. I haven't watched it in quite a few years, and Cypress Frankenfeld just pointed out this sequence from early in the movie: It's a pelican riding a bicycle! Look clos",
+      "published": "2026-09-18T14:52:20.626681+00:00"
+    },
+    {
+      "id": "a8365cfa26c035d9",
+      "title": "Researchers used Claude to hack OpenAI",
+      "link": "https://arstechnica.com/ai/2026/09/researchers-used-claude-to-hack-openai/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "Researchers used Claude to reach an OpenAI employee account and sensitive GitHub data.",
+      "published": "2026-09-18T13:30:12+00:00"
+    },
     {
       "id": "82da9e642a0899d3",
       "title": "Flash floods can strike without warning \u2014 this new technology could change that",
@@ -4021,24 +4039,6 @@
       "source": "arXiv quant-ph",
       "category": "Quantum",
       "summary": "arXiv:2609.19983v1 Announce Type: new Abstract: Graph Neural Networks (GNNs) achieve state-of-the-art performance on graph-structured data, but training and inference on large graphs are often bottlenecked by memory constraints and sparse linear-algebra workloads. Quantum computi",
-      "published": "2026-09-18T04:00:00+00:00"
-    },
-    {
-      "id": "36d7ca5ddb1cdacc",
-      "title": "Private communication from Pauli channels with no privacy",
-      "link": "https://arxiv.org/abs/2609.20133",
-      "source": "arXiv quant-ph",
-      "category": "Quantum",
-      "summary": "arXiv:2609.20133v1 Announce Type: new Abstract: A channel capacity quantifies the communication capability of a noisy physical process. In contrast to communication channels in the classical world, quantum theory makes this capability contextual. We show that two Pauli two-qubit ",
-      "published": "2026-09-18T04:00:00+00:00"
-    },
-    {
-      "id": "47e0ab3c880aaf34",
-      "title": "QECirc: A Community-Driven, FAIR Library of Quantum Error Correction Circuits",
-      "link": "https://arxiv.org/abs/2609.20182",
-      "source": "arXiv quant-ph",
-      "category": "Quantum",
-      "summary": "arXiv:2609.20182v1 Announce Type: new Abstract: Quantum error correction (QEC) underpins fault-tolerant quantum computing, but the circuits that realize QEC codes (encoders, logical state-preparation and gate routines, and syndrome-extraction schedules) are scattered across paper",
       "published": "2026-09-18T04:00:00+00:00"
     }
   ]

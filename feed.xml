@@ -4,7 +4,23 @@
     <title>AI Signal</title>
     <link>https://thillairaj.github.io/Agentic-Engineering-feed-/</link>
     <description>A self-updating feed of AI and quantum computing news, research and releases.</description>
-    <lastBuildDate>Fri, 18 Sep 2026 12:59:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Sep 2026 14:52:23 +0000</lastBuildDate>
+    <item>
+      <title>The Creative Spirit of Who Framed Roger Rabbit</title>
+      <link>https://simonwillison.net/2026/Sep/18/the-creative-spirit-of-who-framed-roger-rabbit/</link>
+      <guid isPermaLink="false">fc55e6480f4ee645</guid>
+      <description>The Creative Spirit of Who Framed Roger Rabbit I love Who Framed Roger Rabbit , the 1988 movie by Robert Zemeckis. I haven't watched it in quite a few years, and Cypress Frankenfeld just pointed out this sequence from early in the movie: It's a pelican riding a bicycle! Look clos</description>
+      <category>Simon Willison</category>
+      <pubDate>Fri, 18 Sep 2026 14:52:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>Researchers used Claude to hack OpenAI</title>
+      <link>https://arstechnica.com/ai/2026/09/researchers-used-claude-to-hack-openai/</link>
+      <guid isPermaLink="false">a8365cfa26c035d9</guid>
+      <description>Researchers used Claude to reach an OpenAI employee account and sensitive GitHub data.</description>
+      <category>Ars Technica AI</category>
+      <pubDate>Fri, 18 Sep 2026 13:30:12 +0000</pubDate>
+    </item>
     <item>
       <title>Flash floods can strike without warning — this new technology could change that</title>
       <link>https://www.theverge.com/science/997083/flash-flood-warning-tacls-satellite-machine-learning</link>
@@ -466,22 +482,6 @@
       <link>https://arxiv.org/abs/2609.19448</link>
       <guid isPermaLink="false">8909f9af0ffec479</guid>
       <description>arXiv:2609.19448v1 Announce Type: new Abstract: In both cognitive science and computer science, goals are conceptualized as cognitive states that flexibly combine with world knowledge to organize and specify purposeful behavior. In this way, goals are compositional representation</description>
-      <category>arXiv cs.AI</category>
-      <pubDate>Fri, 18 Sep 2026 04:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Compositional Reasoning in Language Models under Reinforcement Learning Post-Training</title>
-      <link>https://arxiv.org/abs/2609.19465</link>
-      <guid isPermaLink="false">2f846d702ed93a5b</guid>
-      <description>arXiv:2609.19465v1 Announce Type: new Abstract: Compositional reasoning is critical for real-world problem solving: since training data is necessarily limited, models must generalize by composing learned skills in new ways. While post-training methods such as reinforcement learni</description>
-      <category>arXiv cs.AI</category>
-      <pubDate>Fri, 18 Sep 2026 04:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Safety Beyond the Interface: Detecting Harm via Latent States in Large Language Models</title>
-      <link>https://arxiv.org/abs/2609.19472</link>
-      <guid isPermaLink="false">5887e7b34a0df394</guid>
-      <description>arXiv:2609.19472v1 Announce Type: new Abstract: Autonomous systems increasingly rely on Large Language Models (LLMs) yet the safety infrastructure surrounding these models introduces latency and compute overhead. This limits utility in resource-constrained, time-critical deployme</description>
       <category>arXiv cs.AI</category>
       <pubDate>Fri, 18 Sep 2026 04:00:00 +0000</pubDate>
     </item>
