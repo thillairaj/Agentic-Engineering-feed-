@@ -1,5 +1,6 @@
 const DATA_URL = "data/articles.json";
 const CLIENT_REFRESH_MS = 5 * 60 * 1000;
+const TICK_MS = 30 * 1000;
 const PAGE_SIZE = 10;
 const BOOKMARK_KEY = "aisignal_bookmarks";
 const THEME_KEY = "aisignal_theme";
@@ -11,6 +12,7 @@ let activeCategory = "";
 let searchTerm = "";
 let visibleCount = PAGE_SIZE;
 let bookmarks = new Set(JSON.parse(localStorage.getItem(BOOKMARK_KEY) || "[]"));
+let lastGeneratedAt = null;
 
 const feedEl = document.getElementById("feed");
 const sourceListEl = document.getElementById("sourceList");
@@ -18,6 +20,7 @@ const searchEl = document.getElementById("search");
 const categoryToggleEl = document.getElementById("categoryToggle");
 const statusDot = document.getElementById("statusDot");
 const statusText = document.getElementById("statusText");
+const refreshDetailEl = document.getElementById("refreshDetail");
 const viewsTextEl = document.getElementById("viewsText");
 const footerMeta = document.getElementById("footerMeta");
 const themeToggleBtn = document.getElementById("themeToggle");
@@ -31,6 +34,34 @@ function timeAgo(iso) {
   if (diffHr < 24) return `${diffHr}h ago`;
   const diffDay = Math.round(diffHr / 24);
   return `${diffDay}d ago`;
+}
+
+function formatClock(date) {
+  const gmt = date.toLocaleTimeString('en-GB', { timeZone: 'UTC', hour: '2-digit', minute: '2-digit', hour12: false });
+  const ist = date.toLocaleTimeString('en-GB', { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', hour12: false });
+  return `${gmt} GMT · ${ist} IST`;
+}
+
+function nextHourlyRefresh() {
+  const now = new Date();
+  const next = new Date(now);
+  next.setMinutes(0, 0, 0);
+  if (next <= now) next.setHours(next.getHours() + 1);
+  return next;
+}
+
+function renderRefreshDetail() {
+  if (!lastGeneratedAt) {
+    refreshDetailEl.textContent = "";
+    return;
+  }
+  const last = new Date(lastGeneratedAt);
+  const next = nextHourlyRefresh();
+  const minsUntil = Math.max(0, Math.round((next - new Date()) / 60000));
+
+  statusText.textContent = `updated ${timeAgo(lastGeneratedAt)}`;
+  refreshDetailEl.innerHTML =
+    `last: ${formatClock(last)}<br>next in ~${minsUntil}m (${formatClock(next)})`;
 }
 
 /* ---------- Theme ---------- */
@@ -74,7 +105,7 @@ async function loadViews() {
       viewsTextEl.textContent = `${data.count} views`;
     }
   } catch (err) {
-    // Silently ignore - views are a nice-to-have, not critical.
+    // Views are a nice-to-have; fail silently.
   }
 }
 
@@ -201,10 +232,12 @@ async function loadData() {
 
     if (data.generated_at) {
       statusDot.classList.add("live");
-      statusText.textContent = `updated ${timeAgo(data.generated_at)}`;
+      lastGeneratedAt = data.generated_at;
+      renderRefreshDetail();
       footerMeta.textContent = `${allArticles.length} articles · ${(data.sources_polled || []).length} sources polled · last run ${new Date(data.generated_at).toUTCString()}`;
     } else {
       statusText.textContent = "awaiting first bot run";
+      refreshDetailEl.textContent = "";
       footerMeta.textContent = "No automated run yet — check the GitHub Action.";
     }
   } catch (err) {
@@ -236,3 +269,4 @@ loadData();
 loadViews();
 setInterval(loadData, CLIENT_REFRESH_MS);
 setInterval(loadViews, CLIENT_REFRESH_MS);
+setInterval(renderRefreshDetail, TICK_MS);
