@@ -1,15 +1,26 @@
 {
-  "generated_at": "2026-09-18T06:00:32.982537+00:00",
+  "generated_at": "2026-09-18T09:03:19.489902+00:00",
   "sources_polled": [
     "arXiv cs.AI",
-    "arXiv cs.CL",
+    "arXiv cs.MA",
     "Simon Willison",
     "The Verge",
     "Latent Space",
     "The Gradient",
-    "Ars Technica AI"
+    "Ars Technica AI",
+    "InfoQ Quantum",
+    "arXiv quant-ph"
   ],
   "articles": [
+    {
+      "id": "405e090bb244957b",
+      "title": "[AINews] not much happened today",
+      "link": "https://www.latent.space/p/ainews-not-much-happened-today-612",
+      "source": "Latent Space",
+      "category": "AI",
+      "summary": "a quiet day",
+      "published": "2026-09-18T06:28:43+00:00"
+    },
     {
       "id": "c40093fb92f8a4c3",
       "title": "Lunacy Audio Nova is a place to build and sell your own AI-powered music plug-ins",
@@ -3779,52 +3790,256 @@
       "published": "2026-09-18T04:00:00+00:00"
     },
     {
-      "id": "289b2cb14f501524",
-      "title": "Small AI models let drones autonomously identify and attack battlefield targets",
-      "link": "https://arstechnica.com/ai/2026/09/nato-backed-startup-adapts-ai-for-autonomous-drone-recon-and-attack-missions/",
-      "source": "Ars Technica AI",
-      "summary": "Scaleout deploys decentralized AI-driven learning to military bases and drones.",
-      "published": "2026-09-17T22:12:58+00:00"
+      "id": "0a4e0cdd56b50138",
+      "title": "Reputation as Community Memory for the Agentic Web",
+      "link": "https://arxiv.org/abs/2609.19502",
+      "source": "arXiv cs.MA",
+      "category": "AI",
+      "summary": "arXiv:2609.19502v1 Announce Type: new Abstract: Agents can now externalize experience into memory, consolidating historical traces into semantic knowledge and procedural shortcuts that persist between sessions. Such memory is typically private to a single agent. We argue that age",
+      "published": "2026-09-18T04:00:00+00:00"
     },
     {
-      "id": "beb9711acac3a683",
-      "title": "Google announces new experimental \"CC\" AI agent for families",
-      "link": "https://arstechnica.com/google/2026/09/google-announces-new-experimental-cc-ai-agent-for-families/",
-      "source": "Ars Technica AI",
-      "summary": "Multiple family members can share data to help the agent make plans and complete tasks.",
-      "published": "2026-09-17T20:24:34+00:00"
+      "id": "03ff5a398e74e32b",
+      "title": "Silence Is Endorsement: Verification-Status Laundering in LLM Agent Pipelines",
+      "link": "https://arxiv.org/abs/2609.20211",
+      "source": "arXiv cs.MA",
+      "category": "AI",
+      "summary": "arXiv:2609.20211v1 Announce Type: cross Abstract: Safety monitors in LLM agent systems often judge actions from summaries or stored handoffs, not from the original evidence. This creates a simple but dangerous failure mode: the handoff preserves the claim that an action is author",
+      "published": "2026-09-18T04:00:00+00:00"
     },
     {
-      "id": "01982aadb2ec9850",
-      "title": "Microsoft exec called AI scraping the \u201clargest theft of labor in human history\u201d",
-      "link": "https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history/",
-      "source": "Ars Technica AI",
-      "summary": "Microsoft, OpenAI emails reveal fear of AI \u201cdoom loop\u201d killing news orgs.",
-      "published": "2026-09-17T20:10:41+00:00"
+      "id": "fcf1e1c29a485368",
+      "title": "Scalable Policy Optimization for Networked Multi-Agent Reinforcement Learning with Continuous State-Action Spaces",
+      "link": "https://arxiv.org/abs/2607.18554",
+      "source": "arXiv cs.MA",
+      "category": "AI",
+      "summary": "arXiv:2607.18554v2 Announce Type: replace Abstract: Learning local policies for continuous networked systems requires accounting for the effects of decisions beyond each agent's observation neighborhood. Spatial decay limits these effects, but a finite critic must also control re",
+      "published": "2026-09-18T04:00:00+00:00"
     },
     {
-      "id": "168e3a7edc732617",
-      "title": "LLMs respond differently to harmful prompts when AI watermarking is used",
-      "link": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/",
-      "source": "Ars Technica AI",
-      "summary": "SynthID can cause models to follow harmful instructions they would otherwise refuse.",
-      "published": "2026-09-17T18:33:13+00:00"
+      "id": "1a77f4146682a536",
+      "title": "CatchBench: When Can an Agent Failure Be Caught?",
+      "link": "https://arxiv.org/abs/2608.22808",
+      "source": "arXiv cs.MA",
+      "category": "AI",
+      "summary": "arXiv:2608.22808v4 Announce Type: replace-cross Abstract: When can an agent failure be caught? A weak audit score alone cannot identify whether the record or the method is limiting. CatchBench therefore puts one auditor's question to three information states: the declared configu",
+      "published": "2026-09-18T04:00:00+00:00"
     },
     {
-      "id": "a6c133e82102caf0",
-      "title": "Covert uploads and megalomania: OpenAI details new \"misaligned\" agent incidents",
-      "link": "https://arstechnica.com/ai/2026/09/covert-uploads-and-megalomania-openai-details-new-misaligned-agent-incidents/",
-      "source": "Ars Technica AI",
-      "summary": "Model maker commits to new framework for reporting misaligned models.",
-      "published": "2026-09-17T16:18:34+00:00"
+      "id": "1859b72617811bdd",
+      "title": "Qupertino: Pure MLX Array Kernels versus Hand-Tuned Metal Shaders for Quantum Circuit Simulation on Apple Silicon",
+      "link": "https://arxiv.org/abs/2609.19147",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.19147v1 Announce Type: new Abstract: We present Qupertino, an open-source quantum circuit simulator for Apple Silicon, and use it to ask how far a simulator written purely in MLX array operations can go and what remains for hand-tuned Metal shaders. The framework ships",
+      "published": "2026-09-18T04:00:00+00:00"
     },
     {
-      "id": "a117e8f013b01d0b",
-      "title": "[AINews] Reality Checks on AI News (Yegge shuts down Gas Town, Databricks\u2019 +60% Astra cost)",
-      "link": "https://www.latent.space/p/ainews-reality-checks-on-ai-news",
-      "source": "Latent Space",
-      "summary": "A dash of cold water keeps the foomers away.",
-      "published": "2026-09-17T07:28:25+00:00"
+      "id": "75178856130f71b2",
+      "title": "AlchemQ: Proof-Carrying Quantum Circuit Optimization with Per-Result Equivalence Certificates",
+      "link": "https://arxiv.org/abs/2609.19160",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.19160v1 Announce Type: new Abstract: We present AlchemQ v0.5, a proof-of-concept system that couples an untrusted beam-search optimizer with a machine-checkable per-result certification layer and a versioned certificate protocol (0.2.0), so that every optimized circuit",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "d78427a3453823c3",
+      "title": "Holomorphic Quantum Error Correction Codes",
+      "link": "https://arxiv.org/abs/2609.19162",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.19162v1 Announce Type: new Abstract: We develop a holomorphic representation of quantum error correction codes (QECCs) within the Segal--Bargmann space. By encoding qubits into Schwinger boson modes $(z_{a_j}, z_{b_j})$ subject to a degree-one homogeneity constraint, w",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "dd511dd7631a2ba7",
+      "title": "Achieving the limits of automorphism gates",
+      "link": "https://arxiv.org/abs/2609.19250",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.19250v1 Announce Type: new Abstract: Universal fault-tolerant quantum computing combines versatile but expensive operations with specialized but cheap ones. Its efficiency depends on how much computation can be pushed onto the cheap operations and on the size of the co",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "7d9e7a50967c523c",
+      "title": "A Square-Root Barrier to Quantum Gate Speed under Linear Coupling",
+      "link": "https://arxiv.org/abs/2609.19280",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.19280v1 Announce Type: new Abstract: Faster quantum gates can suppress the decoherence accumulated during a computation, but in superconducting processors stronger microwave pulses can also increase leakage, off-resonant excitation, stray-field errors, and crosstalk. T",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "9bd5e51746711fad",
+      "title": "Temporal information processing on a 4,500-qubit quantum annealer",
+      "link": "https://arxiv.org/abs/2609.19308",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.19308v1 Announce Type: new Abstract: Quantum machine learning could uncover statistical structure beyond the reach of classical models, but this requires quantum models large and expressive enough to be useful and cheap enough to read out. Most approaches optimize many",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "4e9b39ee04cd6939",
+      "title": "Transformers as Intrinsic Optimizers for Quantum Approximate Optimization Algorithm",
+      "link": "https://arxiv.org/abs/2609.19392",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.19392v1 Announce Type: new Abstract: The Quantum Approximate Optimization Algorithm (QAOA) is a leading variational framework for combinatorial optimization on noisy intermediate-scale quantum hardware, but its practical performance depends strongly on the classical op",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "a611fd9890a0e744",
+      "title": "Scalable Simulation of Quantum Dynamics on Topological Quantum Hardware",
+      "link": "https://arxiv.org/abs/2609.19484",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.19484v1 Announce Type: new Abstract: Quantum computers offer a significant advantage in simulating quantum systems compared to classical computers for certain problems, although most current applications are limited to calculating static molecular properties using hybr",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "eb40a2ed749c20c1",
+      "title": "Efficiently estimating failure rates of fault-tolerant logical non-Clifford blocks",
+      "link": "https://arxiv.org/abs/2609.19485",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.19485v1 Announce Type: new Abstract: Useful quantum computation requires the fault-tolerant implementations of a universal gate set which are generically not efficiently simulable. We devise an algebraic framework that allows for efficient sampling from the measurement",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "4d3a9d18c275549b",
+      "title": "Quantum computers will not be that different: A blueprint for quantum computer architecture at scale",
+      "link": "https://arxiv.org/abs/2609.19639",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.19639v1 Announce Type: new Abstract: Quantum computers are technologically novel and unusual, but at system scale they should be engineered using many of the same principles that govern classical heterogeneous accelerators. This paper argues that utility-scale quantum ",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "d5960c6522efe57e",
+      "title": "Linear combination of Schr\\\"odingerization for quantum linear systems with optimal matrix-query complexity",
+      "link": "https://arxiv.org/abs/2609.19676",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.19676v1 Announce Type: new Abstract: Quantum linear systems algorithms (QLSAs) aim to solve linear systems $A\\bb{x}=\\bb{b}$ exponentially faster than classical methods under certain conditions. In this work, we develop quantum algorithms for solving linear algebraic eq",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "27315478252d47c7",
+      "title": "Scalable entanglement distribution using encoded hybrid repeater chains",
+      "link": "https://arxiv.org/abs/2609.19783",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.19783v1 Announce Type: new Abstract: Long-distance entanglement distribution requires error correction protocols to compensate for qubit decoherence in quantum memories and noise introduced during entanglement swapping. We argue that repeater chains with error-correcti",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "2236b684bc513e44",
+      "title": "Automated search for highly contextual Kochen-Specker proofs",
+      "link": "https://arxiv.org/abs/2609.19862",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.19862v1 Announce Type: new Abstract: Observable-based Kochen-Specker proofs are configurations of multi-qubit Pauli observables grouped into contexts whose products are plus or minus the indentity. Their robustness as state-independent contextuality tests can be measur",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "dd557926387d7522",
+      "title": "Quantum WalkScore: Benchmarking Quantum Computers on the Graph Nodefinding Problem",
+      "link": "https://arxiv.org/abs/2609.19931",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.19931v1 Announce Type: new Abstract: Recent advances in quantum computing hardware toward fault-tolerance have increased interest in evaluating near-term quantum platforms on application-relevant quantum algorithms. In this work, we introduce Quantum WalkScore (QWS), a",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "6cec31f1b70371e4",
+      "title": "Quantum Graph Convolutional Networks: Implementation and Trainability Analysis",
+      "link": "https://arxiv.org/abs/2609.19983",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.19983v1 Announce Type: new Abstract: Graph Neural Networks (GNNs) achieve state-of-the-art performance on graph-structured data, but training and inference on large graphs are often bottlenecked by memory constraints and sparse linear-algebra workloads. Quantum computi",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "36d7ca5ddb1cdacc",
+      "title": "Private communication from Pauli channels with no privacy",
+      "link": "https://arxiv.org/abs/2609.20133",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.20133v1 Announce Type: new Abstract: A channel capacity quantifies the communication capability of a noisy physical process. In contrast to communication channels in the classical world, quantum theory makes this capability contextual. We show that two Pauli two-qubit ",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "47e0ab3c880aaf34",
+      "title": "QECirc: A Community-Driven, FAIR Library of Quantum Error Correction Circuits",
+      "link": "https://arxiv.org/abs/2609.20182",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.20182v1 Announce Type: new Abstract: Quantum error correction (QEC) underpins fault-tolerant quantum computing, but the circuits that realize QEC codes (encoders, logical state-preparation and gate routines, and syndrome-extraction schedules) are scattered across paper",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "bcba0a703091b23d",
+      "title": "Fast Unitary Preparation of Surface-Code Logical States on Neutral-Atom Hardware",
+      "link": "https://arxiv.org/abs/2609.20183",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.20183v1 Announce Type: new Abstract: Preparing logical states is a constantly recurring primitive at the start of any surface-code-based quantum computation. The standard measurement-based protocol is expensive on neutral atoms, since measurements are orders of magnitu",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "af701854c6a1b22d",
+      "title": "Verification Meets Calibration: Bounds and Secret-Independent State Preparation with an NV-Center as a Case Study",
+      "link": "https://arxiv.org/abs/2609.20219",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.20219v1 Announce Type: new Abstract: Verification protocols provide cryptographic guarantees that the outcome of a delegated quantum computation is correct, a key requirement for scalable and trustworthy quantum computing. A central assumption underlying these protocol",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "a5ba4b4e7dcf9edd",
+      "title": "Multiparameter sensing of axion dark matter with superconducting-qubit networks",
+      "link": "https://arxiv.org/abs/2609.20254",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.20254v1 Announce Type: new Abstract: We propose a quantum sensor network for direct detection of quantum chromodynamics (QCD) axion dark matter using entangled superconducting qubits. In the presence of a static magnetic field, the oscillating axion field induces a coh",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "41605e74cf258a6f",
+      "title": "The effects of shot noise on the quantum computation of NMR spectra",
+      "link": "https://arxiv.org/abs/2609.20406",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.20406v1 Announce Type: new Abstract: Recent advances in the field of quantum computing hardware motivate the search for applications which demonstrate so-called quantum advantage. One promising use case that has been identified is the simulation of quantum many-body sy",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "7dc9ef9f8f36633d",
+      "title": "Neutral atom quantum computing for materials science and quantum chemistry",
+      "link": "https://arxiv.org/abs/2609.20464",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.20464v1 Announce Type: new Abstract: Neutral atom arrays have emerged as versatile platforms for performing both digital and analogue quantum computing and simulation, with demonstrations ranging from large-scale programmable Hamiltonians realising topological phases o",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "b33fda2e5dc98453",
+      "title": "Scalable logical qubits",
+      "link": "https://arxiv.org/abs/2609.20549",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.20549v1 Announce Type: new Abstract: Utility-scale quantum computing will require executing long, complex algorithms with end-to-end error rates far below what physical qubits can support directly. Error-corrected logical qubits are needed to achieve this goal. To make",
+      "published": "2026-09-18T04:00:00+00:00"
+    },
+    {
+      "id": "221826ebdf2ea0c1",
+      "title": "FT-Weave: Real-Time Compilation Framework for Reconfigurable Fault-Tolerant Quantum Architectures",
+      "link": "https://arxiv.org/abs/2609.20573",
+      "source": "arXiv quant-ph",
+      "category": "Quantum",
+      "summary": "arXiv:2609.20573v1 Announce Type: new Abstract: Fault-tolerant quantum computing (FTQC) is essential for large-scale quantum computation, but realizing useful application throughput requires coordinating resource preparation, assignment, routing, and logical execution under stric",
+      "published": "2026-09-18T04:00:00+00:00"
     }
   ]
 }
