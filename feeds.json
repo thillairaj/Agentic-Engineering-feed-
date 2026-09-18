@@ -1,0 +1,9 @@
+[
+  { "source": "arXiv cs.AI", "url": "http://export.arxiv.org/rss/cs.AI" },
+  { "source": "arXiv cs.CL", "url": "http://export.arxiv.org/rss/cs.CL" },
+  { "source": "Simon Willison", "url": "https://simonwillison.net/atom/everything/" },
+  { "source": "TechCrunch AI", "url": "https://techcrunch.com/category/artificial-intelligence/feed/" },
+  { "source": "VentureBeat AI", "url": "https://venturebeat.com/category/ai/feed/" },
+  { "source": "The Verge", "url": "https://www.theverge.com/rss/index.xml" },
+  { "source": "MIT News AI", "url": "https://news.mit.edu/rss/topic/artificial-intelligence2" }
+]

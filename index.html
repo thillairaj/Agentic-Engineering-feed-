@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signal — Agentic Engineering</title>
+<meta name="description" content="A self-updating feed of agentic engineering news, research and releases.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-left">
+    <h1>Signal</h1>
+    <p class="tagline">a running feed of agentic engineering</p>
+  </div>
+  <div class="masthead-right">
+    <div class="status">
+      <span class="dot" id="statusDot"></span>
+      <span id="statusText">connecting…</span>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="panel">
+    <div class="panel-block">
+      <label class="panel-label" for="search">Search</label>
+      <input type="text" id="search" class="search-input" placeholder="filter headlines…" autocomplete="off">
+    </div>
+    <div class="panel-block">
+      <p class="panel-label">Sources</p>
+      <ul class="source-list" id="sourceList"><!-- populated by app.js --></ul>
+    </div>
+    <div class="panel-block panel-note">
+      <p>This page rebuilds itself. A scheduled bot polls a set of RSS feeds several times a day and republishes here — nothing on this page is typed by hand.</p>
+    </div>
+  </aside>
+
+  <main class="feed" id="feed">
+    <p class="empty-state">Waiting on the first automated run — once the bot's GitHub Action fires, articles will appear here.</p>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <span id="footerMeta">—</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
