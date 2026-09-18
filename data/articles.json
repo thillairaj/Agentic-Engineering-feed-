@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T19:34:04.850381+00:00",
+  "generated_at": "2026-09-18T22:32:38.775114+00:00",
   "sources_polled": [
     "The Verge \u2014 AI",
     "Simon Willison",
@@ -12,6 +12,24 @@
     "arXiv quant-ph"
   ],
   "articles": [
+    {
+      "id": "7456d8000ebfebb2",
+      "title": "OpenAI and Microsoft knew they were starting a \u2018doom loop\u2019 for the web",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "Recently unsealed court documents in the New York Times' case against OpenAI and Microsoft are pretty damning. The companies' own documentation warned that it was starting a \"doom loop\" that would damage the web, characterized its scraping of data to train its models as the \"larg",
+      "published": "2026-09-18T22:32:35.850526+00:00"
+    },
+    {
+      "id": "6b844761c1220d26",
+      "title": "AI hallucination of Chinese nuclear components almost led to US military attack",
+      "link": "https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "But the military's overall use of AI seems to be accelerating.",
+      "published": "2026-09-18T20:26:33+00:00"
+    },
     {
       "id": "beaede86e124ef87",
       "title": "Quoting Thariq Shihipar",
@@ -4021,24 +4039,6 @@
       "source": "arXiv quant-ph",
       "category": "Quantum",
       "summary": "arXiv:2609.19280v1 Announce Type: new Abstract: Faster quantum gates can suppress the decoherence accumulated during a computation, but in superconducting processors stronger microwave pulses can also increase leakage, off-resonant excitation, stray-field errors, and crosstalk. T",
-      "published": "2026-09-18T04:00:00+00:00"
-    },
-    {
-      "id": "9bd5e51746711fad",
-      "title": "Temporal information processing on a 4,500-qubit quantum annealer",
-      "link": "https://arxiv.org/abs/2609.19308",
-      "source": "arXiv quant-ph",
-      "category": "Quantum",
-      "summary": "arXiv:2609.19308v1 Announce Type: new Abstract: Quantum machine learning could uncover statistical structure beyond the reach of classical models, but this requires quantum models large and expressive enough to be useful and cheap enough to read out. Most approaches optimize many",
-      "published": "2026-09-18T04:00:00+00:00"
-    },
-    {
-      "id": "4e9b39ee04cd6939",
-      "title": "Transformers as Intrinsic Optimizers for Quantum Approximate Optimization Algorithm",
-      "link": "https://arxiv.org/abs/2609.19392",
-      "source": "arXiv quant-ph",
-      "category": "Quantum",
-      "summary": "arXiv:2609.19392v1 Announce Type: new Abstract: The Quantum Approximate Optimization Algorithm (QAOA) is a leading variational framework for combinatorial optimization on noisy intermediate-scale quantum hardware, but its practical performance depends strongly on the classical op",
       "published": "2026-09-18T04:00:00+00:00"
     }
   ]

@@ -4,7 +4,23 @@
     <title>AI Signal</title>
     <link>https://thillairaj.github.io/Agentic-Engineering-feed-/</link>
     <description>A self-updating feed of AI and quantum computing news, research and releases.</description>
-    <lastBuildDate>Fri, 18 Sep 2026 19:34:04 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Sep 2026 22:32:38 +0000</lastBuildDate>
+    <item>
+      <title>OpenAI and Microsoft knew they were starting a ‘doom loop’ for the web</title>
+      <link>https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero</link>
+      <guid isPermaLink="false">7456d8000ebfebb2</guid>
+      <description>Recently unsealed court documents in the New York Times' case against OpenAI and Microsoft are pretty damning. The companies' own documentation warned that it was starting a "doom loop" that would damage the web, characterized its scraping of data to train its models as the "larg</description>
+      <category>The Verge — AI</category>
+      <pubDate>Fri, 18 Sep 2026 22:32:35 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI hallucination of Chinese nuclear components almost led to US military attack</title>
+      <link>https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report/</link>
+      <guid isPermaLink="false">6b844761c1220d26</guid>
+      <description>But the military's overall use of AI seems to be accelerating.</description>
+      <category>Ars Technica AI</category>
+      <pubDate>Fri, 18 Sep 2026 20:26:33 +0000</pubDate>
+    </item>
     <item>
       <title>Quoting Thariq Shihipar</title>
       <link>https://simonwillison.net/2026/Sep/18/thariq-shihipar/</link>
@@ -468,22 +484,6 @@
       <description>Be alert: targeted attacks on prominent Rustaceans Important warning from Adam Harvey and the crates security team: We believe that there is an ongoing campaign targeting rust-lang members and owners of popular crates that is attempting to compromise devices and accounts in order</description>
       <category>Simon Willison</category>
       <pubDate>Fri, 18 Sep 2026 04:21:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>Regularized Emphatic Temporal-Difference Learning: Stability under Constant Stepsizes</title>
-      <link>https://arxiv.org/abs/2609.19170</link>
-      <guid isPermaLink="false">b92c247dcc1a3129</guid>
-      <description>arXiv:2609.19170v1 Announce Type: new Abstract: Emphatic temporal-difference learning (ETD) stabilizes the expected off-policy TD update and changes its projection geometry, but neither property determines constant-stepsize sampled dynamics. We construct an ergodic two-state coun</description>
-      <category>arXiv cs.AI</category>
-      <pubDate>Fri, 18 Sep 2026 04:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>BioPhys-Bridge: A Benchmark for Interdisciplinary Scientific Reasoning in Physics-Grounded Biological Research</title>
-      <link>https://arxiv.org/abs/2609.19180</link>
-      <guid isPermaLink="false">7b3bd791b71a8d72</guid>
-      <description>arXiv:2609.19180v1 Announce Type: new Abstract: Language models face unique challenges in analyzing interdisciplinary scientific research literature. In biophysics research, faithful answers require grounding observed data in source evidence, interpreting it through a quantitativ</description>
-      <category>arXiv cs.AI</category>
-      <pubDate>Fri, 18 Sep 2026 04:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
