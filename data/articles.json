@@ -1,17 +1,71 @@
 {
-  "generated_at": "2026-09-18T09:03:19.489902+00:00",
+  "generated_at": "2026-09-18T09:56:36.737953+00:00",
   "sources_polled": [
-    "arXiv cs.AI",
-    "arXiv cs.MA",
+    "The Verge \u2014 AI",
     "Simon Willison",
-    "The Verge",
     "Latent Space",
     "The Gradient",
     "Ars Technica AI",
+    "arXiv cs.AI",
+    "arXiv cs.MA",
     "InfoQ Quantum",
     "arXiv quant-ph"
   ],
   "articles": [
+    {
+      "id": "2306ad1a8f49503f",
+      "title": "Google will now let any AI agent run your smart home",
+      "link": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "Google is opening up its smart home to AI agents, letting tools like Claude and Open Claw access and control your connected devices and analyze your home's data using the standardized Model Context Protocol. Google Home MCP is a new integration that lets third-party AI agents con",
+      "published": "2026-09-18T09:56:33.332469+00:00"
+    },
+    {
+      "id": "933ca83973d0dec8",
+      "title": "Apple might make servers again to cash in on the AI rush",
+      "link": "https://www.theverge.com/tech/996321/apple-servers-ai-nvidia",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "According to The Information, Apple is planning to get back into the server game and might just pair up with Nvidia to make it happen. Apple retired its Xserve line in 2011 and has largely left enterprise machines to other manufacturers since. But the growing demand for compute p",
+      "published": "2026-09-18T09:56:33.332444+00:00"
+    },
+    {
+      "id": "be79f3048c92aa4e",
+      "title": "The AI data center e-waste problem is huge \u2014 and getting bigger",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "E-waste from the AI boom has been vastly underestimated, a new report warns. By 2050, it could become enough trash to fill 23 million shipping containers - roughly enough 40-foot containers to circle the world six times if lined up in a row. It's a significantly higher estimate o",
+      "published": "2026-09-18T09:56:33.332417+00:00"
+    },
+    {
+      "id": "cf356bfbc5c48c5c",
+      "title": "The 2.5-hour AI-generated Odyssey movie is 2.5 hours too long",
+      "link": "https://www.theverge.com/entertainment/996499/ai-odyssey-movie-review",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "Christopher Nolan's engrossing take on The Odyssey dominated at the box office and spurred a newfound interest in classic literature among filmgoers. But a new retelling of the story made entirely with AI is so bad that it might just make viewers hate the original tale altogether",
+      "published": "2026-09-18T09:56:33.332390+00:00"
+    },
+    {
+      "id": "d2f3ab14e50f6d7d",
+      "title": "Snap is launching a new Specs AI tool, and it\u2019s coming to iOS and Mac",
+      "link": "https://www.theverge.com/tech/996078/snap-specs-intelligence-ai-agent-ios-mac",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "Snap is introducing \"Specs Intelligence,\" a new AI assistant that can connect other digital accounts to help you with things like work tasks and keeping track of travel information. It seems similar to AI assistants like Meta's Muse and Gemini's Spark, though Snap is pitching Spe",
+      "published": "2026-09-18T09:56:33.332357+00:00"
+    },
+    {
+      "id": "41b021268bbc9661",
+      "title": "Inside the suddenly explosive world of AI safety",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/996563/ai-safety-research-metr-redwood-openai-anthropic",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "On a sunny July day in Berkeley, California, the country's top AI safety researchers gathered on an unmarked floor of an unmarked building. They had come together for a \"war room\" to dissect the high-profile cybersecurity incident that had rocked the AI industry hours earlier. An",
+      "published": "2026-09-18T09:56:33.332311+00:00"
+    },
     {
       "id": "405e090bb244957b",
       "title": "[AINews] not much happened today",
@@ -3985,60 +4039,6 @@
       "source": "arXiv quant-ph",
       "category": "Quantum",
       "summary": "arXiv:2609.20183v1 Announce Type: new Abstract: Preparing logical states is a constantly recurring primitive at the start of any surface-code-based quantum computation. The standard measurement-based protocol is expensive on neutral atoms, since measurements are orders of magnitu",
-      "published": "2026-09-18T04:00:00+00:00"
-    },
-    {
-      "id": "af701854c6a1b22d",
-      "title": "Verification Meets Calibration: Bounds and Secret-Independent State Preparation with an NV-Center as a Case Study",
-      "link": "https://arxiv.org/abs/2609.20219",
-      "source": "arXiv quant-ph",
-      "category": "Quantum",
-      "summary": "arXiv:2609.20219v1 Announce Type: new Abstract: Verification protocols provide cryptographic guarantees that the outcome of a delegated quantum computation is correct, a key requirement for scalable and trustworthy quantum computing. A central assumption underlying these protocol",
-      "published": "2026-09-18T04:00:00+00:00"
-    },
-    {
-      "id": "a5ba4b4e7dcf9edd",
-      "title": "Multiparameter sensing of axion dark matter with superconducting-qubit networks",
-      "link": "https://arxiv.org/abs/2609.20254",
-      "source": "arXiv quant-ph",
-      "category": "Quantum",
-      "summary": "arXiv:2609.20254v1 Announce Type: new Abstract: We propose a quantum sensor network for direct detection of quantum chromodynamics (QCD) axion dark matter using entangled superconducting qubits. In the presence of a static magnetic field, the oscillating axion field induces a coh",
-      "published": "2026-09-18T04:00:00+00:00"
-    },
-    {
-      "id": "41605e74cf258a6f",
-      "title": "The effects of shot noise on the quantum computation of NMR spectra",
-      "link": "https://arxiv.org/abs/2609.20406",
-      "source": "arXiv quant-ph",
-      "category": "Quantum",
-      "summary": "arXiv:2609.20406v1 Announce Type: new Abstract: Recent advances in the field of quantum computing hardware motivate the search for applications which demonstrate so-called quantum advantage. One promising use case that has been identified is the simulation of quantum many-body sy",
-      "published": "2026-09-18T04:00:00+00:00"
-    },
-    {
-      "id": "7dc9ef9f8f36633d",
-      "title": "Neutral atom quantum computing for materials science and quantum chemistry",
-      "link": "https://arxiv.org/abs/2609.20464",
-      "source": "arXiv quant-ph",
-      "category": "Quantum",
-      "summary": "arXiv:2609.20464v1 Announce Type: new Abstract: Neutral atom arrays have emerged as versatile platforms for performing both digital and analogue quantum computing and simulation, with demonstrations ranging from large-scale programmable Hamiltonians realising topological phases o",
-      "published": "2026-09-18T04:00:00+00:00"
-    },
-    {
-      "id": "b33fda2e5dc98453",
-      "title": "Scalable logical qubits",
-      "link": "https://arxiv.org/abs/2609.20549",
-      "source": "arXiv quant-ph",
-      "category": "Quantum",
-      "summary": "arXiv:2609.20549v1 Announce Type: new Abstract: Utility-scale quantum computing will require executing long, complex algorithms with end-to-end error rates far below what physical qubits can support directly. Error-corrected logical qubits are needed to achieve this goal. To make",
-      "published": "2026-09-18T04:00:00+00:00"
-    },
-    {
-      "id": "221826ebdf2ea0c1",
-      "title": "FT-Weave: Real-Time Compilation Framework for Reconfigurable Fault-Tolerant Quantum Architectures",
-      "link": "https://arxiv.org/abs/2609.20573",
-      "source": "arXiv quant-ph",
-      "category": "Quantum",
-      "summary": "arXiv:2609.20573v1 Announce Type: new Abstract: Fault-tolerant quantum computing (FTQC) is essential for large-scale quantum computation, but realizing useful application throughput requires coordinating resource preparation, assignment, routing, and logical execution under stric",
       "published": "2026-09-18T04:00:00+00:00"
     }
   ]
