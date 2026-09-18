@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """
 Pulls every feed listed in feeds.json, merges new items into data/articles.json,
-and keeps only articles published in the last 24 hours. Designed to run
-unattended on a schedule (see .github/workflows/update-feeds.yml).
+and keeps only articles published in the last 24 hours. arXiv sources are
+filtered to topic-relevant papers only (agent/agentic for AI category, quantum
+computing for Quantum category), since arXiv's raw daily volume would
+otherwise swamp everything else. Blog/news sources pass through unfiltered.
 
 Usage: python3 scripts/fetch_feeds.py
 """
@@ -18,12 +20,26 @@ import feedparser
 ROOT = Path(__file__).resolve().parent.parent
 FEEDS_FILE = ROOT / "feeds.json"
 DATA_FILE = ROOT / "data" / "articles.json"
-FRESHNESS_HOURS = 24   # anything older than this is dropped every run
-SAFETY_CAP = 500       # hard ceiling in case a burst of items comes in
+FRESHNESS_HOURS = 24
+SAFETY_CAP = 500
+
+AGENT_KEYWORDS = re.compile(
+    r"\b(agent|agentic|multi-agent|multiagent|tool.?use|tool.?calling|"
+    r"autonomous|orchestrat|llm agent|reasoning agent|agent harness|"
+    r"agent workflow|agent framework)\w*",
+    re.IGNORECASE,
+)
+
+QUANTUM_KEYWORDS = re.compile(
+    r"\b(quantum comput|qubit|quantum algorithm|quantum circuit|"
+    r"quantum error correction|quantum hardware|quantum advantage|"
+    r"quantum supremacy|quantum processor|quantum chip|quantum software|"
+    r"quantum gate|quantum annealing)\w*",
+    re.IGNORECASE,
+)
 
 
 def clean_html(raw: str) -> str:
-    """Strip tags and collapse whitespace so summaries render as plain text."""
     if not raw:
         return ""
     text = re.sub(r"<[^>]+>", " ", raw)
@@ -32,7 +48,6 @@ def clean_html(raw: str) -> str:
 
 
 def parse_date(entry) -> str:
-    """Return an ISO-8601 UTC timestamp, falling back to now() if a feed omits one."""
     for key in ("published", "updated"):
         value = entry.get(key)
         if value:
@@ -57,13 +72,24 @@ def load_existing() -> dict:
     return {}
 
 
+def is_relevant(source: str, category: str, title: str, summary: str) -> bool:
+    """Non-arXiv sources pass through untouched. arXiv sources must match
+    their category's keyword filter to be kept."""
+    if not source.lower().startswith("arxiv"):
+        return True
+    pattern = QUANTUM_KEYWORDS if category == "Quantum" else AGENT_KEYWORDS
+    return bool(pattern.search(title) or pattern.search(summary))
+
+
 def main():
     feeds = json.loads(FEEDS_FILE.read_text())
     by_id = load_existing()
-    added, seen_sources = 0, []
+    added, skipped_offtopic, seen_sources = 0, 0, []
 
     for feed in feeds:
-        source, url = feed["source"], feed["url"]
+        source = feed["source"]
+        url = feed["url"]
+        category = feed.get("category", "AI")
         parsed = feedparser.parse(url)
         if parsed.bozo and not parsed.entries:
             print(f"  [skip] {source}: could not parse feed ({parsed.bozo_exception})")
@@ -78,20 +104,24 @@ def main():
 
             aid = article_id(link)
             if aid in by_id:
-                continue  # already have it, bot only adds new items
+                continue
+
+            summary = clean_html(entry.get("summary", ""))
+            if not is_relevant(source, category, title, summary):
+                skipped_offtopic += 1
+                continue
 
             by_id[aid] = {
                 "id": aid,
                 "title": title,
                 "link": link,
                 "source": source,
-                "summary": clean_html(entry.get("summary", "")),
+                "category": category,
+                "summary": summary,
                 "published": parse_date(entry),
             }
             added += 1
 
-    # Prune anything older than the freshness window - this runs every time,
-    # so old items (from this run OR earlier runs) always get dropped.
     cutoff = datetime.now(timezone.utc) - timedelta(hours=FRESHNESS_HOURS)
     fresh = [a for a in by_id.values() if datetime.fromisoformat(a["published"]) >= cutoff]
     dropped = len(by_id) - len(fresh)
@@ -105,9 +135,9 @@ def main():
         "articles": articles,
     }, indent=2))
 
-    print(f"Polled {len(seen_sources)}/{len(feeds)} feeds, added {added} new item(s), "
-          f"dropped {dropped} item(s) older than {FRESHNESS_HOURS}h, "
-          f"{len(articles)} total stored.")
+    print(f"Polled {len(seen_sources)}/{len(feeds)} feeds, added {added} new item(s) "
+          f"(skipped {skipped_offtopic} off-topic), dropped {dropped} item(s) older than "
+          f"{FRESHNESS_HOURS}h, {len(articles)} total stored.")
 
 
 if __name__ == "__main__":
