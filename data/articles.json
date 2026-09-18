@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T10:42:53.448400+00:00",
+  "generated_at": "2026-09-18T12:59:19.167762+00:00",
   "sources_polled": [
     "The Verge \u2014 AI",
     "Simon Willison",
@@ -12,6 +12,15 @@
     "arXiv quant-ph"
   ],
   "articles": [
+    {
+      "id": "82da9e642a0899d3",
+      "title": "Flash floods can strike without warning \u2014 this new technology could change that",
+      "link": "https://www.theverge.com/science/997083/flash-flood-warning-tacls-satellite-machine-learning",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "On the morning of June 9th, Laura Lin was working from her home in Lanesville, a rural southern Indiana town about 15 miles from the Kentucky border. She was on a Zoom call, unaware that the heavy rain outside was beginning to flood her yard. \"I look over to where the barn is ove",
+      "published": "2026-09-18T12:59:15.509188+00:00"
+    },
     {
       "id": "2306ad1a8f49503f",
       "title": "Google will now let any AI agent run your smart home",
@@ -4030,15 +4039,6 @@
       "source": "arXiv quant-ph",
       "category": "Quantum",
       "summary": "arXiv:2609.20182v1 Announce Type: new Abstract: Quantum error correction (QEC) underpins fault-tolerant quantum computing, but the circuits that realize QEC codes (encoders, logical state-preparation and gate routines, and syndrome-extraction schedules) are scattered across paper",
-      "published": "2026-09-18T04:00:00+00:00"
-    },
-    {
-      "id": "bcba0a703091b23d",
-      "title": "Fast Unitary Preparation of Surface-Code Logical States on Neutral-Atom Hardware",
-      "link": "https://arxiv.org/abs/2609.20183",
-      "source": "arXiv quant-ph",
-      "category": "Quantum",
-      "summary": "arXiv:2609.20183v1 Announce Type: new Abstract: Preparing logical states is a constantly recurring primitive at the start of any surface-code-based quantum computation. The standard measurement-based protocol is expensive on neutral atoms, since measurements are orders of magnitu",
       "published": "2026-09-18T04:00:00+00:00"
     }
   ]
