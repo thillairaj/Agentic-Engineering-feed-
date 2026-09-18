@@ -1,12 +1,16 @@
 const DATA_URL = "data/articles.json";
 const CLIENT_REFRESH_MS = 5 * 60 * 1000;
 const PAGE_SIZE = 10;
+const BOOKMARK_KEY = "aisignal_bookmarks";
+const THEME_KEY = "aisignal_theme";
+const GOATCOUNTER_TOTAL_URL = "https://trttech.goatcounter.com/counter/TOTAL.json";
 
 let allArticles = [];
 let activeSource = null;
 let activeCategory = "";
 let searchTerm = "";
 let visibleCount = PAGE_SIZE;
+let bookmarks = new Set(JSON.parse(localStorage.getItem(BOOKMARK_KEY) || "[]"));
 
 const feedEl = document.getElementById("feed");
 const sourceListEl = document.getElementById("sourceList");
@@ -14,7 +18,9 @@ const searchEl = document.getElementById("search");
 const categoryToggleEl = document.getElementById("categoryToggle");
 const statusDot = document.getElementById("statusDot");
 const statusText = document.getElementById("statusText");
+const viewsTextEl = document.getElementById("viewsText");
 const footerMeta = document.getElementById("footerMeta");
+const themeToggleBtn = document.getElementById("themeToggle");
 
 function timeAgo(iso) {
   const then = new Date(iso).getTime();
@@ -27,10 +33,60 @@ function timeAgo(iso) {
   return `${diffDay}d ago`;
 }
 
+/* ---------- Theme ---------- */
+function applyTheme(theme) {
+  if (theme === "dark" || theme === "light") {
+    document.documentElement.setAttribute("data-theme", theme);
+  } else {
+    document.documentElement.removeAttribute("data-theme");
+  }
+  themeToggleBtn.textContent = (theme === "dark") ? "☀" : "☾";
+}
+(function initTheme() {
+  const saved = localStorage.getItem(THEME_KEY);
+  applyTheme(saved);
+})();
+themeToggleBtn.addEventListener("click", () => {
+  const current = document.documentElement.getAttribute("data-theme") ||
+    (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  const next = current === "dark" ? "light" : "dark";
+  localStorage.setItem(THEME_KEY, next);
+  applyTheme(next);
+});
+
+/* ---------- Bookmarks ---------- */
+function saveBookmarks() {
+  localStorage.setItem(BOOKMARK_KEY, JSON.stringify([...bookmarks]));
+}
+function toggleBookmark(id) {
+  if (bookmarks.has(id)) bookmarks.delete(id); else bookmarks.add(id);
+  saveBookmarks();
+  renderFeed();
+}
+
+/* ---------- Views (GoatCounter) ---------- */
+async function loadViews() {
+  try {
+    const res = await fetch(GOATCOUNTER_TOTAL_URL);
+    if (!res.ok) return;
+    const data = await res.json();
+    if (data && data.count) {
+      viewsTextEl.textContent = `${data.count} views`;
+    }
+  } catch (err) {
+    // Silently ignore - views are a nice-to-have, not critical.
+  }
+}
+
+/* ---------- Filtering & rendering ---------- */
 function getFiltered() {
   const term = searchTerm.trim().toLowerCase();
   return allArticles.filter(a => {
-    if (activeCategory && a.category !== activeCategory) return false;
+    if (activeCategory === "__bookmarked") {
+      if (!bookmarks.has(a.id)) return false;
+    } else if (activeCategory && a.category !== activeCategory) {
+      return false;
+    }
     if (activeSource && a.source !== activeSource) return false;
     if (term && !(a.title.toLowerCase().includes(term) || a.summary.toLowerCase().includes(term))) return false;
     return true;
@@ -38,7 +94,15 @@ function getFiltered() {
 }
 
 function renderSources() {
-  const scoped = activeCategory ? allArticles.filter(a => a.category === activeCategory) : allArticles;
+  let scoped;
+  if (activeCategory === "__bookmarked") {
+    scoped = allArticles.filter(a => bookmarks.has(a.id));
+  } else if (activeCategory) {
+    scoped = allArticles.filter(a => a.category === activeCategory);
+  } else {
+    scoped = allArticles;
+  }
+
   const counts = {};
   scoped.forEach(a => { counts[a.source] = (counts[a.source] || 0) + 1; });
   const sources = Object.keys(counts).sort();
@@ -76,18 +140,25 @@ function renderFeed() {
 
   const shown = filtered.slice(0, visibleCount);
 
-  feedEl.innerHTML = shown.map(a => `
+  feedEl.innerHTML = shown.map(a => {
+    const saved = bookmarks.has(a.id);
+    return `
     <article class="article">
       <div class="article-meta">
         ${timeAgo(a.published)}
         <span class="source">${a.source}</span>
+        <div class="article-actions">
+          <button class="icon-btn bookmark-btn ${saved ? "active" : ""}" data-id="${a.id}" title="${saved ? "Remove bookmark" : "Save for later"}">${saved ? "★" : "☆"}</button>
+          <button class="icon-btn copy-btn" data-link="${a.link}" title="Copy link">⧉</button>
+        </div>
       </div>
       <div>
         <h2 class="article-title"><a href="${a.link}" target="_blank" rel="noopener">${a.title}</a></h2>
         <p class="article-summary">${a.summary || ""}</p>
       </div>
     </article>
-  `).join("");
+  `;
+  }).join("");
 
   if (filtered.length > visibleCount) {
     const remaining = filtered.length - visibleCount;
@@ -101,6 +172,22 @@ function renderFeed() {
     });
   }
 }
+
+feedEl.addEventListener("click", (e) => {
+  const bm = e.target.closest(".bookmark-btn");
+  if (bm) {
+    toggleBookmark(bm.dataset.id);
+    return;
+  }
+  const cp = e.target.closest(".copy-btn");
+  if (cp) {
+    navigator.clipboard.writeText(cp.dataset.link).then(() => {
+      const original = cp.textContent;
+      cp.textContent = "✓";
+      setTimeout(() => { cp.textContent = original; }, 1200);
+    }).catch(() => {});
+  }
+});
 
 async function loadData() {
   try {
@@ -146,4 +233,6 @@ categoryToggleEl.querySelectorAll(".cat-btn").forEach(btn => {
 });
 
 loadData();
+loadViews();
 setInterval(loadData, CLIENT_REFRESH_MS);
+setInterval(loadViews, CLIENT_REFRESH_MS);
