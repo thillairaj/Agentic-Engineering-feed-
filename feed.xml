@@ -4,7 +4,47 @@
     <title>AI Signal</title>
     <link>https://thillairaj.github.io/Agentic-Engineering-feed-/</link>
     <description>A self-updating feed of AI and quantum computing news, research and releases.</description>
-    <lastBuildDate>Fri, 18 Sep 2026 17:07:50 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Sep 2026 19:34:04 +0000</lastBuildDate>
+    <item>
+      <title>Quoting Thariq Shihipar</title>
+      <link>https://simonwillison.net/2026/Sep/18/thariq-shihipar/</link>
+      <guid isPermaLink="false">beaede86e124ef87</guid>
+      <description>We're adding support for AGENTS.md to Claude Code. Starting today in version 2.1.277, if there is no CLAUDE.md in a folder, Claude will check for and use AGENTS.md. AGENTS.md support is built off of Claude Code mods, our upcoming way to customize the Claude Code harness. This is </description>
+      <category>Simon Willison</category>
+      <pubDate>Fri, 18 Sep 2026 19:34:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>Note on 18th September 2026</title>
+      <link>https://simonwillison.net/2026/Sep/18/probably-gonna-eat-you/</link>
+      <guid isPermaLink="false">e3a6799112421c6d</guid>
+      <description>Being a computer scientist who refuses to find anything about LLMs interesting right now is a bit like being a geneticist who refuses to find anything interesting about the recently opened Jurassic Park. Tags: llms , ai , generative-ai</description>
+      <category>Simon Willison</category>
+      <pubDate>Fri, 18 Sep 2026 19:34:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>Virginia governor creates an AI task force and moves to restrain data centers</title>
+      <link>https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force</link>
+      <guid isPermaLink="false">802486953da21839</guid>
+      <description>Virginia Gov. Abigail Spanberger ordered the state government to take steps that could empower local communities to have a larger say in data center development and slow down approvals in a state that is already home to the data center capital of the world. Executive Order 22 ban</description>
+      <category>The Verge — AI</category>
+      <pubDate>Fri, 18 Sep 2026 19:34:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>FAA tees up $875M AI tool to help manage air traffic congestion</title>
+      <link>https://arstechnica.com/ai/2026/09/faa-tees-up-875m-ai-tool-to-help-manage-air-traffic-congestion/</link>
+      <guid isPermaLink="false">8a86701f25e4f074</guid>
+      <description>FAA plans for AI tool to help manage DC air traffic before a nationwide rollout.</description>
+      <category>Ars Technica AI</category>
+      <pubDate>Fri, 18 Sep 2026 19:20:50 +0000</pubDate>
+    </item>
+    <item>
+      <title>US government website used Chinese model the FBI called "malicious"</title>
+      <link>https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious/</link>
+      <guid isPermaLink="false">26bd35d9b365cbf2</guid>
+      <description>The Federal Register website briefly used an open source Chinese AI search tool.</description>
+      <category>Ars Technica AI</category>
+      <pubDate>Fri, 18 Sep 2026 17:28:50 +0000</pubDate>
+    </item>
     <item>
       <title>Security researchers used Claude to help them hack into OpenAI</title>
       <link>https://www.theverge.com/ai-artificial-intelligence/997444/openai-hack-claude-heif-heist</link>
@@ -442,46 +482,6 @@
       <link>https://arxiv.org/abs/2609.19180</link>
       <guid isPermaLink="false">7b3bd791b71a8d72</guid>
       <description>arXiv:2609.19180v1 Announce Type: new Abstract: Language models face unique challenges in analyzing interdisciplinary scientific research literature. In biophysics research, faithful answers require grounding observed data in source evidence, interpreting it through a quantitativ</description>
-      <category>arXiv cs.AI</category>
-      <pubDate>Fri, 18 Sep 2026 04:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>What Do We Expect from LLMs? Mapping the Design of LLM Benchmarks</title>
-      <link>https://arxiv.org/abs/2609.19182</link>
-      <guid isPermaLink="false">8c88d48a4f44ebeb</guid>
-      <description>arXiv:2609.19182v1 Announce Type: new Abstract: Benchmarks are central to how progress in large language models (LLMs) is assessed and communicated. Yet model rankings alone reveal little about how evaluation requirements themselves are changing. The expanding variety of benchmar</description>
-      <category>arXiv cs.AI</category>
-      <pubDate>Fri, 18 Sep 2026 04:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Position: It is Time to Virtualize Foundation Models with a Self-evolving Operating System Layer</title>
-      <link>https://arxiv.org/abs/2609.19203</link>
-      <guid isPermaLink="false">c1e8c41b9a82998d</guid>
-      <description>arXiv:2609.19203v1 Announce Type: new Abstract: AI applications have shifted from single, monolithic foundation models (FM) to compound agentic systems. Yet today's stacks remain fragmented: even as protocols (e.g., MCP, A2A) ease tool/agent connectivity, each framework embeds an</description>
-      <category>arXiv cs.AI</category>
-      <pubDate>Fri, 18 Sep 2026 04:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>What Do Current Systematic Generalization Tasks Miss? A Reasoning-Centered Analysis</title>
-      <link>https://arxiv.org/abs/2609.19212</link>
-      <guid isPermaLink="false">5b846e1c4b28543f</guid>
-      <description>arXiv:2609.19212v1 Announce Type: new Abstract: Systematic generalization, the ability to solve novel problems by recombining known atomic elements, is central to human intelligence but difficult to study rigorously under controlled settings. Existing studies therefore rely on si</description>
-      <category>arXiv cs.AI</category>
-      <pubDate>Fri, 18 Sep 2026 04:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Characterizing Web Search by Conversational LLM Agents: From Search Decisions and Strategies to Results and Responses</title>
-      <link>https://arxiv.org/abs/2609.19244</link>
-      <guid isPermaLink="false">832e040fa8eaf395</guid>
-      <description>arXiv:2609.19244v1 Announce Type: new Abstract: Conversational LLM agents increasingly rely on Web search, yet the end-to-end lifecycle of agentic search remains poorly understood. We present the first study of Web search across four major conversational platforms (ChatGPT, Claud</description>
-      <category>arXiv cs.AI</category>
-      <pubDate>Fri, 18 Sep 2026 04:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Do AI Agents Understand Computer Architecture?</title>
-      <link>https://arxiv.org/abs/2609.19387</link>
-      <guid isPermaLink="false">f7461a078397ef0d</guid>
-      <description>arXiv:2609.19387v1 Announce Type: new Abstract: Agents are increasingly asked to design hardware, and increasingly reported to succeed. Such reports establish that a design improved; they cannot establish why. An agent that improves an accelerator may be reasoning about the machi</description>
       <category>arXiv cs.AI</category>
       <pubDate>Fri, 18 Sep 2026 04:00:00 +0000</pubDate>
     </item>

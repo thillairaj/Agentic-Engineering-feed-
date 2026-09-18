@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T17:07:50.240481+00:00",
+  "generated_at": "2026-09-18T19:34:04.850381+00:00",
   "sources_polled": [
     "The Verge \u2014 AI",
     "Simon Willison",
@@ -12,6 +12,51 @@
     "arXiv quant-ph"
   ],
   "articles": [
+    {
+      "id": "beaede86e124ef87",
+      "title": "Quoting Thariq Shihipar",
+      "link": "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "We're adding support for AGENTS.md to Claude Code. Starting today in version 2.1.277, if there is no CLAUDE.md in a folder, Claude will check for and use AGENTS.md. AGENTS.md support is built off of Claude Code mods, our upcoming way to customize the Claude Code harness. This is ",
+      "published": "2026-09-18T19:34:02.345050+00:00"
+    },
+    {
+      "id": "e3a6799112421c6d",
+      "title": "Note on 18th September 2026",
+      "link": "https://simonwillison.net/2026/Sep/18/probably-gonna-eat-you/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "Being a computer scientist who refuses to find anything about LLMs interesting right now is a bit like being a geneticist who refuses to find anything interesting about the recently opened Jurassic Park. Tags: llms , ai , generative-ai",
+      "published": "2026-09-18T19:34:02.344993+00:00"
+    },
+    {
+      "id": "802486953da21839",
+      "title": "Virginia governor creates an AI task force and moves to restrain data centers",
+      "link": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "Virginia Gov. Abigail Spanberger ordered the state government to take steps that could empower local communities to have a larger say in data center development and slow down approvals in a state that is already home to the data center capital of the world. Executive Order 22 ban",
+      "published": "2026-09-18T19:34:02.170474+00:00"
+    },
+    {
+      "id": "8a86701f25e4f074",
+      "title": "FAA tees up $875M AI tool to help manage air traffic congestion",
+      "link": "https://arstechnica.com/ai/2026/09/faa-tees-up-875m-ai-tool-to-help-manage-air-traffic-congestion/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "FAA plans for AI tool to help manage DC air traffic before a nationwide rollout.",
+      "published": "2026-09-18T19:20:50+00:00"
+    },
+    {
+      "id": "26bd35d9b365cbf2",
+      "title": "US government website used Chinese model the FBI called \"malicious\"",
+      "link": "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "The Federal Register website briefly used an open source Chinese AI search tool.",
+      "published": "2026-09-18T17:28:50+00:00"
+    },
     {
       "id": "907e9d5308761968",
       "title": "Security researchers used Claude to help them hack into OpenAI",
@@ -3994,51 +4039,6 @@
       "source": "arXiv quant-ph",
       "category": "Quantum",
       "summary": "arXiv:2609.19392v1 Announce Type: new Abstract: The Quantum Approximate Optimization Algorithm (QAOA) is a leading variational framework for combinatorial optimization on noisy intermediate-scale quantum hardware, but its practical performance depends strongly on the classical op",
-      "published": "2026-09-18T04:00:00+00:00"
-    },
-    {
-      "id": "a611fd9890a0e744",
-      "title": "Scalable Simulation of Quantum Dynamics on Topological Quantum Hardware",
-      "link": "https://arxiv.org/abs/2609.19484",
-      "source": "arXiv quant-ph",
-      "category": "Quantum",
-      "summary": "arXiv:2609.19484v1 Announce Type: new Abstract: Quantum computers offer a significant advantage in simulating quantum systems compared to classical computers for certain problems, although most current applications are limited to calculating static molecular properties using hybr",
-      "published": "2026-09-18T04:00:00+00:00"
-    },
-    {
-      "id": "eb40a2ed749c20c1",
-      "title": "Efficiently estimating failure rates of fault-tolerant logical non-Clifford blocks",
-      "link": "https://arxiv.org/abs/2609.19485",
-      "source": "arXiv quant-ph",
-      "category": "Quantum",
-      "summary": "arXiv:2609.19485v1 Announce Type: new Abstract: Useful quantum computation requires the fault-tolerant implementations of a universal gate set which are generically not efficiently simulable. We devise an algebraic framework that allows for efficient sampling from the measurement",
-      "published": "2026-09-18T04:00:00+00:00"
-    },
-    {
-      "id": "4d3a9d18c275549b",
-      "title": "Quantum computers will not be that different: A blueprint for quantum computer architecture at scale",
-      "link": "https://arxiv.org/abs/2609.19639",
-      "source": "arXiv quant-ph",
-      "category": "Quantum",
-      "summary": "arXiv:2609.19639v1 Announce Type: new Abstract: Quantum computers are technologically novel and unusual, but at system scale they should be engineered using many of the same principles that govern classical heterogeneous accelerators. This paper argues that utility-scale quantum ",
-      "published": "2026-09-18T04:00:00+00:00"
-    },
-    {
-      "id": "d5960c6522efe57e",
-      "title": "Linear combination of Schr\\\"odingerization for quantum linear systems with optimal matrix-query complexity",
-      "link": "https://arxiv.org/abs/2609.19676",
-      "source": "arXiv quant-ph",
-      "category": "Quantum",
-      "summary": "arXiv:2609.19676v1 Announce Type: new Abstract: Quantum linear systems algorithms (QLSAs) aim to solve linear systems $A\\bb{x}=\\bb{b}$ exponentially faster than classical methods under certain conditions. In this work, we develop quantum algorithms for solving linear algebraic eq",
-      "published": "2026-09-18T04:00:00+00:00"
-    },
-    {
-      "id": "27315478252d47c7",
-      "title": "Scalable entanglement distribution using encoded hybrid repeater chains",
-      "link": "https://arxiv.org/abs/2609.19783",
-      "source": "arXiv quant-ph",
-      "category": "Quantum",
-      "summary": "arXiv:2609.19783v1 Announce Type: new Abstract: Long-distance entanglement distribution requires error correction protocols to compensate for qubit decoherence in quantum memories and noise introduced during entanglement swapping. We argue that repeater chains with error-correcti",
       "published": "2026-09-18T04:00:00+00:00"
     }
   ]
