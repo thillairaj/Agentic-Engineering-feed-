@@ -225,3 +225,64 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .dot.live { animation: none; }
 }
+/* ---------- Category toggle ---------- */
+.category-toggle {
+  display: flex;
+  gap: 0.4rem;
+}
+.cat-btn {
+  flex: 1;
+  padding: 0.4rem 0;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--muted);
+  cursor: pointer;
+}
+.cat-btn.active {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+
+/* ---------- Follow link ---------- */
+.follow-link {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.7rem;
+  border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.follow-link:hover { background: var(--surface); }
+
+/* ---------- Load more ---------- */
+.load-more-wrap {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+.load-more-btn {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--ink);
+  cursor: pointer;
+}
+.load-more-btn:hover { background: var(--accent-dim); }
+
+/* ---------- Footer credit ---------- */
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.credit { color: var(--ink); }
