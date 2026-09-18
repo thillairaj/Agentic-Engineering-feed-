@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 """
 Pulls every feed listed in feeds.json, merges new items into data/articles.json,
-and keeps only articles published in the last 24 hours. arXiv sources are
-filtered to topic-relevant papers only (agent/agentic for AI category, quantum
-computing for Quantum category), since arXiv's raw daily volume would
-otherwise swamp everything else. Blog/news sources pass through unfiltered.
+keeps only articles published in the last 24 hours, and also writes feed.xml -
+an RSS 2.0 feed of the curated results so others can subscribe to this site.
 
 Usage: python3 scripts/fetch_feeds.py
 """
@@ -13,15 +11,19 @@ import hashlib
 import re
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
-from email.utils import parsedate_to_datetime
+from email.utils import parsedate_to_datetime, format_datetime
+from xml.sax.saxutils import escape
 
 import feedparser
 
 ROOT = Path(__file__).resolve().parent.parent
 FEEDS_FILE = ROOT / "feeds.json"
 DATA_FILE = ROOT / "data" / "articles.json"
+RSS_FILE = ROOT / "feed.xml"
+SITE_URL = "https://thillairaj.github.io/Agentic-Engineering-feed-/"
 FRESHNESS_HOURS = 24
 SAFETY_CAP = 500
+RSS_ITEM_LIMIT = 60
 
 AGENT_KEYWORDS = re.compile(
     r"\b(agent|agentic|multi-agent|multiagent|tool.?use|tool.?calling|"
@@ -73,12 +75,39 @@ def load_existing() -> dict:
 
 
 def is_relevant(source: str, category: str, title: str, summary: str) -> bool:
-    """Non-arXiv sources pass through untouched. arXiv sources must match
-    their category's keyword filter to be kept."""
     if not source.lower().startswith("arxiv"):
         return True
     pattern = QUANTUM_KEYWORDS if category == "Quantum" else AGENT_KEYWORDS
     return bool(pattern.search(title) or pattern.search(summary))
+
+
+def build_rss(articles) -> str:
+    items = []
+    for a in articles[:RSS_ITEM_LIMIT]:
+        try:
+            pub_dt = datetime.fromisoformat(a["published"])
+        except ValueError:
+            pub_dt = datetime.now(timezone.utc)
+        items.append(f"""    <item>
+      <title>{escape(a['title'])}</title>
+      <link>{escape(a['link'])}</link>
+      <guid isPermaLink="false">{a['id']}</guid>
+      <description>{escape(a['summary'])}</description>
+      <category>{escape(a['source'])}</category>
+      <pubDate>{format_datetime(pub_dt)}</pubDate>
+    </item>""")
+    items_xml = "\n".join(items)
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>AI Signal</title>
+    <link>{SITE_URL}</link>
+    <description>A self-updating feed of AI and quantum computing news, research and releases.</description>
+    <lastBuildDate>{format_datetime(datetime.now(timezone.utc))}</lastBuildDate>
+{items_xml}
+  </channel>
+</rss>
+"""
 
 
 def main():
@@ -135,9 +164,11 @@ def main():
         "articles": articles,
     }, indent=2))
 
+    RSS_FILE.write_text(build_rss(articles), encoding="utf-8")
+
     print(f"Polled {len(seen_sources)}/{len(feeds)} feeds, added {added} new item(s) "
           f"(skipped {skipped_offtopic} off-topic), dropped {dropped} item(s) older than "
-          f"{FRESHNESS_HOURS}h, {len(articles)} total stored.")
+          f"{FRESHNESS_HOURS}h, {len(articles)} total stored, feed.xml written.")
 
 
 if __name__ == "__main__":
