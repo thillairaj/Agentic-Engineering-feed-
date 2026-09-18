@@ -45,7 +45,7 @@ function formatClock(date) {
 function nextHourlyRefresh() {
   const now = new Date();
   const next = new Date(now);
-  next.setMinutes(0, 0, 0);
+  next.setMinutes(9, 0, 0);
   if (next <= now) next.setHours(next.getHours() + 1);
   return next;
 }
