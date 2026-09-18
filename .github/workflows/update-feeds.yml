@@ -2,7 +2,6 @@ name: Update feed data
 
 on:
   schedule:
-    # Runs at 00:00, 08:00, 16:00 UTC - 3x/day, every 8 hours.
     - cron: "0 0,8,16 * * *"
   workflow_dispatch: {}
 
@@ -29,6 +28,6 @@ jobs:
         run: |
           git config user.name "feed-bot"
           git config user.email "feed-bot@users.noreply.github.com"
-          git add data/articles.json
+          git add data/articles.json feed.xml
           git diff --quiet --cached || git commit -m "Auto-update: refresh 24h window $(date -u +%Y-%m-%dT%H:%MZ)"
           git push
