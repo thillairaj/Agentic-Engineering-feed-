@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """
 Pulls every feed listed in feeds.json, merges new items into data/articles.json,
-and keeps the file sorted newest-first. Designed to run unattended on a schedule
-(see .github/workflows/update-feeds.yml) - it never overwrites history, it only adds.
+and keeps only articles published in the last 24 hours. Designed to run
+unattended on a schedule (see .github/workflows/update-feeds.yml).
 
 Usage: python3 scripts/fetch_feeds.py
 """
 import json
 import hashlib
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from email.utils import parsedate_to_datetime
 
@@ -18,7 +18,8 @@ import feedparser
 ROOT = Path(__file__).resolve().parent.parent
 FEEDS_FILE = ROOT / "feeds.json"
 DATA_FILE = ROOT / "data" / "articles.json"
-MAX_ARTICLES = 300  # keep the feed trimmed so the site stays fast
+FRESHNESS_HOURS = 24   # anything older than this is dropped every run
+SAFETY_CAP = 500       # hard ceiling in case a burst of items comes in
 
 
 def clean_html(raw: str) -> str:
@@ -89,7 +90,13 @@ def main():
             }
             added += 1
 
-    articles = sorted(by_id.values(), key=lambda a: a["published"], reverse=True)[:MAX_ARTICLES]
+    # Prune anything older than the freshness window - this runs every time,
+    # so old items (from this run OR earlier runs) always get dropped.
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=FRESHNESS_HOURS)
+    fresh = [a for a in by_id.values() if datetime.fromisoformat(a["published"]) >= cutoff]
+    dropped = len(by_id) - len(fresh)
+
+    articles = sorted(fresh, key=lambda a: a["published"], reverse=True)[:SAFETY_CAP]
 
     DATA_FILE.parent.mkdir(exist_ok=True)
     DATA_FILE.write_text(json.dumps({
@@ -99,6 +106,7 @@ def main():
     }, indent=2))
 
     print(f"Polled {len(seen_sources)}/{len(feeds)} feeds, added {added} new item(s), "
+          f"dropped {dropped} item(s) older than {FRESHNESS_HOURS}h, "
           f"{len(articles)} total stored.")
 
 
