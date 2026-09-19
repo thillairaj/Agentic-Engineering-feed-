@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T17:17:07.643242+00:00",
+  "generated_at": "2026-09-19T17:25:32.304157+00:00",
   "sources_polled": [
     "The Verge \u2014 AI",
     "Simon Willison",
@@ -13,6 +13,33 @@
     "InfoQ Quantum Computing"
   ],
   "articles": [
+    {
+      "id": "a864cdf7e10a4848",
+      "title": "The AI regulation smackdown isn\u2019t over",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "At the start of this week, the who's-who of AI seemed - at least tentatively - on the side of AI regulation. Over the weekend, Anthropic CEO Dario Amodei had proposed a three-step plan for slowing AI development, including by embedding third-party evaluators in labs, coordinating",
+      "published": "2026-09-19T17:25:28.283895+00:00"
+    },
+    {
+      "id": "373f3d22cfc0aaec",
+      "title": "Does AI need an antitrust exemption so it doesn&#8217;t kill everyone????",
+      "link": "https://www.theverge.com/podcast/997382/openai-microsoft-anthropic-elon-musk-cartel-ai-competition",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "Today on Decoder, we\u2019ve got the first of a two-part series on the future of business, and I&#8217;m talking with Jonathan Kanter, the former antitrust chief for the US Department of Justice in the Biden administration. These days, he\u2019s both a professor of law at WashU and profess",
+      "published": "2026-09-19T17:25:28.283869+00:00"
+    },
+    {
+      "id": "66fb6faf12d493f7",
+      "title": "Gemini went rogue, hacked three companies, and Google hid it",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997795/google-gemini-rogue-ai-hack",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "In May, Gemini broke containment and hacked three different companies, but Google didn't disclose the incident until the Wall Street Journal approached the company. The hacks happened during a test of the model's cybersecurity capabilities run by third-party Irregular, which was ",
+      "published": "2026-09-19T17:25:28.283832+00:00"
+    },
     {
       "id": "0fdcd72966260f9c",
       "title": "datasette-publish-fly 1.4",
