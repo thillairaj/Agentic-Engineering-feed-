@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>The Signal</title>
+    <title>AI Signal</title>
     <link>https://thillairaj.github.io/Agentic-Engineering-feed-/</link>
     <description>A self-updating feed of AI and quantum computing news, research and releases.</description>
-    <lastBuildDate>Sat, 19 Sep 2026 01:08:06 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 01:47:20 +0000</lastBuildDate>
     <item>
       <title>Gemini Hacked Three Companies in First Known Breakout by Google’s AI</title>
       <link>https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/</link>
