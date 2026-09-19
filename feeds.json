@@ -1,11 +1,12 @@
 [
   { "source": "The Verge — AI", "category": "AI", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml" },
   { "source": "Simon Willison", "category": "AI", "url": "https://simonwillison.net/atom/everything/" },
-  { "source": "Latent Space", "category": "AI", "url": "https://www.latent.space/feed" },
-  { "source": "The Gradient", "category": "AI", "url": "https://thegradient.pub/rss/" },
   { "source": "Ars Technica AI", "category": "AI", "url": "https://arstechnica.com/ai/feed/" },
-  { "source": "arXiv cs.AI", "category": "AI", "url": "http://export.arxiv.org/rss/cs.AI" },
-  { "source": "arXiv cs.MA", "category": "AI", "url": "http://export.arxiv.org/rss/cs.MA" },
-  { "source": "InfoQ Quantum", "category": "Quantum", "url": "https://feed.infoq.com/quantumcomputing/news/" },
-  { "source": "arXiv quant-ph", "category": "Quantum", "url": "http://export.arxiv.org/rss/quant-ph" }
+  { "source": "OpenAI Blog", "category": "AI", "url": "https://openai.com/news/rss.xml" },
+  { "source": "Google AI Blog", "category": "AI", "url": "https://blog.google/technology/ai/rss/" },
+  { "source": "Anthropic/Claude News", "category": "AI", "url": "https://www.tomshardware.com/feeds/tag/anthropic" },
+  { "source": "Microsoft AI Blog", "category": "AI", "url": "https://blogs.microsoft.com/ai/feed/" },
+  { "source": "Tom's Hardware Quantum", "category": "Quantum", "url": "https://www.tomshardware.com/feeds/tag/quantum-computing" },
+  { "source": "arXiv quant-ph", "category": "Quantum", "url": "http://export.arxiv.org/rss/quant-ph" },
+  { "source": "InfoQ Quantum Computing", "category": "Quantum", "url": "https://feed.infoq.com/quantumcomputing/news/" }
 ]
