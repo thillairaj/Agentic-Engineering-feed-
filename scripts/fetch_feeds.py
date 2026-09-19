@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """
 Pulls every feed listed in feeds.json, merges new items into data/articles.json,
-keeps only articles published in the last 24 hours, and also writes feed.xml -
-an RSS 2.0 feed of the curated results so others can subscribe to this site.
+and keeps each article only while it's within its own source's freshness window
+(so busy day-to-day sources stay tight and current, while quieter official blogs
+get more time to appear between their less-frequent posts). Also writes feed.xml,
+an RSS 2.0 feed of the curated results.
 
 Usage: python3 scripts/fetch_feeds.py
 """
@@ -20,8 +22,8 @@ ROOT = Path(__file__).resolve().parent.parent
 FEEDS_FILE = ROOT / "feeds.json"
 DATA_FILE = ROOT / "data" / "articles.json"
 RSS_FILE = ROOT / "feed.xml"
-SITE_URL = "https://thillairaj.github.io/Agentic-Engineering-feed-/"
-FRESHNESS_HOURS = 24
+SITE_URL = "https://thillairaj.github.io/The-Signal-AI-Quantum/"
+DEFAULT_FRESHNESS_HOURS = 24
 SAFETY_CAP = 500
 RSS_ITEM_LIMIT = 60
 
@@ -100,7 +102,7 @@ def build_rss(articles) -> str:
     return f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>AI Signal</title>
+    <title>The Signal</title>
     <link>{SITE_URL}</link>
     <description>A self-updating feed of AI and quantum computing news, research and releases.</description>
     <lastBuildDate>{format_datetime(datetime.now(timezone.utc))}</lastBuildDate>
@@ -112,6 +114,11 @@ def build_rss(articles) -> str:
 
 def main():
     feeds = json.loads(FEEDS_FILE.read_text())
+    # Map each source name to its own freshness window (hours).
+    freshness_by_source = {
+        f["source"]: f.get("freshness_hours", DEFAULT_FRESHNESS_HOURS) for f in feeds
+    }
+
     by_id = load_existing()
     added, skipped_offtopic, seen_sources = 0, 0, []
 
@@ -151,8 +158,15 @@ def main():
             }
             added += 1
 
-    cutoff = datetime.now(timezone.utc) - timedelta(hours=FRESHNESS_HOURS)
-    fresh = [a for a in by_id.values() if datetime.fromisoformat(a["published"]) >= cutoff]
+    # Prune using each article's own source's freshness window - a busy source
+    # (24h) and a quiet source (72h) are judged by different clocks.
+    now = datetime.now(timezone.utc)
+    fresh = []
+    for a in by_id.values():
+        window_hours = freshness_by_source.get(a["source"], DEFAULT_FRESHNESS_HOURS)
+        cutoff = now - timedelta(hours=window_hours)
+        if datetime.fromisoformat(a["published"]) >= cutoff:
+            fresh.append(a)
     dropped = len(by_id) - len(fresh)
 
     articles = sorted(fresh, key=lambda a: a["published"], reverse=True)[:SAFETY_CAP]
@@ -167,8 +181,8 @@ def main():
     RSS_FILE.write_text(build_rss(articles), encoding="utf-8")
 
     print(f"Polled {len(seen_sources)}/{len(feeds)} feeds, added {added} new item(s) "
-          f"(skipped {skipped_offtopic} off-topic), dropped {dropped} item(s) older than "
-          f"{FRESHNESS_HOURS}h, {len(articles)} total stored, feed.xml written.")
+          f"(skipped {skipped_offtopic} off-topic), dropped {dropped} item(s) past their "
+          f"source's freshness window, {len(articles)} total stored, feed.xml written.")
 
 
 if __name__ == "__main__":
