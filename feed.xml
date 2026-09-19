@@ -4,7 +4,23 @@
     <title>AI Signal</title>
     <link>https://thillairaj.github.io/Agentic-Engineering-feed-/</link>
     <description>A self-updating feed of AI and quantum computing news, research and releases.</description>
-    <lastBuildDate>Sat, 19 Sep 2026 10:52:19 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 14:21:38 +0000</lastBuildDate>
+    <item>
+      <title>The AI regulation smackdown isn’t over</title>
+      <link>https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over</link>
+      <guid isPermaLink="false">a864cdf7e10a4848</guid>
+      <description>At the start of this week, the who's-who of AI seemed - at least tentatively - on the side of AI regulation. Over the weekend, Anthropic CEO Dario Amodei had proposed a three-step plan for slowing AI development, including by embedding third-party evaluators in labs, coordinating</description>
+      <category>The Verge — AI</category>
+      <pubDate>Sat, 19 Sep 2026 14:21:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>Does AI need an antitrust exemption so it doesn&amp;#8217;t kill everyone????</title>
+      <link>https://www.theverge.com/podcast/997382/openai-microsoft-anthropic-elon-musk-cartel-ai-competition</link>
+      <guid isPermaLink="false">373f3d22cfc0aaec</guid>
+      <description>Today on Decoder, we’ve got the first of a two-part series on the future of business, and I&amp;#8217;m talking with Jonathan Kanter, the former antitrust chief for the US Department of Justice in the Biden administration. These days, he’s both a professor of law at WashU and profess</description>
+      <category>The Verge — AI</category>
+      <pubDate>Sat, 19 Sep 2026 14:21:36 +0000</pubDate>
+    </item>
     <item>
       <title>github-to-sqlite 2.9.1</title>
       <link>https://simonwillison.net/2026/Sep/11/github-to-sqlite/</link>
@@ -348,22 +364,6 @@
       <description>The Creative Spirit of Who Framed Roger Rabbit I love Who Framed Roger Rabbit , the 1988 movie by Robert Zemeckis. I haven't watched it in quite a few years, and Cypress Frankenfeld just pointed out this sequence from early in the movie: It's a pelican riding a bicycle! Look clos</description>
       <category>Simon Willison</category>
       <pubDate>Fri, 18 Sep 2026 14:52:20 +0000</pubDate>
-    </item>
-    <item>
-      <title>Researchers used Claude to hack OpenAI</title>
-      <link>https://arstechnica.com/ai/2026/09/researchers-used-claude-to-hack-openai/</link>
-      <guid isPermaLink="false">a8365cfa26c035d9</guid>
-      <description>Researchers used Claude to reach an OpenAI employee account and sensitive GitHub data.</description>
-      <category>Ars Technica AI</category>
-      <pubDate>Fri, 18 Sep 2026 13:30:12 +0000</pubDate>
-    </item>
-    <item>
-      <title>Flash floods can strike without warning — this new technology could change that</title>
-      <link>https://www.theverge.com/science/997083/flash-flood-warning-tacls-satellite-machine-learning</link>
-      <guid isPermaLink="false">82da9e642a0899d3</guid>
-      <description>On the morning of June 9th, Laura Lin was working from her home in Lanesville, a rural southern Indiana town about 15 miles from the Kentucky border. She was on a Zoom call, unaware that the heavy rain outside was beginning to flood her yard. "I look over to where the barn is ove</description>
-      <category>The Verge — AI</category>
-      <pubDate>Fri, 18 Sep 2026 12:59:15 +0000</pubDate>
     </item>
   </channel>
 </rss>

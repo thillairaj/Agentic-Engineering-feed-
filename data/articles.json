@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T10:52:19.903726+00:00",
+  "generated_at": "2026-09-19T14:21:38.739221+00:00",
   "sources_polled": [
     "The Verge \u2014 AI",
     "Simon Willison",
@@ -12,6 +12,24 @@
     "arXiv quant-ph"
   ],
   "articles": [
+    {
+      "id": "a864cdf7e10a4848",
+      "title": "The AI regulation smackdown isn\u2019t over",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "At the start of this week, the who's-who of AI seemed - at least tentatively - on the side of AI regulation. Over the weekend, Anthropic CEO Dario Amodei had proposed a three-step plan for slowing AI development, including by embedding third-party evaluators in labs, coordinating",
+      "published": "2026-09-19T14:21:36.856035+00:00"
+    },
+    {
+      "id": "373f3d22cfc0aaec",
+      "title": "Does AI need an antitrust exemption so it doesn&#8217;t kill everyone????",
+      "link": "https://www.theverge.com/podcast/997382/openai-microsoft-anthropic-elon-musk-cartel-ai-competition",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "Today on Decoder, we\u2019ve got the first of a two-part series on the future of business, and I&#8217;m talking with Jonathan Kanter, the former antitrust chief for the US Department of Justice in the Biden administration. These days, he\u2019s both a professor of law at WashU and profess",
+      "published": "2026-09-19T14:21:36.855969+00:00"
+    },
     {
       "id": "77a4b9491da9a3a0",
       "title": "github-to-sqlite 2.9.1",
@@ -398,24 +416,6 @@
       "category": "AI",
       "summary": "The Creative Spirit of Who Framed Roger Rabbit I love Who Framed Roger Rabbit , the 1988 movie by Robert Zemeckis. I haven't watched it in quite a few years, and Cypress Frankenfeld just pointed out this sequence from early in the movie: It's a pelican riding a bicycle! Look clos",
       "published": "2026-09-18T14:52:20.626681+00:00"
-    },
-    {
-      "id": "a8365cfa26c035d9",
-      "title": "Researchers used Claude to hack OpenAI",
-      "link": "https://arstechnica.com/ai/2026/09/researchers-used-claude-to-hack-openai/",
-      "source": "Ars Technica AI",
-      "category": "AI",
-      "summary": "Researchers used Claude to reach an OpenAI employee account and sensitive GitHub data.",
-      "published": "2026-09-18T13:30:12+00:00"
-    },
-    {
-      "id": "82da9e642a0899d3",
-      "title": "Flash floods can strike without warning \u2014 this new technology could change that",
-      "link": "https://www.theverge.com/science/997083/flash-flood-warning-tacls-satellite-machine-learning",
-      "source": "The Verge \u2014 AI",
-      "category": "AI",
-      "summary": "On the morning of June 9th, Laura Lin was working from her home in Lanesville, a rural southern Indiana town about 15 miles from the Kentucky border. She was on a Zoom call, unaware that the heavy rain outside was beginning to flood her yard. \"I look over to where the barn is ove",
-      "published": "2026-09-18T12:59:15.509188+00:00"
     }
   ]
 }
