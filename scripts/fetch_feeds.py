@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 """
 Pulls every feed listed in feeds.json, merges new items into data/articles.json,
-and keeps each article only while it's within its own source's freshness window
-(so busy day-to-day sources stay tight and current, while quieter official blogs
-get more time to appear between their less-frequent posts). Also writes feed.xml,
-an RSS 2.0 feed of the curated results.
+and keeps each article only while it's within its own source's freshness window.
+Also writes feed.xml, an RSS 2.0 feed of the curated results.
 
 Usage: python3 scripts/fetch_feeds.py
 """
@@ -114,7 +112,6 @@ def build_rss(articles) -> str:
 
 def main():
     feeds = json.loads(FEEDS_FILE.read_text())
-    # Map each source name to its own freshness window (hours).
     freshness_by_source = {
         f["source"]: f.get("freshness_hours", DEFAULT_FRESHNESS_HOURS) for f in feeds
     }
@@ -122,14 +119,27 @@ def main():
     by_id = load_existing()
     added, skipped_offtopic, seen_sources = 0, 0, []
 
+    print("--- Per-source diagnostic ---")
     for feed in feeds:
         source = feed["source"]
         url = feed["url"]
         category = feed.get("category", "AI")
         parsed = feedparser.parse(url)
+
         if parsed.bozo and not parsed.entries:
-            print(f"  [skip] {source}: could not parse feed ({parsed.bozo_exception})")
+            print(f"  [FAILED] {source}: could not parse feed ({parsed.bozo_exception})")
             continue
+
+        entry_count = len(parsed.entries)
+        if entry_count == 0:
+            print(f"  [EMPTY]  {source}: feed loaded fine but returned 0 entries")
+        else:
+            newest = None
+            for e in parsed.entries:
+                d = parse_date(e)
+                if newest is None or d > newest:
+                    newest = d
+            print(f"  [OK]     {source}: {entry_count} entries returned, newest dated {newest}")
 
         seen_sources.append(source)
         for entry in parsed.entries:
@@ -157,9 +167,8 @@ def main():
                 "published": parse_date(entry),
             }
             added += 1
+    print("--- End diagnostic ---")
 
-    # Prune using each article's own source's freshness window - a busy source
-    # (24h) and a quiet source (72h) are judged by different clocks.
     now = datetime.now(timezone.utc)
     fresh = []
     for a in by_id.values():
