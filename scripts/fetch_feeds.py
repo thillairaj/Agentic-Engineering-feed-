@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
 """
 Pulls every feed listed in feeds.json, merges new items into data/articles.json,
-and keeps each article only while it's within its own source's freshness window.
-Also writes feed.xml, an RSS 2.0 feed of the curated results.
+and keeps the 50 most recent articles per source (no time cutoff - a quiet
+source's older posts stay visible instead of aging out). Also writes feed.xml,
+an RSS 2.0 feed of the curated results.
 
 Usage: python3 scripts/fetch_feeds.py
 """
 import json
 import hashlib
 import re
-from datetime import datetime, timezone, timedelta
+from collections import defaultdict
+from datetime import datetime, timezone
 from pathlib import Path
 from email.utils import parsedate_to_datetime, format_datetime
 from xml.sax.saxutils import escape
@@ -21,8 +23,7 @@ FEEDS_FILE = ROOT / "feeds.json"
 DATA_FILE = ROOT / "data" / "articles.json"
 RSS_FILE = ROOT / "feed.xml"
 SITE_URL = "https://thillairaj.github.io/The-Signal-AI-Quantum/"
-DEFAULT_FRESHNESS_HOURS = 24
-SAFETY_CAP = 500
+MAX_PER_SOURCE = 50
 RSS_ITEM_LIMIT = 60
 
 AGENT_KEYWORDS = re.compile(
@@ -112,10 +113,6 @@ def build_rss(articles) -> str:
 
 def main():
     feeds = json.loads(FEEDS_FILE.read_text())
-    freshness_by_source = {
-        f["source"]: f.get("freshness_hours", DEFAULT_FRESHNESS_HOURS) for f in feeds
-    }
-
     by_id = load_existing()
     added, skipped_offtopic, seen_sources = 0, 0, []
 
@@ -134,12 +131,7 @@ def main():
         if entry_count == 0:
             print(f"  [EMPTY]  {source}: feed loaded fine but returned 0 entries")
         else:
-            newest = None
-            for e in parsed.entries:
-                d = parse_date(e)
-                if newest is None or d > newest:
-                    newest = d
-            print(f"  [OK]     {source}: {entry_count} entries returned, newest dated {newest}")
+            print(f"  [OK]     {source}: {entry_count} entries returned")
 
         seen_sources.append(source)
         for entry in parsed.entries:
@@ -169,16 +161,19 @@ def main():
             added += 1
     print("--- End diagnostic ---")
 
-    now = datetime.now(timezone.utc)
-    fresh = []
+    # Keep only the MAX_PER_SOURCE most recent articles for each individual
+    # source - no time cutoff, so a slow-posting source's older items stay
+    # visible instead of aging out.
+    by_source = defaultdict(list)
     for a in by_id.values():
-        window_hours = freshness_by_source.get(a["source"], DEFAULT_FRESHNESS_HOURS)
-        cutoff = now - timedelta(hours=window_hours)
-        if datetime.fromisoformat(a["published"]) >= cutoff:
-            fresh.append(a)
-    dropped = len(by_id) - len(fresh)
+        by_source[a["source"]].append(a)
 
-    articles = sorted(fresh, key=lambda a: a["published"], reverse=True)[:SAFETY_CAP]
+    final = []
+    for source_articles in by_source.values():
+        source_articles.sort(key=lambda a: a["published"], reverse=True)
+        final.extend(source_articles[:MAX_PER_SOURCE])
+
+    articles = sorted(final, key=lambda a: a["published"], reverse=True)
 
     DATA_FILE.parent.mkdir(exist_ok=True)
     DATA_FILE.write_text(json.dumps({
@@ -190,8 +185,8 @@ def main():
     RSS_FILE.write_text(build_rss(articles), encoding="utf-8")
 
     print(f"Polled {len(seen_sources)}/{len(feeds)} feeds, added {added} new item(s) "
-          f"(skipped {skipped_offtopic} off-topic), dropped {dropped} item(s) past their "
-          f"source's freshness window, {len(articles)} total stored, feed.xml written.")
+          f"(skipped {skipped_offtopic} off-topic), kept up to {MAX_PER_SOURCE} per source, "
+          f"{len(articles)} total stored, feed.xml written.")
 
 
 if __name__ == "__main__":
