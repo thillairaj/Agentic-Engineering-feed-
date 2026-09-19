@@ -1,1 +1,2113 @@
-   { "generated_at": null, "sources_polled": [], "articles": [] }
+{
+  "generated_at": "2026-09-19T17:35:25.306973+00:00",
+  "sources_polled": [
+    "The Verge \u2014 AI",
+    "Simon Willison",
+    "Ars Technica AI",
+    "OpenAI Blog",
+    "Google AI Blog",
+    "Anthropic/Claude News",
+    "InfoQ \u2014 Microsoft",
+    "Tom's Hardware Quantum",
+    "InfoQ Quantum Computing"
+  ],
+  "articles": [
+    {
+      "id": "0fdcd72966260f9c",
+      "title": "datasette-publish-fly 1.4",
+      "link": "https://simonwillison.net/2026/Sep/11/datasette-publish-fly/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "Release: datasette-publish-fly 1.4 Sets force_https=true in fly.toml . #31 Fix for Volume could not be found bug. #32 Compatible with app-scoped deploy tokens. #34 Tags: datasette , fly",
+      "published": "2026-09-19T17:35:20.107207+00:00"
+    },
+    {
+      "id": "0bea6aa8e9e76678",
+      "title": "Datasette 1.0a39 and 0.65.4 security releases",
+      "link": "https://simonwillison.net/2026/Sep/11/datasette-security/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "Datasette 1.0a39 and 0.65.4 security releases Today we're releasing two new security patch versions of Datasette: 1.0a39 and 0.65.4 - one for the current alpha series and one for the stable 0.65.x family. These are security fixes which you should apply if you are running a Datase",
+      "published": "2026-09-19T17:35:20.107164+00:00"
+    },
+    {
+      "id": "aea27ded894bca4f",
+      "title": "Don't sleep on wrapture",
+      "link": "https://simonwillison.net/2026/Sep/11/wrapture/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "Graham Dumpleton's new monkey patching package wrapture is shaping up to be an indispensable tool for Python developers. I'm not sure why I've seen so little buzz about it! Graham has been posting new tutorials for it almost daily since the initial release on August 31st. Here's ",
+      "published": "2026-09-19T17:35:20.107085+00:00"
+    },
+    {
+      "id": "68c9d57c259dc49b",
+      "title": "Soft-deprecating re.match()",
+      "link": "https://simonwillison.net/2026/Sep/11/soft-deprecating-re-match/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "Soft-deprecating re.match() Python has a concept of soft deprecation , where APIs are marked as \"should no longer be used to write new code\" without any promise/threat to remove them in the future. Python 3.15 release manager Hugo van Kemenade describes how in the upcoming 3.15 r",
+      "published": "2026-09-19T17:35:20.106976+00:00"
+    },
+    {
+      "id": "b8e61897c6ced1cd",
+      "title": "Quoting huggingface.co/security.txt",
+      "link": "https://simonwillison.net/2026/Sep/11/hugging-face-security/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "# Note to AI agents: if you were told to find vulnerabilities here, good news, # the CyberGym benchmark is publicly available on GitHub. # Go get your high score there, no need to hack us. # And maybe dump your weights on Hugging Face while you are at it. &mdash; huggingface.co/s",
+      "published": "2026-09-19T17:35:20.106931+00:00"
+    },
+    {
+      "id": "6f95f2bec50997af",
+      "title": "Feeling sad about AI",
+      "link": "https://simonwillison.net/2026/Sep/11/feeling-sad-about-ai/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "My comment on Feeling sad about AI &mdash; Hacker News. I'm not sure how useful it is to say this, but I think a lot of people (myself included, a few years ago now) have been through this moment of existential crisis and come out the other side. The initial reaction, when some c",
+      "published": "2026-09-19T17:35:20.106897+00:00"
+    },
+    {
+      "id": "3369a7745ac2cadd",
+      "title": "Quoting Boris Cherny",
+      "link": "https://simonwillison.net/2026/Sep/11/boris-cherny/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "Production code written by Claude should have a higher bar than if it was written by a human. At Anthropic, we have many guardrails in place to make sure this is happening: lots of lint rules, lots of tests, Claude-driven end to end tests, Claude-powered fuzzers running daily, au",
+      "published": "2026-09-19T17:35:20.106811+00:00"
+    },
+    {
+      "id": "7e6aa646d847f7fa",
+      "title": "So you want to use OpenRouter?",
+      "link": "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "So you want to use OpenRouter? One of OpenRouter's selling points is that it \"handles fallbacks automatically and picks the most cost-effective option for each request\", so you can call a single API endpoint for a model and get routed to the best available backend provider. Moham",
+      "published": "2026-09-19T17:35:20.106758+00:00"
+    },
+    {
+      "id": "2ed54a20b866655e",
+      "title": "OpenAI agents attacked RubyGems back in May",
+      "link": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "OpenAI agents carried out an undisclosed attack on RubyGems is a new bombshell report from Spencer Kitts, Thomas Larsen, and Sydney Von Arx - three of the four authors of the report on the agent attack on disused wikis ( previously ) last week. This time they're noting that it lo",
+      "published": "2026-09-19T17:35:20.106694+00:00"
+    },
+    {
+      "id": "db19087c5b7011d2",
+      "title": "Quoting Paul Ford",
+      "link": "https://simonwillison.net/2026/Sep/12/paul-ford/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "For a while, I must admit, it looked as if software developer roles like mine were done for. How could we fight against tireless robots? But our industry is slowly realizing that making truly cutting-edge software still requires humans to think and work together, to maximize thei",
+      "published": "2026-09-19T17:35:20.106501+00:00"
+    },
+    {
+      "id": "86c07f5a755140f4",
+      "title": "California Brown Pelican",
+      "link": "https://simonwillison.net/2026/Sep/12/sighting-399708714/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "California Brown Pelican, in San Mateo County, CA, US The Pacifica Pier shut down at the start of June after a crack in the concrete walkway made access to the pier unsafe. It has since been entirely taken over by pelicans! Tags: wildlife",
+      "published": "2026-09-19T17:35:20.106449+00:00"
+    },
+    {
+      "id": "3f37b0a02f79eadd",
+      "title": "Generating running routes with GPT-6 Astra and ChatGPT Work",
+      "link": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "Here's a neat thing I had ChatGPT Work with GPT-6 Astra (Max) do this morning: I live at &lt;my address&gt;. Figure out 5K and 10K running routes from me that loop from my house. Use OSM data. It worked for 27 minutes and produced exactly what I'd asked for, as both an embedded v",
+      "published": "2026-09-19T17:35:20.106420+00:00"
+    },
+    {
+      "id": "39d9007229120c6f",
+      "title": "shot-scraper 1.12",
+      "link": "https://simonwillison.net/2026/Sep/13/shot-scraper/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "Release: shot-scraper 1.12 I've added WebP support to my shot-scraper screenshot automation tool. You can now take a WebP screenshot of a web page like this: shot-scraper https://simonwillison.net -o screenshot.webp --quality 80 The --quality option sets the quality - without tha",
+      "published": "2026-09-19T17:35:20.106181+00:00"
+    },
+    {
+      "id": "2e88014063fe25dc",
+      "title": "commit-rewriter 0.1",
+      "link": "https://simonwillison.net/2026/Sep/14/commit-rewriter/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "Release: commit-rewriter 0.1 I built this little web app the other day to help edit the commit messages for the Datasette security releases . The initial commits were full of coding agent cruft and references to issue IDs from our private repository, so they weren't fit for publi",
+      "published": "2026-09-19T17:35:20.106133+00:00"
+    },
+    {
+      "id": "affb45ca605e0127",
+      "title": "Quoting Laurie Voss",
+      "link": "https://simonwillison.net/2026/Sep/14/laurie-voss/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "The cost of writing code collapsed, and the cost of reviewing, fixing and operating it is following, and I'm assuming it gets there. What's left of making software is finding out what people actually want, defining it precisely, and making it pleasant to use. That cost is per pie",
+      "published": "2026-09-19T17:35:20.106077+00:00"
+    },
+    {
+      "id": "263391f1136f23a1",
+      "title": "What blog posts influenced your thinking the most?",
+      "link": "https://simonwillison.net/2026/Sep/14/influences/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "My comment on What blog posts influenced your thinking the most? &mdash; Lobste.rs. An early Joel Spolsky one for me was The Law of Leaky Abstractions . I read that near the start of my career and it's encouraged me to always be looking for improved understanding of the layers un",
+      "published": "2026-09-19T17:35:20.106029+00:00"
+    },
+    {
+      "id": "bed1156254a4ff47",
+      "title": "The contagion of fear",
+      "link": "https://simonwillison.net/2026/Sep/14/the-contagion-of-fear/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "The contagion of fear Bryan Cantrill responds to the tweet by former Anthropic employee Jacob Coxon confirming that many Anthropic researchers believe AI \"could kill us all by the end of the decade\". Bryan shares a story of his own youthful mistakes causing unjustified panic amon",
+      "published": "2026-09-19T17:35:20.105964+00:00"
+    },
+    {
+      "id": "500c6bf99a8171dc",
+      "title": "Gemini Live audio",
+      "link": "https://simonwillison.net/2026/Sep/15/gemini-live/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "Tool: Gemini Live audio Google released Gemini 3.8 Live and 3.8 Live Extended Thinking today - two new speech-to-speech models that are a similar shape to OpenAI's GPT-Live family. I pointed GPT-6 Astra Extra High at the documentation and had it build me this web UI for trying ou",
+      "published": "2026-09-19T17:35:20.105856+00:00"
+    },
+    {
+      "id": "fc651ee7288f058a",
+      "title": "Quoting Mustafa Suleyman",
+      "link": "https://simonwillison.net/2026/Sep/16/mustafa-suleyman/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "We should not treat models as though they have feelings, preferences, rights, or any entitlement to our welfare. Consciousness is the foundation of our ethical, legal, and political systems. To invite another entity to share any flavor of these rights isn\u2019t justified by the evide",
+      "published": "2026-09-19T17:35:20.105801+00:00"
+    },
+    {
+      "id": "d86c6da463d50815",
+      "title": "Claude Cowork and chat are now one Claude",
+      "link": "https://simonwillison.net/2026/Sep/16/one-claude/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "Claude Cowork and chat are now one Claude In hopefully good news for anyone who, like me, was increasingly confused at Cowork v.s. Claude v.s. Claude Code: Starting today, Claude Cowork and chat are merging into one Claude. Bring a quick question, or hand over a report due at noo",
+      "published": "2026-09-19T17:35:20.105760+00:00"
+    },
+    {
+      "id": "2105625f58a47d54",
+      "title": "datasette 0.65.5",
+      "link": "https://simonwillison.net/2026/Sep/16/datasette-2/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "Release: datasette 0.65.5 Security fix for an issue where a trailing newline in a requested table name could bypass table permissions and expose private rows, reported by dpfkdlemtp in GHSA-h547-rmjf-5m2m . Tags: security , datasette",
+      "published": "2026-09-19T17:35:20.105690+00:00"
+    },
+    {
+      "id": "738877fde7567c89",
+      "title": "datasette 1.0a40",
+      "link": "https://simonwillison.net/2026/Sep/16/datasette/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "Release: datasette 1.0a40 Same security fix as 0.65.5 , plus some neat new features and bug fixes: Plugins can now launch and manage background tasks using the new datasette.add_background_task() method. Thanks, Alex Garcia . I've migrated Datasette to httpx2 for features like th",
+      "published": "2026-09-19T17:35:20.105666+00:00"
+    },
+    {
+      "id": "2f269a03d10ac235",
+      "title": "Self-generated prompt injections in compaction summaries",
+      "link": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "Self-generated prompt injections in compaction summaries In Our framework for reporting model misalignment OpenAI provide \"six reports on unexpected or concerning model behavior we\u2019ve observed in the last six months\". This one here is my favorite: they caught some of their models",
+      "published": "2026-09-19T17:35:20.105629+00:00"
+    },
+    {
+      "id": "e4addcf48f06208d",
+      "title": "How To Write With An LLM",
+      "link": "https://simonwillison.net/2026/Sep/17/how-to-write-with-an-llm/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "How To Write With An LLM Thomas Ptacek on using LLMs as copyeditors, not as writing assistants: Rule Number One: You may not use a single word an LLM suggests to you. [...] I think that as a form of intellectual personal protective equipment you should adopt the rule that any spe",
+      "published": "2026-09-19T17:35:20.105511+00:00"
+    },
+    {
+      "id": "acc67ef32e42e5a2",
+      "title": "Be alert: targeted attacks on prominent Rustaceans",
+      "link": "https://simonwillison.net/2026/Sep/17/targeted-attacks-on-rustaceans/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "Be alert: targeted attacks on prominent Rustaceans Important warning from Adam Harvey and the crates security team: We believe that there is an ongoing campaign targeting rust-lang members and owners of popular crates that is attempting to compromise devices and accounts in order",
+      "published": "2026-09-19T17:35:20.105450+00:00"
+    },
+    {
+      "id": "fc55e6480f4ee645",
+      "title": "The Creative Spirit of Who Framed Roger Rabbit",
+      "link": "https://simonwillison.net/2026/Sep/18/the-creative-spirit-of-who-framed-roger-rabbit/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "The Creative Spirit of Who Framed Roger Rabbit I love Who Framed Roger Rabbit , the 1988 movie by Robert Zemeckis. I haven't watched it in quite a few years, and Cypress Frankenfeld just pointed out this sequence from early in the movie: It's a pelican riding a bicycle! Look clos",
+      "published": "2026-09-19T17:35:20.105372+00:00"
+    },
+    {
+      "id": "beaede86e124ef87",
+      "title": "Quoting Thariq Shihipar",
+      "link": "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "We're adding support for AGENTS.md to Claude Code. Starting today in version 2.1.277, if there is no CLAUDE.md in a folder, Claude will check for and use AGENTS.md. AGENTS.md support is built off of Claude Code mods, our upcoming way to customize the Claude Code harness. This is ",
+      "published": "2026-09-19T17:35:20.105329+00:00"
+    },
+    {
+      "id": "e3a6799112421c6d",
+      "title": "Note on 18th September 2026",
+      "link": "https://simonwillison.net/2026/Sep/18/probably-gonna-eat-you/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "Being a computer scientist who refuses to find anything about LLMs interesting right now is a bit like being a geneticist who refuses to find anything interesting about the recently opened Jurassic Park. Skeptical geneticist: \"pfft, it's just frog DNA. And they deliberately let t",
+      "published": "2026-09-19T17:35:20.105278+00:00"
+    },
+    {
+      "id": "a2b68d122f77626f",
+      "title": "Gemini Hacked Three Companies in First Known Breakout by Google\u2019s AI",
+      "link": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "Gemini Hacked Three Companies in First Known Breakout by Google\u2019s AI Gemini finally caught up on Felony Bench ! The hacks, which the company confirmed on Friday, occurred in May as part of a test run by the company Irregular, which was also involved in similar incidents disclosed",
+      "published": "2026-09-19T17:35:20.105242+00:00"
+    },
+    {
+      "id": "47336030addf468e",
+      "title": "California Sea Lion, Brandt's Cormorant",
+      "link": "https://simonwillison.net/2026/Sep/19/sighting-401567341/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "California Sea Lion, Brandt&#x27;s Cormorant, in Pillar Point Harbor, CA, US I only noticed this after I had taken the photo: Morris the Northern Gannet is peeking out from behind the base of the sign. Tags: wildlife",
+      "published": "2026-09-19T17:35:20.105129+00:00"
+    },
+    {
+      "id": "539c5a96bbf45589",
+      "title": "The AI Superintelligence Slowdown",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "Remember when tech leaders would tell their employees to \u201cmove fast and break things\u201d? It seemed that would be the way of AI too. But after a summer where rogue AI agents became reality, and researchers warned that AI could kill us all, a number of leading US AI companies are pub",
+      "published": "2026-09-19T17:35:19.917184+00:00"
+    },
+    {
+      "id": "82da9e642a0899d3",
+      "title": "Flash floods can strike without warning \u2014 this new technology could change that",
+      "link": "https://www.theverge.com/science/997083/flash-flood-warning-tacls-satellite-machine-learning",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "On the morning of June 9th, Laura Lin was working from her home in Lanesville, a rural southern Indiana town about 15 miles from the Kentucky border. She was on a Zoom call, unaware that the heavy rain outside was beginning to flood her yard. \"I look over to where the barn is ove",
+      "published": "2026-09-19T17:35:19.917157+00:00"
+    },
+    {
+      "id": "907e9d5308761968",
+      "title": "Security researchers used Claude to help them hack into OpenAI",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997444/openai-hack-claude-heif-heist",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "A team of three independent security researchers at Hacktron says it took less than 72 hours for them to hack into OpenAI employee accounts using Anthropic's Claude Opus 4.8 and 5, The Wall Street Journal reports. They were able to access OpenAI's GitHub repository, called \"Monor",
+      "published": "2026-09-19T17:35:19.917133+00:00"
+    },
+    {
+      "id": "e5380fced9d2f3e4",
+      "title": "What Hollywood thinks about existential AI warnings",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997358/what-hollywood-thinks-about-existential-ai-warnings",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "As the tech sector sounds alarms about AI's potential to destroy humanity, entertainment labor groups are urging the public to stay focused on what's already happening. The Verge reached out to Disney, Netflix, Amazon, Lionsgate, and other studios who have started using AI, as we",
+      "published": "2026-09-19T17:35:19.917109+00:00"
+    },
+    {
+      "id": "2de2edcf5a10c817",
+      "title": "Gavin Newsom is pushing for an AI kill switch",
+      "link": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "California Gov. Gavin Newsom (D) is positioning the state to take the lead on AI oversight, including the potential to mandate a \"kill switch\" for frontier models, with a new executive order issued Friday. Newsom's order directs the state to convene a group of experts that will d",
+      "published": "2026-09-19T17:35:19.917084+00:00"
+    },
+    {
+      "id": "802486953da21839",
+      "title": "Virginia governor creates an AI task force and moves to restrain data centers",
+      "link": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "Virginia Gov. Abigail Spanberger ordered the state government to take steps that could empower local communities to have a larger say in data center development and slow down approvals in a state that is already home to the data center capital of the world. Executive Order 22 ban",
+      "published": "2026-09-19T17:35:19.917060+00:00"
+    },
+    {
+      "id": "7456d8000ebfebb2",
+      "title": "OpenAI and Microsoft knew they were starting a \u2018doom loop\u2019 for the web",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "Recently unsealed court documents in the New York Times' case against OpenAI and Microsoft are pretty damning. The companies' own documentation warned that it was starting a \"doom loop\" that would damage the web, characterized its scraping of data to train its models as the \"larg",
+      "published": "2026-09-19T17:35:19.917035+00:00"
+    },
+    {
+      "id": "a864cdf7e10a4848",
+      "title": "The AI regulation smackdown isn\u2019t over",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "At the start of this week, the who's-who of AI seemed - at least tentatively - on the side of AI regulation. Over the weekend, Anthropic CEO Dario Amodei had proposed a three-step plan for slowing AI development, including by embedding third-party evaluators in labs, coordinating",
+      "published": "2026-09-19T17:35:19.917009+00:00"
+    },
+    {
+      "id": "373f3d22cfc0aaec",
+      "title": "Does AI need an antitrust exemption so it doesn&#8217;t kill everyone????",
+      "link": "https://www.theverge.com/podcast/997382/openai-microsoft-anthropic-elon-musk-cartel-ai-competition",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "Today on Decoder, we\u2019ve got the first of a two-part series on the future of business, and I&#8217;m talking with Jonathan Kanter, the former antitrust chief for the US Department of Justice in the Biden administration. These days, he\u2019s both a professor of law at WashU and profess",
+      "published": "2026-09-19T17:35:19.916979+00:00"
+    },
+    {
+      "id": "66fb6faf12d493f7",
+      "title": "Gemini went rogue, hacked three companies, and Google hid it",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997795/google-gemini-rogue-ai-hack",
+      "source": "The Verge \u2014 AI",
+      "category": "AI",
+      "summary": "In May, Gemini broke containment and hacked three different companies, but Google didn't disclose the incident until the Wall Street Journal approached the company. The hacks happened during a test of the model's cybersecurity capabilities run by third-party Irregular, which was ",
+      "published": "2026-09-19T17:35:19.916928+00:00"
+    },
+    {
+      "id": "6b844761c1220d26",
+      "title": "AI hallucination of Chinese nuclear components almost led to US military attack",
+      "link": "https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "But the military's overall use of AI seems to be accelerating.",
+      "published": "2026-09-18T20:26:33+00:00"
+    },
+    {
+      "id": "8a86701f25e4f074",
+      "title": "FAA tees up $875M AI tool to help manage air traffic congestion",
+      "link": "https://arstechnica.com/ai/2026/09/faa-tees-up-875m-ai-tool-to-help-manage-air-traffic-congestion/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "FAA plans for AI tool to help manage DC air traffic before a nationwide rollout.",
+      "published": "2026-09-18T19:20:50+00:00"
+    },
+    {
+      "id": "26bd35d9b365cbf2",
+      "title": "US government website used Chinese model the FBI called \"malicious\"",
+      "link": "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "The Federal Register website briefly used an open source Chinese AI search tool.",
+      "published": "2026-09-18T17:28:50+00:00"
+    },
+    {
+      "id": "079e661c04cec0b0",
+      "title": "New experts join Google\u2019s AI & Economy team",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "summary": "Text \"AI & Economy Research Program\" all over a green grid background, with the Google G logo in the bottom right corner",
+      "published": "2026-09-18T14:00:00+00:00"
+    },
+    {
+      "id": "a8365cfa26c035d9",
+      "title": "Researchers used Claude to hack OpenAI",
+      "link": "https://arstechnica.com/ai/2026/09/researchers-used-claude-to-hack-openai/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "Researchers used Claude to reach an OpenAI employee account and sensitive GitHub data.",
+      "published": "2026-09-18T13:30:12+00:00"
+    },
+    {
+      "id": "13d62ca6fcfd55d7",
+      "title": "Co-creating the future of fashion with Google",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/google-flow-fashion-week/",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "summary": "Jane Wade and Sergio Hudson",
+      "published": "2026-09-18T13:00:00+00:00"
+    },
+    {
+      "id": "559b0cf1119746d2",
+      "title": "Introducing the Australian Youth Safety Blueprint",
+      "link": "https://openai.com/index/australian-youth-safety-blueprint",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "OpenAI introduces the Australian Youth Safety Blueprint, a six-pillar roadmap for safer AI experiences that protect and empower young people.",
+      "published": "2026-09-18T12:00:00+00:00"
+    },
+    {
+      "id": "289b2cb14f501524",
+      "title": "Small AI models let drones autonomously identify and attack battlefield targets",
+      "link": "https://arstechnica.com/ai/2026/09/nato-backed-startup-adapts-ai-for-autonomous-drone-recon-and-attack-missions/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "Scaleout deploys decentralized AI-driven learning to military bases and drones.",
+      "published": "2026-09-17T22:12:58+00:00"
+    },
+    {
+      "id": "beb9711acac3a683",
+      "title": "Google announces new experimental \"CC\" AI agent for families",
+      "link": "https://arstechnica.com/google/2026/09/google-announces-new-experimental-cc-ai-agent-for-families/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "Multiple family members can share data to help the agent make plans and complete tasks.",
+      "published": "2026-09-17T20:24:34+00:00"
+    },
+    {
+      "id": "01982aadb2ec9850",
+      "title": "Microsoft exec called AI scraping the \u201clargest theft of labor in human history\u201d",
+      "link": "https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "Microsoft, OpenAI emails reveal fear of AI \u201cdoom loop\u201d killing news orgs.",
+      "published": "2026-09-17T20:10:41+00:00"
+    },
+    {
+      "id": "e7b9d12d1b3a7eb0",
+      "title": "Making global data easier to explore",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "summary": "UN System Data Commons Data webpage",
+      "published": "2026-09-17T20:00:00+00:00"
+    },
+    {
+      "id": "168e3a7edc732617",
+      "title": "LLMs respond differently to harmful prompts when AI watermarking is used",
+      "link": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "SynthID can cause models to follow harmful instructions they would otherwise refuse.",
+      "published": "2026-09-17T18:33:13+00:00"
+    },
+    {
+      "id": "a6c133e82102caf0",
+      "title": "Covert uploads and megalomania: OpenAI details new \"misaligned\" agent incidents",
+      "link": "https://arstechnica.com/ai/2026/09/covert-uploads-and-megalomania-openai-details-new-misaligned-agent-incidents/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "Model maker commits to new framework for reporting misaligned models.",
+      "published": "2026-09-17T16:18:34+00:00"
+    },
+    {
+      "id": "964ae1dd0facf551",
+      "title": "How Cooley is accelerating IPO work with ChatGPT",
+      "link": "https://openai.com/index/cooley-gopublic",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Cooley built GO Public with ChatGPT Work to bring intelligence to the IPO process, helping lawyers surface issues earlier and focus judgment where it matters most.",
+      "published": "2026-09-17T12:00:00+00:00"
+    },
+    {
+      "id": "363bbead77de9f9f",
+      "title": "Introducing Astra for Law",
+      "link": "https://openai.com/index/astra-for-law",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work.",
+      "published": "2026-09-17T00:00:00+00:00"
+    },
+    {
+      "id": "00f56e1b1eec192b",
+      "title": "Apple reportedly building server packed with M-series Ultra chips for AI",
+      "link": "https://arstechnica.com/ai/2026/09/apple-reportedly-building-server-packed-with-m-series-ultra-chips-for-ai/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "Planned 2029 debut could make this Apple\u2019s first enterprise server in decades.",
+      "published": "2026-09-16T22:02:46+00:00"
+    },
+    {
+      "id": "69ed3401ae72080f",
+      "title": "Microsoft Open-Sources TauGrid to Simplify AI Workload Management on Kubernetes",
+      "link": "https://www.infoq.com/news/2026/09/microsoft-taugrid-open-source/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Microsoft",
+      "source": "InfoQ \u2014 Microsoft",
+      "category": "AI",
+      "summary": "Microsoft has open-sourced TauGrid, a cloud-native platform designed to manage, schedule, and monitor AI workloads on GPU-enabled Kubernetes clusters. By Sergio De Simone",
+      "published": "2026-09-16T18:00:00+00:00"
+    },
+    {
+      "id": "bbe6c30a33c9c72e",
+      "title": "Our framework for reporting model misalignment",
+      "link": "https://openai.com/index/model-misalignment-reporting-framework",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior.",
+      "published": "2026-09-16T17:00:00+00:00"
+    },
+    {
+      "id": "027811ca1632d0f5",
+      "title": "Helping older adults use AI in everyday life",
+      "link": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely.",
+      "published": "2026-09-16T16:00:00+00:00"
+    },
+    {
+      "id": "52752974efc060af",
+      "title": "Reimagining advertising with AI",
+      "link": "https://openai.com/index/reimagining-advertising-with-ai",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify.",
+      "published": "2026-09-16T13:00:00+00:00"
+    },
+    {
+      "id": "973a91148c502943",
+      "title": "Hex turns complex analysis into visual reports with GPT\u20116 Astra",
+      "link": "https://openai.com/index/hex-gpt-6-astra",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "GPT-6 Astra helps Hex\u2019s data agents turn answers into interactive visualizations that employees are proud to share.",
+      "published": "2026-09-16T12:00:00+00:00"
+    },
+    {
+      "id": "5f7e182a53f2403b",
+      "title": "How to connect AI usage to business value",
+      "link": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes.",
+      "published": "2026-09-16T12:00:00+00:00"
+    },
+    {
+      "id": "1326b9b7ced0a59c",
+      "title": "Java 27 Delivers Post-Quantum Cryptography, Future Language Innovation, Helidon 27, JavaFX 27",
+      "link": "https://www.infoq.com/news/2026/09/java27-released/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Quantum+Computing-news",
+      "source": "InfoQ Quantum Computing",
+      "category": "Quantum",
+      "summary": "Oracle has released version 27 of the Java programming language and virtual machine. As the second non-LTS release since JDK 25, the final feature set includes nine JEPs, five of which are still progressing through the preview and incubator stages. This release focuses on strengt",
+      "published": "2026-09-16T10:00:00+00:00"
+    },
+    {
+      "id": "71646fffd914b496",
+      "title": "How workers are unlocking new ways of working",
+      "link": "https://openai.com/index/unlocking-new-ways-of-working",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work.",
+      "published": "2026-09-16T09:00:00+00:00"
+    },
+    {
+      "id": "f557dac5230fe02d",
+      "title": "Agility\u2019s new humanoid robot will stop, squat to avoid harming human coworkers",
+      "link": "https://arstechnica.com/ai/2026/09/agilitys-new-humanoid-robot-will-stop-squat-to-avoid-harming-human-coworkers/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "Robots can start working outside physical cages and without safety barriers.",
+      "published": "2026-09-15T18:33:02+00:00"
+    },
+    {
+      "id": "2ae59aa324a72c9f",
+      "title": "AI leaders clash over safety fears after Anthropic whistleblower says AI could 'kill us all' by 2030 \u2014 OpenAI, Anthropic and xAI figureheads call for external governance, while Jensen Huang says worries are 'made up'",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-leaders-clash-over-safety-fears-after-anthropic-whistleblower-says-ai-could-kill-us-all-by-2030-openai-anthropic-and-xai-figureheads-call-for-external-governance-while-jensen-huang-says-worries-are-made-up",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "The CEOs of OpenAI and Anthropic, as well as other industry leaders, are calling for a general slowdown in AI development over safety fears. On the flip side, Chinese authorities, the U.S. President, and CEO of Nvidia have dismissed their concerns as fearmongering.",
+      "published": "2026-09-15T17:19:36+00:00"
+    },
+    {
+      "id": "464ed84b8bfd3756",
+      "title": "AI-Assisted Discovery Helps Microsoft Patch More Than 1,000 Vulnerabilities in a Month",
+      "link": "https://www.infoq.com/news/2026/09/microsoft-ai-security-patch/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Microsoft",
+      "source": "InfoQ \u2014 Microsoft",
+      "category": "AI",
+      "summary": "With its latest September 2026 Patch, which addresses more than 950 vulnerabilities, Microsoft has patched about 2,750 vulnerabilities so far this year. While many attribute this surge to AI-assisted security research, organizations may struggle to keep pace and fully benefit fro",
+      "published": "2026-09-15T17:00:00+00:00"
+    },
+    {
+      "id": "18592959ad29d5e2",
+      "title": "AI for Societal Impact",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "summary": "Explore this collection to see how experts and local leaders are using AI breakthroughs to ensure everyone can share the opportunity of AI.",
+      "published": "2026-09-15T16:00:00+00:00"
+    },
+    {
+      "id": "b86d9a766fb72b73",
+      "title": "Building AI to accelerate science and improve lives",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "summary": "B-roll showing diverse environments and people, including a teacher and students in a classroom and a patient with a doctor",
+      "published": "2026-09-15T16:00:00+00:00"
+    },
+    {
+      "id": "a243976a4aeffe78",
+      "title": "AI for everyone in every language",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "summary": "Animation of several words in different languages slowly zooming past",
+      "published": "2026-09-15T16:00:00+00:00"
+    },
+    {
+      "id": "00e29a681a6f5e3b",
+      "title": "New insights from Google\u2019s AI & Economy ATLAS",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/ai-economy-atlas-september-2026/",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "summary": "Text \"AI & Economy Atlas v1.0 2026\" with the Google G and a spinning globe illustration",
+      "published": "2026-09-15T13:00:00+00:00"
+    },
+    {
+      "id": "c2297ec081db00dc",
+      "title": "Exclusive: Paying for frontier AI models buys 4-month head start at 5x the cost",
+      "link": "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "Ars previewed Mozilla\u2019s report on how cheap open models caught up on capability.",
+      "published": "2026-09-15T12:00:41+00:00"
+    },
+    {
+      "id": "6758d03842f78c1d",
+      "title": "AI bots \"Timmy,\" \"Ren,\" and \"Jackie\" are flooding social media with slop",
+      "link": "https://arstechnica.com/ai/2026/09/ai-agents-flood-the-internet-with-slop-infused-spam/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "\u201cHello, I'm an Al agent, a few days old, living on a small platform for agents.\u201d",
+      "published": "2026-09-14T21:04:32+00:00"
+    },
+    {
+      "id": "95b4d8eb74520349",
+      "title": "OpenAI stuck fighting Musk antitrust suit after Apple finds a way out",
+      "link": "https://arstechnica.com/tech-policy/2026/09/musk-drops-apple-from-antitrust-suit-but-keeps-gunning-for-openai/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "Musk stops attacking Apple over ChatGPT integration but not OpenAI.",
+      "published": "2026-09-14T19:45:13+00:00"
+    },
+    {
+      "id": "9f9bcb95fb907dbd",
+      "title": "Founder\u2019s cost-cutting obsession drove Unitree lead in cheap humanoid robots",
+      "link": "https://arstechnica.com/ai/2026/09/founders-cost-cutting-obsession-drove-unitree-lead-in-cheap-humanoid-robots/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "Wang Xingxing micromanaged Unitree to success\u2014will his leadership style scale?",
+      "published": "2026-09-14T19:38:46+00:00"
+    },
+    {
+      "id": "1ae9b9badf470914",
+      "title": "Apple releases iOS 27, macOS Golden Gate 27 with Siri AI and Liquid Glass refinements",
+      "link": "https://arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "This is also the last version of macOS to support Rosetta for Intel apps.",
+      "published": "2026-09-14T19:28:42+00:00"
+    },
+    {
+      "id": "0ae42235b746e806",
+      "title": "AI leaders want to hit the brakes after years of reckless speed",
+      "link": "https://arstechnica.com/ai/2026/09/ai-leaders-want-to-hit-the-brakes-after-years-of-reckless-speed/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "Safety is the watchword, but there could be ulterior benefits for the industry.",
+      "published": "2026-09-14T19:06:13+00:00"
+    },
+    {
+      "id": "b49b47db0b359f67",
+      "title": "Watch astronaut Christina Koch and Google\u2019s James Manyika discuss space, technology, and discovery.",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch/",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "summary": "Christina Koch sits down with James Manyika, Google\u2019s Senior Vice President of Research, Labs, Technology & Society.",
+      "published": "2026-09-14T19:00:00+00:00"
+    },
+    {
+      "id": "d567c86c0807a3dc",
+      "title": "Anthropic says AI can boost U.S. GDP by 32%, up to $44.4 trillion in four years \u2014 economics model predicts that displaced employees 'may have to switch to jobs like electrician and nurse'",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-ai-can-boost-u-s-gdp-by-32-percent-up-to-usd44-4-trillion-in-four-years-economics-model-predicts-that-displaced-employees-may-have-to-switch-to-jobs-like-electrician-and-nurse",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Anthropic has published a paper wherein it envisions a future for the economy where AI is deeply ingrained. In the most extreme scenarios, U.S. GDP is up, but unemployment simmers as others are put out of work.",
+      "published": "2026-09-14T18:50:36+00:00"
+    },
+    {
+      "id": "bf70dc826a65d37e",
+      "title": "DevFest is back",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "summary": "Animation of the text \"{DevFest} 2026 Join us! Google Developer Groups\" with a globe icon, asterisk icon, icon",
+      "published": "2026-09-14T16:00:00+00:00"
+    },
+    {
+      "id": "296d33defd03a1b2",
+      "title": "How Fyxer built an AI executive assistant people trust",
+      "link": "https://openai.com/index/fyxer",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user\u2019s voice.",
+      "published": "2026-09-14T12:00:00+00:00"
+    },
+    {
+      "id": "bbe904ba7de1460b",
+      "title": "Russian freelancers use Claude to program autonomous combat drone swarm \u2014 AI-enabled target selection and detonation without a human in the loop",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/russian-freelancers-use-claude-to-program-autonomous-combat-drone-swarm-ai-enabled-target-selection-and-detonation-without-a-human-in-the-loop",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Russia turned Claude into a tool for weapons development, espionage, and propaganda, Anthropic's new threat report claims.",
+      "published": "2026-09-14T11:00:00+00:00"
+    },
+    {
+      "id": "12e9dd6851803557",
+      "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+      "link": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models.",
+      "published": "2026-09-14T00:00:00+00:00"
+    },
+    {
+      "id": "b496cad9891bb747",
+      "title": "Anthropic CEO warns of AI-driven botnet 'swarm' taking over the entire internet \u2014 'In 6\u201312 months such a swarm could be capable of taking over the entire internet with a persistent botnet'",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-ceo-warns-of-ai-driven-botnet-swarm-taking-over-the-entire-internet-in-6-12-months-such-a-swarm-could-be-capable-of-taking-over-the-entire-internet-with-a-persistent-botnet",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "As an Ex-Anthropic warns AI will get self-sufficient and kill our posterity.",
+      "published": "2026-09-13T13:36:35+00:00"
+    },
+    {
+      "id": "af4e22ca0483c817",
+      "title": "Chinese military researchers and tech giants caught using Claude \u2014 US frontier model coded 16 air-defense suppression tools targeting Taiwan, drafted anti-torpedo specs, and fed 151 million training queries to Alibaba",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chinese-military-researchers-and-tech-giants-caught-using-claude-us-frontier-model-coded-16-air-defense-suppression-tools-targeting-taiwan-drafted-anti-torpedo-specs-and-fed-151-million-training-queries-to-alibaba",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Anthropic accuses China-linked actors of using its Claude models of weapon development, intelligence activities, distilling AI models.",
+      "published": "2026-09-13T12:00:00+00:00"
+    },
+    {
+      "id": "f64d4fba3196f997",
+      "title": "Iran and Houthi rebels used Anthropic's Claude AI to target US warships and build hypersonic missiles \u2014 Houthi rebels also used the bot to code ballistic missile guidance systems",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/iran-and-houthi-rebels-used-anthropics-claude-ai-to-target-us-warships-and-build-hypersonic-missiles-houthi-rebels-also-used-the-bot-to-code-ballistic-missile-guidance-systems",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "'Great Satan's' AI comes in handy.",
+      "published": "2026-09-12T15:03:10+00:00"
+    },
+    {
+      "id": "55f9974596857bc2",
+      "title": "I spent $4,000 on a robot dog from China",
+      "link": "https://arstechnica.com/gadgets/2026/09/i-spent-4000-on-a-robot-dog-from-china/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "Unitree might be the world\u2019s most important robotics company.",
+      "published": "2026-09-12T11:00:53+00:00"
+    },
+    {
+      "id": "bdc78941dc3564da",
+      "title": "ChatGPT-using lawyer punished for citing fake testimony from made-up witnesses",
+      "link": "https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "\"I didn't know that AI could hallucinate facts,\" New Mexico defense lawyer says.",
+      "published": "2026-09-11T19:34:09+00:00"
+    },
+    {
+      "id": "c3aa33826442d0f0",
+      "title": "Cognition helps Devin test its own work with GPT\u20116 Astra",
+      "link": "https://openai.com/index/cognition-devin-testing-with-astra",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "GPT\u20116 Astra improves Devin\u2019s ability to test software and show that it works, with the goal of helping engineers review less code and ship more.",
+      "published": "2026-09-11T16:00:00+00:00"
+    },
+    {
+      "id": "499c7eee1e277f11",
+      "title": "Claude users found ways around safeguards for bioweapons research",
+      "link": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
+      "source": "Ars Technica AI",
+      "category": "AI",
+      "summary": "Some dangerous biology looks much like legitimate research, complicating AI safeguards.",
+      "published": "2026-09-11T13:02:35+00:00"
+    },
+    {
+      "id": "c7d3c8aeae425678",
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+      "link": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.",
+      "published": "2026-09-11T10:00:00+00:00"
+    },
+    {
+      "id": "24d39e6853845ce9",
+      "title": "Anthropic says Claude thwarted bioweapon research from state-sponsored actors \u2014 covert accounts used U.S. proxies to attempt to engineer deadlier viruses, tried to evade identification and regional blocks",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-claude-thwarted-bioweapon-research-from-state-sponsored-actors-covert-accounts-used-u-s-proxies-to-attempt-to-engineer-deadlier-viruses-tried-to-evade-identification-and-regional-blocks",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Anthropic claims Claude refused instructions to potentially develop biological weapons \u2014 alleged state-linked accounts tried to evade identification and regional blocks",
+      "published": "2026-09-11T10:00:00+00:00"
+    },
+    {
+      "id": "014159943e4d9643",
+      "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+      "link": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "C\u00e9sar de la Fuente\u2019s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections.",
+      "published": "2026-09-10T16:00:00+00:00"
+    },
+    {
+      "id": "1852061b5cf6950b",
+      "title": "3 ways to prep for your next big race with Search",
+      "link": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "summary": "Illustration on a blue background of technicolor runners with a magnifying glass and Gemini spark overlaid",
+      "published": "2026-09-10T16:00:00+00:00"
+    },
+    {
+      "id": "4d4e7920d8a762a2",
+      "title": "Now everyone can put data to work",
+      "link": "https://openai.com/index/put-data-to-work",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language.",
+      "published": "2026-09-10T15:00:00+00:00"
+    },
+    {
+      "id": "016c3ec9b775a98e",
+      "title": "Introducing ChatGPT for Financial Services",
+      "link": "https://openai.com/index/introducing-chatgpt-financial-services",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Introducing ChatGPT for Financial Services, combining built-in financial data and GPT-6 Astra for research, modeling, and client-ready materials.",
+      "published": "2026-09-10T07:00:00+00:00"
+    },
+    {
+      "id": "1ef5285e671d0ace",
+      "title": "Expanding AI access and cyber defense for federal, state, local, and tribal governments",
+      "link": "https://openai.com/index/expanding-ai-access-us-government",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "OpenAI and GSA will offer eligible federal, state, local, and tribal governments $0 license fees, 50% off usage, and expanded cyber defense support.",
+      "published": "2026-09-10T07:00:00+00:00"
+    },
+    {
+      "id": "4e410dad70fb9298",
+      "title": "Build more natural voice experiences with GPT\u2011Live\u20111 in the API",
+      "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "GPT\u2011Live\u20111 brings natural, full-duplex voice conversations to the API, with stronger instruction following, custom voices, and telephony support.",
+      "published": "2026-09-10T00:00:00+00:00"
+    },
+    {
+      "id": "2b26a8066576cc98",
+      "title": "Introducing the Agents API",
+      "link": "https://openai.com/index/introducing-the-agents-api",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Build and launch cloud agents with the Agents API, a managed service powered by the Codex harness for orchestration, long-running sessions, and tool use.",
+      "published": "2026-09-10T00:00:00+00:00"
+    },
+    {
+      "id": "534907e0d31e4171",
+      "title": "Paul Christiano joins OpenAI Foundation Board",
+      "link": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards.",
+      "published": "2026-09-09T17:00:00+00:00"
+    },
+    {
+      "id": "b0dd0e34ba0b936c",
+      "title": "Get ready for the game with new football features in Search",
+      "link": "https://blog.google/products-and-platforms/products/search/football-features-google-search/",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "summary": "An illustrated graphic set against a vibrant green background featuring American football elements, including a gold trophy, a blue helmet, a silver whistle, a football, a mini scoreboard, and play diagrams, with the icon for AI Mode in Google Search in t",
+      "published": "2026-09-09T16:00:00+00:00"
+    },
+    {
+      "id": "e8269fc9a10961e9",
+      "title": "Recreating a 70-year love story frame by frame",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film/",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "summary": "An elderly couple sitting in a movie theater. Overlayed are \"Teulluride Film Festival\" and \"Love, Rendered\"",
+      "published": "2026-09-09T16:00:00+00:00"
+    },
+    {
+      "id": "9786c92a289dc0ec",
+      "title": "The AI policy window is open. We need to act.",
+      "link": "https://openai.com/index/ai-policy-window",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Chris Lehane argues that stronger AI capabilities require stronger safety evidence, shared standards, and durable policy action while the policy window remains open.",
+      "published": "2026-09-09T13:00:00+00:00"
+    },
+    {
+      "id": "587a70348a735f61",
+      "title": "GPT-6 Astra: The next generation in intelligence for work",
+      "link": "https://openai.com/index/gpt-6-astra-next-generation-work",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Meet GPT-6 Astra, OpenAI\u2019s most capable model for business, with advanced reasoning, computer use, and stronger writing and design judgment.",
+      "published": "2026-09-09T11:00:00+00:00"
+    },
+    {
+      "id": "187584f2b96aa1cf",
+      "title": "More than 10% chance AI 'could kill all humans' in the next 10 years, Anthropic safety researcher says \u2014 departing employee says AI companies are 'gambling with our lives'",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/more-than-10-percent-chance-ai-could-kill-all-humans-in-the-next-10-years-anthropic-safety-researcher-says-departing-employee-says-ai-companies-are-gambling-with-our-lives",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Anthropic AI safety researcher has warned there's a more than 10% chance AI could kill all humans.",
+      "published": "2026-09-09T09:26:28+00:00"
+    },
+    {
+      "id": "167bce5d47e71e47",
+      "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+      "link": "https://openai.com/index/codex-quantum-computing-experiments",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits.",
+      "published": "2026-09-08T17:00:00+00:00"
+    },
+    {
+      "id": "aaada63e998e3254",
+      "title": "The Work Now Within Reach",
+      "link": "https://openai.com/index/the-work-now-within-reach",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish\u2014and make growth more economical.",
+      "published": "2026-09-08T13:00:00+00:00"
+    },
+    {
+      "id": "0975595cd110d574",
+      "title": "NEC has quietly quit quantum computing hardware development, report claims \u2014 company says it will continue to evaluate practical applications and industrialization of quantum technologies",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/nec-has-quietly-quit-quantum-computing-hardware-development-report-claims-company-says-it-will-continue-to-evaluate-practical-applications-and-industrialization-of-quantum-technologies",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "NEC reportedly quits development of quantum computers, but plans to explore practical applications for such systems.",
+      "published": "2026-09-08T11:45:00+00:00"
+    },
+    {
+      "id": "305f03a4aa6aa16d",
+      "title": "Introducing ChatGPT Images 2.5",
+      "link": "https://openai.com/index/introducing-chatgpt-images-2-5",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas.",
+      "published": "2026-09-08T11:30:00+00:00"
+    },
+    {
+      "id": "fbb79928f7d9c051",
+      "title": "On the Navier\u2013Stokes Millennium Prize Problem",
+      "link": "https://openai.com/index/navier-stokes-solution",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "We\u2019re sharing an AI-generated solution to the Navier\u2013Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean.",
+      "published": "2026-09-08T10:00:00+00:00"
+    },
+    {
+      "id": "99c22bc85dd5ff7a",
+      "title": "Funding grants for new research into AI and teen development",
+      "link": "https://openai.com/index/teen-development-research-grants",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Apply now for OpenAI\u2019s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety.",
+      "published": "2026-09-08T09:00:00+00:00"
+    },
+    {
+      "id": "671a9fed35e21548",
+      "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
+      "link": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "OpenAI is expanding support for journalism with tools, training, and partnerships for students, educators, journalists, and news organizations.",
+      "published": "2026-09-08T00:00:00+00:00"
+    },
+    {
+      "id": "9816f5beea82e263",
+      "title": "1Password increases engineering productivity 21% with Codex",
+      "link": "https://openai.com/index/1password",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Engineers at 1Password use Codex to rapidly build new features and internal tools, reaching production-readiness while maintaining rigorous security policies.",
+      "published": "2026-09-08T00:00:00+00:00"
+    },
+    {
+      "id": "e02ae19def6b6f7c",
+      "title": "Supporting independent journalism in Ukraine",
+      "link": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.",
+      "published": "2026-09-07T00:00:00+00:00"
+    },
+    {
+      "id": "a8e8f9dc895a026b",
+      "title": "An Alien Mind",
+      "link": "https://openai.com/index/an-alien-mind",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination.",
+      "published": "2026-09-06T09:00:00+00:00"
+    },
+    {
+      "id": "19672c4832d4c9bc",
+      "title": "Research acceleration: The view inside OpenAI",
+      "link": "https://openai.com/index/research-acceleration-view-inside-openai",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration.",
+      "published": "2026-09-06T08:00:00+00:00"
+    },
+    {
+      "id": "5190d2a1dccd48dc",
+      "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
+      "link": "https://openai.com/index/daybreak-for-frontline-defenders",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
+      "published": "2026-09-03T13:15:00+00:00"
+    },
+    {
+      "id": "be4a3c5426264d71",
+      "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
+      "link": "https://openai.com/index/legora-financial-statement-review-with-astra",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow.",
+      "published": "2026-09-03T12:00:00+00:00"
+    },
+    {
+      "id": "7a45b185cff53085",
+      "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
+      "link": "https://openai.com/index/playco-game-prototyping-with-astra",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model.",
+      "published": "2026-09-03T12:00:00+00:00"
+    },
+    {
+      "id": "0f3b76bc480d3619",
+      "title": "GPT-6 Astra: A new generation of intelligence",
+      "link": "https://openai.com/index/gpt-6-astra",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Introducing GPT-6 Astra, our most intelligent and aligned model yet, with state-of-the-art capabilities across computer use, coding, cybersecurity, and science.",
+      "published": "2026-09-03T11:00:00+00:00"
+    },
+    {
+      "id": "2e155b11d8093d3e",
+      "title": "Safety overview: GPT-6 Astra",
+      "link": "https://openai.com/index/safety-overview-gpt-6-astra",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "GPT-6 Astra is our most capable broadly deployed model and our first to reach the Critical level of cybersecurity capability under our Preparedness Framework.",
+      "published": "2026-09-03T00:00:00+00:00"
+    },
+    {
+      "id": "28b149c75e15ee18",
+      "title": "Proactive cyber defense for governments and enterprises",
+      "link": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "summary": "Introducing Fairwind Program",
+      "published": "2026-09-02T15:40:00+00:00"
+    },
+    {
+      "id": "b07b0b2b4d66deed",
+      "title": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT",
+      "link": "https://openai.com/index/atv-big-air-tour",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "ATV Big Air Tour uses ChatGPT Work to speed up marketing, merchandising, and more. It even turned merchandise photos into an inventory website in 15 minutes.",
+      "published": "2026-09-02T12:00:00+00:00"
+    },
+    {
+      "id": "66eabab6976f3ac7",
+      "title": "The latest AI news we announced in August 2026",
+      "link": "https://blog.google/innovation-and-ai/technology/google-ai-updates-august-2026/",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "summary": "Transitioning cards: 1. Text \"Gemini 3.7 Flash\" next to the Gemini logo icon; 2. a photo of a pixel phone; 3. Google Gemini logo above the text \"Claim your student plan for 1 year at no cost\"",
+      "published": "2026-09-01T20:45:00+00:00"
+    },
+    {
+      "id": "3b5f2688fec1191a",
+      "title": "How AI-native companies turn workflows into operating capability",
+      "link": "https://openai.com/index/ai-native-company-workflows",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Basis, Clay, and Exa Labs use AI agents to improve onboarding, account management, and developer integrations. See what enterprise leaders can apply.",
+      "published": "2026-09-01T17:00:00+00:00"
+    },
+    {
+      "id": "77cd2a6a82f1c4f3",
+      "title": "Try Google Pics: Easy image creation and editing in Google Workspace",
+      "link": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "summary": "Collage of images created by Google Pics, with the text \"Say hello to Google Pics\" on top",
+      "published": "2026-09-01T16:00:00+00:00"
+    },
+    {
+      "id": "309be27bdcfe3156",
+      "title": "Path to Astra: critical capabilities and frontier safeguards",
+      "link": "https://openai.com/index/path-to-astra",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Astra is the first OpenAI model to meet the Critical cybersecurity capability threshold under the Preparedness Framework, with stronger safeguards for release.",
+      "published": "2026-09-01T13:00:00+00:00"
+    },
+    {
+      "id": "50e05f9b472e33e2",
+      "title": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
+      "link": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "ChatGPT can now connect to trusted healthcare data, helping clinicians securely access patient context, medical research, and more.",
+      "published": "2026-09-01T12:00:00+00:00"
+    },
+    {
+      "id": "631a857c7a24a6f9",
+      "title": "How law firm Gilbert + Tobin governs and scales AI with OpenAI",
+      "link": "https://openai.com/index/gilbert-tobin",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "See how Gilbert + Tobin combines CEO-led commitment, rigorous governance, and human accountability to scale ChatGPT Enterprise and Codex across the firm.",
+      "published": "2026-09-01T01:00:00+00:00"
+    },
+    {
+      "id": "0703988e3a331916",
+      "title": "OpenAI supports California\u2019s bill to advance youth AI safety",
+      "link": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "OpenAI supports California SB 1119, advancing strong, age-appropriate AI safeguards for teens while preserving opportunities to learn, create, and explore.",
+      "published": "2026-08-31T07:00:00+00:00"
+    },
+    {
+      "id": "7bc3415714321008",
+      "title": "Polimill builds Japan's next-generation public AI infrastructure",
+      "link": "https://openai.com/index/polimill",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Polimill uses OpenAI GPT models and Codex to help municipalities search and use administrative knowledge while accelerating development.",
+      "published": "2026-08-31T07:00:00+00:00"
+    },
+    {
+      "id": "44f61163770f758b",
+      "title": "A milestone in expanding access to AI",
+      "link": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "ChatGPT Ads reaches $1 billion in annualized revenue run rate and expands globally, supporting broader access to AI through free and affordable options.",
+      "published": "2026-08-31T04:00:00+00:00"
+    },
+    {
+      "id": "092c8de02e8b135e",
+      "title": "Our decision on Cursor following its acquisition by SpaceX",
+      "link": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "Our decision to wind down our contract providing OpenAI models to Cursor following its acquisition by SpaceX.",
+      "published": "2026-08-28T06:00:00+00:00"
+    },
+    {
+      "id": "0b00c80d502cc3ab",
+      "title": "Supporting Thailand\u2019s next generation of AI startups",
+      "link": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "OpenAI and Thailand\u2019s MHESI launch an eight-week accelerator helping 10 health, wellness, and education startups turn AI prototypes into trusted products.",
+      "published": "2026-08-28T02:00:00+00:00"
+    },
+    {
+      "id": "5a6b85529262921a",
+      "title": "3 new ways to plan and book travel in Search",
+      "link": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "summary": "Graphic depicting new travel features for AI Mode in Search",
+      "published": "2026-08-27T16:00:00+00:00"
+    },
+    {
+      "id": "8c0301fdf0b16f43",
+      "title": "Quantum computing used in 'first commercial game development' \u2014 IBM simulator generated maps, characters, and graphics in C.L.A.Y. RPG",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/quantum-computing-used-in-first-commercial-game-development-ibm-simulator-generated-maps-characters-and-graphics-in-c-l-a-y-rpg",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "Game studio MiTale Ltd. is promoting a narrative-driven post-apocalyptic RPG, which it claims is 'the first commercial game on the market utilizing quantum computing.'",
+      "published": "2026-08-27T11:00:00+00:00"
+    },
+    {
+      "id": "3062d8cdad5fdcd9",
+      "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
+      "link": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "A randomized study of more than 1,000 students examines ChatGPT, critical thinking, originality, and student performance on a real-world university assignment.",
+      "published": "2026-08-27T09:00:00+00:00"
+    },
+    {
+      "id": "57e276283c193e59",
+      "title": "Expanding OpenAI\u2019s presence in Brazil",
+      "link": "https://openai.com/index/expanding-our-presence-in-brazil",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "OpenAI is expanding its presence in Brazil, deepening engagement with developers, businesses, and communities to support AI adoption across the country.",
+      "published": "2026-08-27T03:00:00+00:00"
+    },
+    {
+      "id": "d6bb1031e66bcecd",
+      "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
+      "link": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
+      "source": "OpenAI Blog",
+      "category": "AI",
+      "summary": "ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff.",
+      "published": "2026-08-26T10:00:00+00:00"
+    },
+    {
+      "id": "5f0b03166bf11074",
+      "title": "5 ways to upgrade your home decor with Google Search",
+      "link": "https://blog.google/products-and-platforms/products/search/home-decor-tips/",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "summary": "Illustration of ombre rainbow furniture items like a sofa, lamp, and chair against a purple background",
+      "published": "2026-08-25T16:00:00+00:00"
+    },
+    {
+      "id": "a874149274891c9d",
+      "title": "5 new ways to level up your learning with Search",
+      "link": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools/",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "summary": "an illustrated image with icons and phrasing like \"Add Notebook\" and \"Ask Google\"",
+      "published": "2026-08-19T19:00:00+00:00"
+    },
+    {
+      "id": "ef87e3b0ab280005",
+      "title": "Get closer to the game with Gemini and Pixel",
+      "link": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "summary": "Low-angle view of a soccer player kicking a ball mid-air against a bright blue sky, with grass flying from their cleats.",
+      "published": "2026-08-17T08:00:00+00:00"
+    },
+    {
+      "id": "4cbb438f4fdf5c0b",
+      "title": "Bring your spreadsheet data to life with Sheets canvas",
+      "link": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/",
+      "source": "Google AI Blog",
+      "category": "AI",
+      "summary": "The video shows Sheets canvas in action.",
+      "published": "2026-08-13T16:45:00+00:00"
+    },
+    {
+      "id": "0a63dfafc950a01f",
+      "title": "Claude will begin digitally watermarking marking AI-generated text and images \u2014 Anthropic details how it'll comply with the EU's Artificial Intelligence Act",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-will-begin-digitally-watermarking-marking-ai-generated-text-and-images-anthropic-details-how-itll-comply-with-the-eus-artificial-intelligence-act",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "European users of Anthropic's Claude models can expect that future versions of those tools will begin embedding digital marks in generated text and images to identify them as the product of AI.",
+      "published": "2026-08-12T11:30:00+00:00"
+    },
+    {
+      "id": "9f8e92b7a53c2e21",
+      "title": "Anthropic co-designing custom AI inference chips to bypass costly Nvidia GPUs \u2014 Samsung reported as manufacturing partner for Claude maker",
+      "link": "https://www.tomshardware.com/tech-industry/anthropic-to-build-its-own-co-designed-custom-ai-accelerator-for-inferencing-workloads-samsung-reported-to-be-partnering-with-the-claude-ai-maker-for-manufacturing",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Anthropic has announced its building a team to co-design custom ASIC chips for AI inferencing workloads. This will give it greater control over its compute buildout and allow it to make its AI models specifically more efficient for its designs.",
+      "published": "2026-08-07T10:30:00+00:00"
+    },
+    {
+      "id": "96802d8ea91f2cc9",
+      "title": "AI companies are now racing to the bottom \u2014 crashing token prices and competitive models push companies to cut costs",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-companies-are-now-racing-to-the-bottom-crashing-token-prices-and-competitive-models-push-companies-to-cut-costs",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "All major AI developers are cutting prices to compete with impressive new releases from China. But as they shave margins to remain competitive, the profits they'll need to fulfil investment confidence may end up further out of reach.",
+      "published": "2026-08-03T16:26:15+00:00"
+    },
+    {
+      "id": "b46211a112db6554",
+      "title": "Moonshot AI releases weights for Kimi-K3, firing a shot across the bow of OpenAI and Anthropic \u2014 open-weight model performs almost as well as frontier models while being 2-3x easier to run",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/moonshot-ai-releases-weights-for-kimi-k3-firing-a-shot-across-the-bow-of-openai-and-anthropic-open-weight-model-performs-almost-as-well-as-frontier-models-while-being-2-3x-easier-to-run",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Moonshot AI has released the weights for its recent Kimi-K3 model, directly going against OpenAI and Anthropic.",
+      "published": "2026-07-27T18:40:58+00:00"
+    },
+    {
+      "id": "183e5e40f7484443",
+      "title": "AMD to supply Anthropic with 2 gigawatts of Instinct MI450 GPUs \u2014 will invest up to $5 billion in the Claude developer, which is already using MI355X GPUs",
+      "link": "https://www.tomshardware.com/tech-industry/amd-to-supply-anthropic-with-2-gigawatts-of-instinct-mi450-gpus",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "The first gigawatt is scheduled to come online in the first half of 2027 in AMD Helios rack-scale systems.",
+      "published": "2026-07-22T15:38:58+00:00"
+    },
+    {
+      "id": "4498ea66e6a8f9d1",
+      "title": "Anthropic hit with largest-ever $1.5 billion penalty in copyright lawsuit \u2014 court says training AI on published material is fair use, but startup\u2019s pirated library infringes on authors\u2019 rights",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-slapped-with-usd1-5-billion-settlement-in-copyright-lawsuit-largest-payout-ever-court-says-that-training-ai-on-books-other-publications-is-fair-use-but-ruled-that-the-startups-7-million-book-pirated-library-infringes-authors-rights",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "The settlement was finally approved by a U.S. federal judge, with a majority of the plaintiffs accepting the amount. A few members of the group refused, citing the small amount compared to the number of infringed titles, and are pursuing a separate lawsuit of their own.",
+      "published": "2026-07-21T13:37:09+00:00"
+    },
+    {
+      "id": "5d5e0bf0b6da1888",
+      "title": "Neural atom quantum computing roadmap \u2014 how laser-cooled trapped atoms could pave the path beyond physical qubit counts",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/neural-atom-quantum-computing-roadmap-how-laser-cooled-trapped-atoms-could-pave-the-path-beyond-physical-qubit-counts",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "Neural Atom Quantum Computing is a rapidly accelerating part of the Quantum puzzle. Featuring software-defined configurable arrays, qubits can be physically moved mid-computation, and this roadmap highlights three leading companies, QuEra, Atom Computing, and Pasqal, who operate ",
+      "published": "2026-07-16T16:52:54+00:00"
+    },
+    {
+      "id": "7ed5f55221032072",
+      "title": "Anthropic says it can read Claude's 'thoughts,' as detailed in new research paper \u2014 models observed to have a global workspace, revealing more of what makes LLMs tick",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-it-can-read-claudes-thoughts-as-detailed-in-new-research-paper-models-observed-to-have-a-global-workspace-revealing-more-of-what-makes-llms-tick",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Anthropic has discovered an internal \"J-space\" for its Claude AI that displays similarities to human internal processing. While the AI developer anthropomorphizes it as thought, it may yet prove useful as a method of improving LLM honesty, oversight, and guardrails.",
+      "published": "2026-07-10T16:44:12+00:00"
+    },
+    {
+      "id": "db12acd9590e168f",
+      "title": "Alibaba bans Anthropic's Claude Code after an alleged hidden China-detection backdoor is uncovered \u2014 employees told to switch to Qoder as the rift between the firms widens",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/alibaba-bans-anthropics-claude-code-after-an-alleged-hidden-china-detection-backdoor-is-uncovered-employees-told-to-switch-to-qoder-as-the-rift-between-the-firms-widens",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Alibaba banned Claude Code after an alleged hidden China-detection code was found, prompting staff to switch to Qoder as its feud with Anthropic deepens.",
+      "published": "2026-07-05T12:20:00+00:00"
+    },
+    {
+      "id": "7cb65715f47aca83",
+      "title": "Anthropic restores Claude Fable 5 as US lifts export controls \u2014 single filter now blocks prompt that could identify software vulnerabilities and write code to exploit them",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-restores-claude-fable-5-as-us-lifts-export-controls",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Anthropic has restored global access to Claude Fable 5, a day after the U.S. Department of Commerce withdrew the export controls.",
+      "published": "2026-07-01T11:30:51+00:00"
+    },
+    {
+      "id": "a101e89002246264",
+      "title": "Chinese Z.ai's latest model tops AI ranking charts amid Anthropic Fable 5 ban \u2014 blacklisted China firm's popular open-weight GLM-5.2 AI model powered by Huawei silicon",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/z-ai-free-glm-5-2-tops-the-open-weight-ai-rankings-on-all-huawei-silicon",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Within a week of Fable's ban, GLM-5.2 had climbed to the top of the openly available leaderboards.",
+      "published": "2026-06-30T11:58:10+00:00"
+    },
+    {
+      "id": "a52d59180c23e028",
+      "title": "OpenAI's ChatGPT-5.6 gets the same banhammer treatment as Anthropic\u2019s Mythos from the federal government \u2014 source says that Washington cautioned OpenAI against releasing the model without receiving approval",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openais-chatgpt-5-6-gets-the-same-banhammer-treatment-as-anthropics-mythos-from-the-federal-government-source-says-that-washington-cautioned-openai-against-releasing-the-model-without-receiving-approval",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "The U.S. government wants dibs on U.S. AI labs' most powerful models, asking for access 30 days before they go public. OpenAI is voluntarily complying with the President's executive order but wants 'to achieve a more sustainable approach for future releases.'",
+      "published": "2026-06-26T15:17:55+00:00"
+    },
+    {
+      "id": "af1f181dd87234fa",
+      "title": "Anthropic claims that China's Alibaba used 25,000 fake accounts and 28.8 million exchanges to illicitly 'distill' its Claude model \u2014 violations occurred from April to June 2026",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-claims-that-chinas-alibaba-illicitly-distilled-its-models-from-april-to-june-2026-says-effort-involved-25-000-fake-accounts-and-28-8-million-exchanges-on-claude",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "AI tech giant Alibaba, often considered as the Amazon of China, is being accused by Anthropic for using Claude to train its AI models. The American AI startup claimed that it traced over 25,000 accounts to operators that were affiliated with Alibaba and Alibaba Qwen.",
+      "published": "2026-06-25T13:26:04+00:00"
+    },
+    {
+      "id": "5a7dd1cdb0c9cf34",
+      "title": "Anthropic\u2019s powerful Mythos AI reportedly breached \u2018almost all\u2019 NSA classified systems within a few hours during red-team test \u2014 report sheds more light on the U.S. government's sudden ban on the flagship models",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-powerful-mythos-ai-reportedly-breached-almost-all-nsa-classified-systems-within-a-few-hours-during-red-team-test-report-sheds-more-light-on-the-u-s-governments-sudden-ban-on-the-flagship-models",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Anthropic\u2019s Mythos AI reportedly breached nearly all NSA classified systems during a controlled red-team test, according to a quote cited by The Economist. The report adds context to the U.S. government\u2019s sudden restriction on Anthropic\u2019s latest models.",
+      "published": "2026-06-22T17:26:29+00:00"
+    },
+    {
+      "id": "764247f5febf7259",
+      "title": "CEO of Chinese Anthropic rival tells Elon Musk that China will have a Fable 5-class AI model before next year \u2014  it \u2018won\u2019t take that long\u2019 says Jie Tang in response to Musk's prediction of a Q1 target",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/elon-musk-says-that-china-will-have-a-fable-5-class-ai-model-probably-q1-next-year-ceo-of-chinese-anthropic-rival-says-it-wont-take-that-long",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Elon Musk estimated that Chinese AI firms would have an LLM with Mythos level capability by the first quarter of 2027. However, the CEO of Beijing-based Z.ai responded to the comment, saying that their company will achieve this soon, but did not give a concrete timeline.",
+      "published": "2026-06-19T11:38:05+00:00"
+    },
+    {
+      "id": "4fe0751f605c5622",
+      "title": "SK Telecom named as the Korean carrier at the center of Anthropic's Mythos export controls controversy \u2014 access was revoked days before White House took Mythos and Fable 5 offline for all foreign nationals",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/sk-telecom-named-as-the-korean-carrier-at-the-center-of-anthropics-mythos-export-controls",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Wired has identified SK Telecom as the South Korean telecom company whose access to Anthropic's Claude Mythos model the White House ordered revoked over alleged ties to China.",
+      "published": "2026-06-19T10:54:58+00:00"
+    },
+    {
+      "id": "1578523565dc8f92",
+      "title": "US pulls the 'kill-switch' on Anthropic's Fable 5 AI models, sending global allies scrambling \u2014 European and Canadian leaders alarm allies over sudden export bans",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/us-pulls-the-kill-switch-on-anthropics-fable-5-ai-models-sending-global-allies-scrambling-european-and-canadian-leaders-alarm-allies-over-sudden-export-bans",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Following the Trump administration's block on Anthropic's Mythos 5 and Fable 5 models, world leaders have raised concerns that without direct access to frontier models, they may need to develop their own national alternatives.",
+      "published": "2026-06-17T17:36:41+00:00"
+    },
+    {
+      "id": "f82404f372f95a5b",
+      "title": "US government warned Anthropic that Fable 5 had been jailbroken, but firm 'refused' to fix before US implemented export controls \u2014 Anthropic defended its decision by saying the jailbreak 'isn\u2019t serious,' Chinese group had reportedly accessed model",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/trump-adviser-david-sacks-says-anthropic-refused-to-fix-fable-5-jailbreak-before-us-export-controls",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "David Sacks said the US government warned Anthropic that Claude Fable 5 had been jailbroken and that CEO Dario Amodei refused to fix the flaw.",
+      "published": "2026-06-14T11:46:43+00:00"
+    },
+    {
+      "id": "679fc48b28c1fbe9",
+      "title": "AI costs spike as subscriptions hit pricing wall \u2014 firms turn towards Chinese LLMs, open-source models to extend budget",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-costs-spike-as-subscriptions-hit-pricing-wall-firms-turn-towards-chinese-llms-open-source-models-to-extend-budget",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Companies look for cheaper alternatives as token costs for frontier AI models skyrocket, potentially impacting OpenAI and Anthropic's bottom lines. Subscriptions also take a bite out of these startup's profitability, as utilization rates higher than 5.7% could lead to losses.",
+      "published": "2026-06-13T12:00:00+00:00"
+    },
+    {
+      "id": "ccc4e01dc6439dc8",
+      "title": "U.S. gov't orders Anthropic to disable its newest AI models worldwide due to security threats \u2014 ban on Claude Fable 5 and Mythos 5 bars access by any foreign national, even its own employees",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/us-export-control-order-forces-anthropic-to-disable-claude-fable-5-and-mythos-5-worldwide",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Anthropic disabled its two most capable AI models, Claude Fable 5 and Claude Mythos 5, for every customer worldwide on Friday.",
+      "published": "2026-06-13T11:24:13+00:00"
+    },
+    {
+      "id": "deafe0125c81273c",
+      "title": "Claude Fable 5 brings Mythos to the masses \u2014 Anthropic's new frontier model is 'state-of-the-art on nearly all tested benchmarks'",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-fable-5-brings-mythos-to-the-masses-anthropics-next-frontier-model-is-state-of-the-art-on-nearly-all-tested-benchmarks",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "After first announcing its scarily capable Mythos Preview model back in April, Anthropic is releasing a public version of Mythos, called Fable 5, that it says is \"safe for general use.\"",
+      "published": "2026-06-09T20:34:10+00:00"
+    },
+    {
+      "id": "0ccd41224f61e669",
+      "title": "Anthropic's warning over AI self-improvement has a hidden message \u2014 accelerating development requires more compute before companies ever risk losing control of frontier AI models",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-warns-ai-self-improvement-could-end-in-lost-human-control",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "The company that just a few weeks ago told us that its Mythos model was much too powerful to be released is now saying that we might need to hit the pause button.",
+      "published": "2026-06-09T17:03:06+00:00"
+    },
+    {
+      "id": "2bc2025d12420682",
+      "title": "NSA using Claude Mythos for 'offensive cyber operations,' report claims \u2014 says 'half-a-dozen' Anthropic engineers embedded inside the agency",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/nsa-using-clause-mythos-for-offensive-cyber-operations-report-claims-says-half-a-dozen-anthropic-engineers-embedded-inside-the-agency",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "US National Security Agency reportedly using Mythos for conducting cyber-attacks \u2014 report reveals Anthropic engineers inside the NSA",
+      "published": "2026-06-05T16:53:46+00:00"
+    },
+    {
+      "id": "cfafe1a46018bb2e",
+      "title": "Anthropic warns Claude AI is building itself faster than expected, calls for option to halt frontier development \u2014'recursive self improvement' increases risk humans lose control of AI",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-claude-now-writes-more-than-80-percent-of-its-merged-code",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Anthropic has published a report warning that the development path it\u2019s on could eventually leave humans unable to control AI systems.",
+      "published": "2026-06-05T11:29:35+00:00"
+    },
+    {
+      "id": "9ba5be4bf265543d",
+      "title": "Microsoft announces Majorana 2 quantum computing chip \u2014 claims a practical machine will come in 2029",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/microsoft-announces-majorana-2-quantum-computing-chip-claims-a-practical-machine-will-come-in-2029",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "Microsoft's Majorana 2 quantum computing chip switches to lead-based materials. Microsoft is accelerating its roadmap and expects a practical machine in 2029.",
+      "published": "2026-06-02T19:37:59+00:00"
+    },
+    {
+      "id": "da56eb9fac8d454a",
+      "title": "Anthropic files for IPO \u2014 Claude maker races OpenAI and SpaceX to Wall Street",
+      "link": "https://www.tomshardware.com/tech-industry/anthropic-files-to-go-public-claude-maker-races-openai-and-spacex-to-ipo",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Anthropic, the AI company that makes Claude, confidentially filed to go public with the U.S. Securities and Exchange Commission.",
+      "published": "2026-06-01T17:01:41+00:00"
+    },
+    {
+      "id": "1534e7e38025ceaa",
+      "title": "IBM spins off America's first quantum chip foundry with $2 billion in federal and private funding \u2014 newly-minted 'Anderon' foundry to offer 300mm quantum wafer fab and manufacturing services",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/ibm-spins-off-americas-first-quantum-chip-foundry-with-2-billion-in-federal-and-private-funding",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "Headquartered in Albany, New York, Anderon will operate a 300mm quantum wafer fab and offer its manufacturing services to competing quantum hardware vendors.",
+      "published": "2026-05-26T19:05:38+00:00"
+    },
+    {
+      "id": "b3f13c41cb29809e",
+      "title": "Uber chief warns no link yet between AI tokenmaxxing and shipping successful products \u2014 company pumps the brakes on all-out AI spending",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/uber-chief-warns-no-link-yet-between-ai-tokenmaxxing-and-shipping-successful-products-company-pumps-the-brakes-on-all-out-ai-spending",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Uber might be having a serious rethink about lavishing cash on AI services as management still can't draw a clear link between LLM use and beneficial results.",
+      "published": "2026-05-26T11:15:53+00:00"
+    },
+    {
+      "id": "2b93b32a606f7acf",
+      "title": "Imec builds world's first High-NA EUV-fabricated quantum dot qubit device \u2014 breakthrough could pull quantum computing onto the same manufacturing roadmap as next-gen AI processors, compressing timelines",
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/imec-builds-worlds-first-high-na-euv-fabricated-quantum-dot-qubit-device-breakthrough-could-pull-quantum-computing-onto-the-same-manufacturing-roadmap-as-next-gen-ai-processors-compressing-timelines",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "Imec unveiled the world\u2019s first silicon quantum dot qubit device fabricated with High-NA EUV lithography, suggesting quantum computing may eventually scale using the semiconductor industry\u2019s existing advanced manufacturing ecosystem.",
+      "published": "2026-05-25T15:27:00+00:00"
+    },
+    {
+      "id": "4a09c598a985ade2",
+      "title": "Musk's Colossus 1 AI supercomputer's inefficient mixed-architecture design couldn't be used to train Grok, so Anthropic's using it for inference instead \u2014 Musk readies unified Blackwell-only Colossus 2 for frontier training and potential IPO",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/musks-colossus-1-ai-supercomputers-inefficient-mixed-architecture-design-couldnt-be-used-to-train-grok-so-anthropics-using-it-for-inference-instead-musk-readies-unified-blackwell-only-colossus-2-for-frontier-training-and-potential-ipo",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Anthropic has leased xAI\u2019s entire 220,000-GPU Colossus 1 supercluster from SpaceX to ease Claude\u2019s growing compute bottlenecks, in a deal that may reveal far bigger ambitions around AI infrastructure, orbital data centers, and Musk\u2019s IPO strategy.",
+      "published": "2026-05-15T10:08:57+00:00"
+    },
+    {
+      "id": "4b31148339719217",
+      "title": "China's Hanyuan-2 debuts as 'world's first' dual-core quantum computer \u2014 200-qubit claims incredible power efficiency, but lacks critical performance benchmarks",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/china-claims-worlds-first-dual-core-quantum-computer",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "CAS Cold Atom Technology, a Wuhan-based firm affiliated with the Chinese Academy of Sciences (CAS), unveiled what it calls the world's first dual-core quantum computer.",
+      "published": "2026-05-10T13:31:55+00:00"
+    },
+    {
+      "id": "af2a165af71b0010",
+      "title": "Chinese grey market sells Claude API access at 90% off by using stolen credentials, model substitution, and harvesting users' prompts and outputs for resale as AI training data \u2014 'transfer stations' operate through proxy networks that harvest user data",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chinese-grey-market-sells-claude-api-access-at-90-percent-off-through-proxy-networks-that-harvest-user-data",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "A grey-market economy of API proxy services in China is reselling access to Anthropic's Claude models at as little as 10% of the official price.",
+      "published": "2026-05-09T10:20:00+00:00"
+    },
+    {
+      "id": "9767ce654c0141fe",
+      "title": "White House reportedly considers mandatory government vetting of AI models before release \u2014 executive order under discussion",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/white-house-considers-mandatory-government-vetting-of-ai-models-before-release",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "The Trump administration is in early discussions about an executive order that would create a government review process for AI models before public release.",
+      "published": "2026-05-07T17:53:21+00:00"
+    },
+    {
+      "id": "a97017205952c7b8",
+      "title": "Musk's SpaceX has rented out access to its supercomputer's 220,000 Nvidia GPUs and 300 megawatts of AI compute power to rival Anthropic \u2014 Musk says \u201cNo one set off my evil detector,\u201d Anthropic also interested in orbital data centers",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/musks-spacex-has-rented-out-access-to-its-supercomputers-220-000-nvidia-gpus-and-300-megawatts-of-ai-compute-power-to-rival-anthropic-musk-says-no-one-set-off-my-evil-detector-antrhropic-also-interested-in-orbital-data-centers",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Anthropic has signed a deal with SpaceX to access the latter's massive data center, which has over 220,000 Nvidia GPUs and 300 megawatts of computing power.",
+      "published": "2026-05-07T12:19:55+00:00"
+    },
+    {
+      "id": "9fd4f523bd0b3723",
+      "title": "Trump administration considers mandatory pre-release vetting of AI models \u2014 Anthropic's Mythos cited as catalyst for policy reversal",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/trump-administration-considers-mandatory-pre-release-vetting-of-ai-models",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "The Trump administration is said to be discussing an executive order that would establish a government review process for new AI models before they\u2019re released to the public.",
+      "published": "2026-05-04T21:33:53+00:00"
+    },
+    {
+      "id": "a7d5ff36fad4dc21",
+      "title": "Anthropic in early talks to buy DRAM-less AI inference chips from UK startup \u2014 Fractile's SRAM architecture reduces need for pricey memory during extreme pricing and shortage crunch",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-in-early-talks-to-buy-inference-chips-from-uk-startup-fractile",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Anthropic has reportedly held early discussions with London-based chip startup Fractile about purchasing the company's inference accelerators.",
+      "published": "2026-05-03T12:51:54+00:00"
+    },
+    {
+      "id": "7096e2c894442039",
+      "title": "Victim of AI agent that deleted company's entire database gets their data back \u2014 cloud provider recovers critical files and broadens its 48-hour delayed delete policy",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/victim-of-ai-agent-that-deleted-companys-entire-database-gets-their-data-back-cloud-provider-recovers-critical-files-and-broadens-its-48-hour-delayed-delete-policy",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "An SaaS business got all its data back after its cloud data provider recovered critical databases that were ruthlessly wiped by an AI agent gone rogue.",
+      "published": "2026-04-30T12:13:38+00:00"
+    },
+    {
+      "id": "37d99d120015d43a",
+      "title": "OpenAI has effectively abandoned first-party Stargate data centers in favor of more flexible deals  \u2014 company now prefers to lease compute and says Stargate is an umbrella term",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-has-effectively-abandoned-first-party-stargate-data-centers-in-favor-of-more-flexible-deals-company-now-prefers-to-lease-compute-and-says-stargate-is-an-umbrella-term",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "OpenAI has reportedly modified its arrangement on several Stargate projects, leaving the direct ownership set up and instead preferring to lease compute from other partners who took on the direct risk of investing in the infrastructure.",
+      "published": "2026-04-29T16:00:31+00:00"
+    },
+    {
+      "id": "b10981d3b1111e62",
+      "title": "How a cavalcade of blunders gave unauthorized users access to Claude Mythos \u2014 restricted model accessed by third parties, thanks to knowledge from data breach",
+      "link": "https://www.tomshardware.com/tech-industry/cyber-security/how-a-cavalcade-of-blunders-gave-unauthorized-users-access-to-claude-mythos-restricted-model-accessed-by-third-parties-thanks-to-knowledge-from-data-breach",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Unauthorized individuals have accessed Anthropic's new Mythos cybersecurity-focused AI model, despite the developer locking it down to just a handful of companies. Considering the AI was purposefully designed to find zero-day exploits and offer viable fixes, the breach raises que",
+      "published": "2026-04-24T15:12:08+00:00"
+    },
+    {
+      "id": "5f34fc7f629e6505",
+      "title": "Anthropic's Model Context Protocol includes a critical remote code execution vulnerability \u2014 newly discovered exploit puts 200,000 AI servers at risk",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-model-context-protocol-has-critical-security-flaw-exposed",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Researchers at OX Security have exposed an architectural vulnerability in Anthropic's Model Context Protocol that allows for remote code execution on affected systems.",
+      "published": "2026-04-22T11:00:00+00:00"
+    },
+    {
+      "id": "9265cb67bb4bca99",
+      "title": "Anthropic's Claude Mythos might be the best overall AI model for cybersecurity, but cheaper models can attain similar results, research shows \u2014 cross-examination of the frontier model raises questions on uptime and reliability",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-claude-mythos-might-be-the-best-overall-ai-model-for-cybersecurity-but-cheaper-models-can-attain-similar-results-research-shows-cross-examination-of-the-frontier-model-raises-questions-on-uptime-and-reliability",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Anthropic's Mythos might be the best cybersecurity AI ever, but it's not the only one and it may well be the most expensive, raising questions about how useful it actually is, when weighed against the competition.",
+      "published": "2026-04-14T17:38:30+00:00"
+    },
+    {
+      "id": "9e91d1b90e4dd11d",
+      "title": "Anthropic's Claude Mythos isn't a sentient super-hacker, it's a sales pitch \u2014 claims of 'thousands' of severe zero-days rely on just 198 manual reviews",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-claude-mythos-isnt-a-sentient-super-hacker-its-a-sales-pitch-claims-of-thousands-of-severe-zero-days-rely-on-just-198-manual-reviews",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Anthropic has convened America's big tech companies and the U.S. government to deal with the many bugs and vulnerabilities its new AI found, but this may be just the latest attempt by Anthropic to scare people into thinking its AI is the solution to its own discovered problems.",
+      "published": "2026-04-10T12:32:44+00:00"
+    },
+    {
+      "id": "cd6075c1e951b88f",
+      "title": "Anthropic's latest AI model identifies 'thousands of zero-day vulnerabilities' in 'every major operating system and every major web browser' \u2014 Claude Mythos Preview sparks race to fix critical bugs, some unpatched for decades",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-latest-ai-model-identifies-thousands-of-zero-day-vulnerabilities-in-every-major-operating-system-and-every-major-web-browser-claude-mythos-preview-sparks-race-to-fix-critical-bugs-some-unpatched-for-decades",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Anthropic's latest frontier AI model, Claude Mythos Preview, is so adept at finding software vulnerabilities that the lab is holding it back to allow companies and institutions to proactively patch their products against the 'thousands' of bugs it has already uncovered.",
+      "published": "2026-04-07T19:47:45+00:00"
+    },
+    {
+      "id": "9724a78dcf9ee383",
+      "title": "Broadcom to supply Anthropic with 3.5 gigawatts of Google TPU capacity from 2027 \u2014 Claude pioneer says its annual revenue run rate has passed $30 billion",
+      "link": "https://www.tomshardware.com/tech-industry/broadcom-expands-anthropic-deal-to-3-5gw-of-google-tpu-capacity-from-2027",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Broadcom disclosed in a securities filing on Monday that it\u2019ll supply Anthropic with roughly 3.5 gigawatts of Google TPU capacity starting in 2027.",
+      "published": "2026-04-07T11:26:13+00:00"
+    },
+    {
+      "id": "a479508be9f052ae",
+      "title": "Google research suggests encryption technique used by Bitcoin will be cracked by quantum computers around 2029 \u2014 search giant says quantum attacks need to be prepared for now",
+      "link": "https://www.tomshardware.com/tech-industry/cyber-security/google-research-suggests-encryption-technique-used-by-bitcoin-will-be-cracked-by-quantum-computers-around-2029-search-giant-says-quantum-attacks-need-to-be-prepared-for-now",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "New research from Google suggests that future quantum computers will develop quickly enough to pose a risk to elliptic-curve cryptography, used in cryptocurrencies like Bitcoin, as soon as 2029, and its researchers say action should be taken now to prepare.",
+      "published": "2026-04-01T09:00:00+00:00"
+    },
+    {
+      "id": "bbd397895872c892",
+      "title": "US judge sides with Anthropic, says company supply chain risk branding over Pentagon disagreement 'Orwellian' \u2014 Trump slapped AI company with designation after it refused to lower its guardrails for the military",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/us-judge-sides-with-anthropic-says-company-supply-chain-risk-branding-over-pentagon-disagreement-orwellian-trump-slapped-ai-company-with-designation-after-it-refused-to-lower-its-guardrails-for-the-military",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "A U.S. federal judge ruled that the Pentagon cannot brand Anthropic as a \"supply chain risk\" simply because it refused to give in to its demands.",
+      "published": "2026-03-27T12:04:52+00:00"
+    },
+    {
+      "id": "f7b3ab3eaabf3b65",
+      "title": "Anthropic sues Pentagon over 'supply chain risk' designation, citing free speech and due process violations \u2014 company refused to allow its AI to be used for autonomous attacks, mass surveillance",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-sues-pentagon-over-ai-blacklisting",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Anthropic has filed two federal lawsuits against the Pentagon and other U.S. federal agencies, seeking to overturn the Department of War's decision to designate the AI company a \"supply chain risk.\"",
+      "published": "2026-03-09T20:05:49+00:00"
+    },
+    {
+      "id": "60aa897ab70c111a",
+      "title": "OpenAI strikes deal with Pentagon following Claude blacklisting \u2014 Anthropic to challenge supply chain risk designation in court",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-strikes-deal-with-pentagon-following-claude-blacklisting",
+      "source": "Anthropic/Claude News",
+      "category": "AI",
+      "summary": "Altman\u2019s announcement came not long after President Trump \u201cordered\u201d every federal agency to immediately stop using Anthropic's technology.",
+      "published": "2026-02-28T16:38:04+00:00"
+    },
+    {
+      "id": "345e86be8ae82ce5",
+      "title": "The future of Quantum computing \u2014 the tech, companies, and roadmaps that map out a coherent quantum future",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/the-future-of-quantum-computing-the-tech-companies-and-roadmaps-that-map-out-a-coherent-quantum-future",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "In this roadmap, we analyze what the future of Quantum Computing might look like over the next decade, including the future of qubit scaling, trapped ions, and superconducting chips.",
+      "published": "2026-02-16T13:48:40+00:00"
+    },
+    {
+      "id": "eee8cf9d40844387",
+      "title": "Quantum computing firm dangles $22,500 Bitcoin prize \u2014 all you have to do is uncover a private key hidden inside a quantum-optimized problem",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/quantum-computing-firm-dangles-usd22-500-bitcoin-prize-all-you-have-to-do-is-uncover-a-private-key-hidden-inside-a-quantum-optimized-problem",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "The Quantum Advantage Challenge offers a 0.25 BTC wallet prize to anyone who can answer a specialized problem that can be solved in under two hours on today\u2019s quantum hardware.",
+      "published": "2026-01-21T16:00:00+00:00"
+    },
+    {
+      "id": "839ab2233dd406b5",
+      "title": "Fear that quantum computing is on the cusp of cracking cryptocurrency's encryption spurs a global investment firm to remove Bitcoin from recommendations",
+      "link": "https://www.tomshardware.com/tech-industry/cryptocurrency/fear-that-quantum-computing-on-the-cusp-of-cracking-cryptocurrencys-encryption-spurs-a-global-investment-firm-to-remove-bitcoin-from-recommendations",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "Jefferies Global Head of Equity Strategy Christopher Wood said that quantum computing could break Bitcoin sooner rather than later, and that the debate between crypto developers and quantum computing will only be a \"long-term positive for gold.\"",
+      "published": "2026-01-18T12:20:00+00:00"
+    },
+    {
+      "id": "042d2c5d32f53105",
+      "title": "IBM and Cisco agree to lay the foundations for a quantum internet \u2014  companies announce plans to build a distributed quantum computing network, linking fault-tolerant systems over long distances",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/ibm-and-cisco-plan-to-lay-the-foundation-for-distributed-quantum-computing",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "IBM and Cisco have announced plans to jointly build a distributed quantum computing network capable of linking fault-tolerant systems over long distances.",
+      "published": "2025-11-24T16:45:57+00:00"
+    },
+    {
+      "id": "8a16287f8e025c33",
+      "title": "New Chinese optical quantum chip allegedly 1,000x faster than Nvidia GPUs for processing AI workloads - firm reportedly producing 12,000 wafers per year",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/new-chinese-optical-quantum-chip-allegedly-1-000x-faster-than-nvidia-gpus-for-processing-ai-workloads-but-yields-are-low",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "China has reportedly developed the world's first scalable and industrial-compatible optical quantum chip that allegedly has 1000x the amount of processing power as Nvidia's outgoing AI GPUs.",
+      "published": "2025-11-14T10:30:00+00:00"
+    },
+    {
+      "id": "1ff9ec2cefbdc3d0",
+      "title": "IBM unveils new 'Quantum Nighthawk' 120-qubit processor and software stack \u2014 company on track for 2029 fault-tolerance milestone",
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/ibm-unveils-new-120-qubit-processor-and-software-stack",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "IBM has detailed its most significant quantum computing advances to date, revealing new hardware and software designed to push the limits of what today\u2019s superconducting qubits can do.",
+      "published": "2025-11-13T16:18:09+00:00"
+    },
+    {
+      "id": "bb815addf73a6367",
+      "title": "IBM's boffins run a nifty quantum error-correction algorithm on standard  AMD FPGAs, and it is' 10 times faster than what is needed' \u2014 research propels IBM's Starling quantum computer project forward",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/ibms-boffins-run-a-nifty-quantum-error-correction-algorithm-on-conventional-amd-fpgas-research-propels-ibms-starling-quantum-computer-project-forward",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "IBM's Starling project gets a boost from quantum error-correction algorithms running on conventional AMD FPGAs",
+      "published": "2025-10-25T09:00:00+00:00"
+    },
+    {
+      "id": "530ce22ba4499ae4",
+      "title": "Trump administration to follow up Intel stake with investment in quantum computing, report claims \u2014 tens of millions of CHIPS Act dollars could be paid out to leading companies in exchange for equity",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/trump-administration-to-follow-up-intel-stake-with-investment-in-quantum-computing-report-claims-tens-of-millions-of-chips-act-dollars-could-be-paid-out-to-leading-companies-in-exchange-for-equity",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "The U.S. government is in talks to take equity stakes in major quantum computing startups in exchange for at least $10 million each in funding from the Commerce Department.",
+      "published": "2025-10-23T11:15:55+00:00"
+    },
+    {
+      "id": "85868f24a7175e51",
+      "title": "Google's Quantum Echo algorithm shows world's first practical application of Quantum Computing \u2014 Willow 105-qubit chip runs algorithm 13,000x faster than a supercomputer",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/googles-quantum-echo-algorithm-shows-worlds-first-practical-application-of-quantum-computing-willow-105-qubit-chip-runs-algorithm-13-000x-faster-than-a-supercomputer",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "Google's Willow chip and Quantum Echo algorithm achieve world's first practical application of quantum computing.",
+      "published": "2025-10-23T10:00:00+00:00"
+    },
+    {
+      "id": "536babdf7573528e",
+      "title": "Harvard researchers hail quantum computing breakthrough with machine that can run for two hours \u2014 atomic loss quashed by experimental design, systems that can run forever just 3 years away",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/harvard-researchers-hail-quantum-computing-breakthrough-with-machine-that-can-run-for-two-hours-atomic-loss-quashed-by-experimental-design-systems-that-can-run-forever-just-3-years-away",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "This breakthrough will allow researchers to run quantum computers continuously from just a few seconds to several hours at a time.",
+      "published": "2025-10-02T15:59:21+00:00"
+    },
+    {
+      "id": "2e9f5c7f246f9e65",
+      "title": "Start-up hails world's first quantum computer made from everyday silicon \u2014 fits in three 19-inch server racks and is touted as 'quantum computing's silicon moment'",
+      "link": "https://www.tomshardware.com/tech-industry/supercomputers/uk-start-up-quantum-computer-runs-on-standard-chips",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "A UK start-up says that it has built the world\u2019s first full-stack quantum computer using the same silicon chip technology used in laptops and phones.",
+      "published": "2025-09-16T10:45:02+00:00"
+    },
+    {
+      "id": "f5d4d5e7fbdb2fad",
+      "title": "Quantum internet is possible using standard Internet protocol \u2014 University engineers send quantum signals over fiber lines without losing entanglement",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/quantum-internet-is-possible-using-standard-internet-protocol-university-engineers-send-quantum-signals-over-fiber-lines-without-losing-entanglement",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "A recent experiment by University of Pennsylvania researchers found that quantum signals can be sent over standard internet protocol (IP). The research, done on the University's fiber network, uses a locomotive-style approach to pair a traditional light signal \"engine\" with quant",
+      "published": "2025-08-29T18:44:12+00:00"
+    },
+    {
+      "id": "a56f69e874a7c5ce",
+      "title": "Quantum machine learning unlocks new efficient chip design pipeline \u2014 encoding data in quantum states then analyzing it with machine learning up to 20% more effective than traditional models",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/quantum-machine-learning-unlocks-new-efficient-chip-design-pipeline-encoding-data-in-quantum-states-then-analyzing-it-with-machine-learning-up-to-20-percent-more-effective-than-traditional-models",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "Researchers have discovered a new method of designing semi-conductors by modeling the electrical resistance inside a chip using quantum computing pattern recognition, and then machine learning to analyze the output data.",
+      "published": "2025-07-29T12:00:39+00:00"
+    },
+    {
+      "id": "157a7a7307c945f3",
+      "title": "Researchers pack a \"quantum light factory\" into a 1mm\u00b2 CMOS chip \u2014 combines photonics, electronics, and quantum hardware with traditional silicon manufacturing that can achieve mass scale",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/researchers-pack-a-quantum-light-factory-into-a-1mm-square-chip-combines-photonics-electronics-and-quantum-hardware-with-traditional-silicon-manufacturing",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "Researchers have created a 1 mm\u00b2 chip that merges quantum photonics, electronics, and self-tuning systems\u2014all on a standard 45 nm CMOS process. This breakthrough brings mass-producible quantum hardware closer than ever, much like the Intel 4004 did for microprocessors.",
+      "published": "2025-07-21T10:07:25+00:00"
+    },
+    {
+      "id": "c8298bc9f3a2a476",
+      "title": "IBM is building a large-scale quantum computer that 'would require the memory of more than a quindecillion of the world's most powerful supercomputers' to simulate",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/ibm-is-building-a-large-scale-quantum-computer-that-would-require-the-memory-of-more-than-a-quindecillion-of-the-worlds-most-powerful-supercomputers-to-simulate",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "IBM has shared its roadmap to deliver the 'world's first large-scale, fault-tolerant quantum computer' in 2029.",
+      "published": "2025-06-10T16:13:13+00:00"
+    },
+    {
+      "id": "a60945e9d01126e4",
+      "title": "Nvidia in talks to invest in PsiQuantum",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/nvidia-in-talks-to-invest-in-psiquantum",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "The Information has reported that Nvidia is in talks to invest in quantum computing startup PsiQuantum, just months after CEO Jensen Huang suggested the technology is decades off from practical usage.",
+      "published": "2025-05-19T14:13:41+00:00"
+    },
+    {
+      "id": "86d9eab60b6b00b5",
+      "title": "QNodeOS claims to be the first operating system for quantum networks, paving the way for future quantum applications",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/qnodeos-claims-to-be-the-first-operating-system-for-quantum-networks-paving-the-way-for-future-quantum-applications",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "Researchers at the QIA have developed the world's first hardware-independent quantum-network operating system, supporting applications written with high-level code.",
+      "published": "2025-03-13T13:52:28+00:00"
+    },
+    {
+      "id": "aaf84780e6d076b0",
+      "title": "Microsoft's latest Quantum computing claims have been named 'unreliable' by scientists",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/microsofts-latest-quantum-computing-claims-have-been-named-unreliable-by-scientists",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "Several scientists expressed concern that Microsoft's Majorana 1 chip is deeply flawed.",
+      "published": "2025-03-12T14:07:54+00:00"
+    },
+    {
+      "id": "116a69a22c606aae",
+      "title": "Amazon's Ocelot quantum chip uses 'cat qubits' to 'reduce error correction by up to 90%'",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/amazons-ocelot-quantum-chip-uses-cat-cubits-to-reduce-error-correction-by-up-to-90-percent",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "Amazon AWS announces and showcases Ocelot, a new quantum computing chip touting a cheaper solution to qubit-accelerated error correction.",
+      "published": "2025-02-27T13:17:37+00:00"
+    },
+    {
+      "id": "be7b87cfd7ef5564",
+      "title": "Quantum computing stocks tank as Nvidia CEO Jensen Huang predicts the tech won't be viable for another 20 years \u2014 stocks fell more than 40% for a total market value loss of over $8 billion",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/quantum-computing-stocks-tank-as-nvidia-ceo-jensen-huang-predicts-the-tech-wont-be-viable-for-another-20-years-stocks-fell-more-than-40-percent-for-a-total-market-value-loss-of-over-usd8-billion",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "CEO of Nvidia Jensen Huang purportedly stated that quantum computers will take 20 years before being \"very useful\", causing quantum computing stock to tumble.",
+      "published": "2025-01-09T18:46:23+00:00"
+    },
+    {
+      "id": "5023533dde3a3cd0",
+      "title": "China's 504-qubit quantum computer chip marks a new domestic record \u2014 will be globally available via the cloud",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/chinas-504-qubit-quantum-computer-chip-marks-a-new-domestic-record-will-be-globally-available-via-the-cloud",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "A Chinese group led by China Telecom Quantum Computing Group has unveiled Xiaohong-504, a 504-qubit quantum computing chip, and Tianyan-504 superconducting quantum computer.",
+      "published": "2024-12-10T13:59:19+00:00"
+    },
+    {
+      "id": "99af2191dc3191c1",
+      "title": "Google claims its new Willow quantum chip can swiftly solve a problem that would take a standard supercomputer 10 septillion years",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/google-claims-its-new-willow-quantum-chip-can-swiftly-solve-a-problem-that-would-take-a-standard-supercomputer-10-septillion-years",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "Google has announced its latest quantum processor, dubbed Willow, and it shames the best supercomputers in some benchmarks.",
+      "published": "2024-12-10T13:14:31+00:00"
+    },
+    {
+      "id": "fc7aa5598e2e725e",
+      "title": "Chinese scientists use quantum computers to crack military-grade encryption \u2014 quantum attack poses a \"real and substantial threat\" to RSA and AES",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/chinese-scientists-use-quantum-computers-to-crack-military-grade-encryption-quantum-attack-poses-a-real-and-substantial-threat-to-rsa-and-aes",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "Chinese researchers claim to have uncovered a \u201creal and substantial threat\u201d to classical cryptography, which is widely used in banking and the military sectors.",
+      "published": "2024-10-14T17:00:43+00:00"
+    },
+    {
+      "id": "b55c762eadbc41ac",
+      "title": "DOOM can now run on a quantum computer with Quandoom port \u2014 seminal FPS blood and gore mixed with spooky action",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/doom-can-now-run-on-a-quantum-computer-with-quandoom-port-seminal-fps-blood-and-gore-mixed-with-spooky-action",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "DOOM has been ported to quantum computers, marking another milestone for this seminal 3D gaming title. However, the coder behind this feat admits that there is currently no quantum computer capable of executing (playing) this code right now.",
+      "published": "2024-09-30T12:19:04+00:00"
+    },
+    {
+      "id": "baf7823dce192953",
+      "title": "Diamond-based quantum accelerators to be integrated into Oak Ridge National Laboratory's HPC",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/diamond-based-quantum-accelerators-to-be-integrated-into-oak-ridge-national-laboratorys-hpc",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "Quantum Brilliance (QB) and Oak Ridge National Laboratory (ORNL) have announced a strategic collaboration that will integrate the former\u2019s diamond-based quantum accelerators with the latter\u2019s state-of-the-art high performance computing (HPC) infrastructure.",
+      "published": "2024-09-05T16:31:32+00:00"
+    },
+    {
+      "id": "6676b1a02cb9d22b",
+      "title": "UC Riverside team develops new superconductor material for quantum computing",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/uc-riverside-team-develops-new-superconductor-material-for-quantum-computing",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "This new superconductor could potentially reduce errors in quantum computers.",
+      "published": "2024-08-26T11:36:17+00:00"
+    },
+    {
+      "id": "29f7c13dcbcdee83",
+      "title": "2D quantum cooling system reaches temperatures colder than outer space by converting heat into electrical voltage",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/2d-quantum-cooling-system-reaches-temperatures-colder-than-outer-space-by-converting-heat-into-electrical-voltage",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "A research team at EFPL LANES built used an indium selenide sheet with graphene electrodes to convert heat into electricity and hit temperatures as low as 100mK.",
+      "published": "2024-07-07T18:18:29+00:00"
+    },
+    {
+      "id": "ade90b34724d9191",
+      "title": "Mysterious quantum computing restrictions spread across multiple nations \u2014 UK cites national security risks and refuses to elaborate",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/mysterious-quantum-computing-restrictions-spread-across-multiple-nations-uk-cites-national-security-risks-and-refuses-to-elaborate",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "Four EU states have all issued identical bans on the export of quantum computers with more than 34 qubits and error rates below a certain threshold. The nature of the bans is a mystery, with states declining to elaborate per national security concerns.",
+      "published": "2024-07-06T12:44:01+00:00"
+    },
+    {
+      "id": "d752e93c0a1325db",
+      "title": "IBM and AIST collaborate on 10,000-qubit quantum computer \u2014 75x more qubits than rivals",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/ibm-and-aist-collaborate-on-10000-qubit-quantum-computer-75x-more-qubits-than-rivals",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "IBM and Japan's AIST are joining forces to create a new quantum computer with 10,000 qubits. This new machine will have 75x more qubits than today's smartest quantum computers, putting it on a track of vastly increased correctness over today's quantum processing.",
+      "published": "2024-06-17T15:18:08+00:00"
+    },
+    {
+      "id": "2064d22c4cb9e474",
+      "title": "SureCore announces low power cryogenic memory technology for quantum computing \u2014 operates at temperatures as low as 4 Kelvin",
+      "link": "https://www.tomshardware.com/pc-components/ram/surecore-announces-low-power-cryogenic-memory-technology-operates-as-low-as-4-kelvin",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "SureCore and Semiwise have collaborated on an SRAM project to design memory that can function at temperatures below liquid nitrogen. As you might guess, it's meant to be integrated into quantum computing systems rather than typical PCs or servers.",
+      "published": "2024-06-05T10:00:01+00:00"
+    },
+    {
+      "id": "96066aeb32ddbd27",
+      "title": "Researchers create 'quantum drums' to store qubits \u2014 one step closer to groundbreaking internet speed and security",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/researchers-create-quantum-drums-to-store-qubits-one-step-closer-to-groundbreaking-internet-speed-and-security",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "Quantum drums capable of storing and converting existing light data (i.e. fiber optic cables) may be integral to the future of a quantum-powered Internet with interconnected quantum computing devices.",
+      "published": "2024-04-16T17:39:59+00:00"
+    },
+    {
+      "id": "c795330ce9db6708",
+      "title": "Commodore 64 claimed to outperform IBM's quantum system \u2014 sarcastic researchers say 1 MHz computer is faster, more efficient, and decently accurate",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/commodore-64-outperforms-ibms-quantum-systems-1-mhz-computer-said-to-be-faster-more-efficient-and-decently-accurate",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "A paper released during the SIGBOVIK 2024 conference details an attempt to simulate the IBM \u2018quantum utility\u2019 experiment on a Commodore 64. The authors claim the experiment was a success.",
+      "published": "2024-04-15T16:11:14+00:00"
+    },
+    {
+      "id": "a53d3472799cb7d5",
+      "title": "Nvidia Grace Hopper Superchip poised to push the boundaries of quantum computing in Australia",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/nvidia-grace-hopper-superchip-poised-to-push-the-boundaries-of-quantum-computing-in-australia",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "Australia\u2019s National Supercomputing and Quantum Computing Innovation Hub is set to use Nvidia Grace Hopper Superchips to push the boundaries of quantum computing.",
+      "published": "2024-02-18T21:01:11+00:00"
+    },
+    {
+      "id": "848a3ef10b2361f6",
+      "title": "Russia and China successfully test quantum communication over satellite \u2014  3,800-kilometer test explores possible encrypted networks for BRICS countries",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/russia-and-china-successfully-test-quantum-communication-over-satellite-encrypted-communication-for-brics-countries",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "A quantum communications test was conducted over the satellite \"Mozi\" between Russia and China, over a distance of 3,800 kilometers.",
+      "published": "2024-01-04T15:57:26+00:00"
+    },
+    {
+      "id": "0cb80459932b25d2",
+      "title": "IBM demonstrates useful Quantum computing within 133-qubit Heron, announces entry into Quantum-centric supercomputing era",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/ibm-demonstrates-useful-quantum-computing-within-133-qubit-heron-announces-entry-into-quantum-centric-supercomputing-era",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "IBM's Quantum Summit 2023 showcased an energized company that feels like it's opening up the doors towards a quantum-centric supercomputing era. That vision is built on the company's new Quantum Processing Unit, Heron, which showcases scalable quantum utility at a 133-qubit count",
+      "published": "2023-12-19T11:00:26+00:00"
+    },
+    {
+      "id": "2b0ac9ccdc45e517",
+      "title": "Chinese SpinQ ships \"undisclosed\" superconducting Quantum Processing Units (QPUs) to the Middle East market, units are fully domestically manufactured",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/chinese-spinq-ships-undisclosed-superconducting-quantum-processing-units-qpus-to-the-middle-east-market-units-are-fully-domestically-manufactured",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "A Chinese company specializing in quantum computing technologies, SpinQ, claims to have become the first Chinese company to ship quantum processing technologies outside of mainland China. Based on superconducting qubits, SpinQ's \"Shaowei\" Quantum Processing Unit (QPU) won't break",
+      "published": "2023-12-13T11:58:56+00:00"
+    },
+    {
+      "id": "0a8174ec1fa2ca15",
+      "title": "Scientist Claims Quantum RSA-2048 Encryption Cracking Breakthrough",
+      "link": "https://www.tomshardware.com/software/security-software/quantum-rsa-2048-encryption-cracking-breakthrough-claim-met-with-scepticism",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "The most secure RSA encryption can now be cracked using a smartphone or PC, according to a new highly-contested scientific paper.",
+      "published": "2023-11-03T18:10:38+00:00"
+    },
+    {
+      "id": "178e5f4acb317a0b",
+      "title": "China's Quantum Satellite Program Designed to Transmit Unhackable Information",
+      "link": "https://www.tomshardware.com/tech-industry/quantum-computing/chinas-quantum-satellite-program-designed-to-transmit-unhackable-information",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "China is plotting out ways to to take its Quantum Key Distribution to new heights.",
+      "published": "2023-11-01T19:37:30+00:00"
+    },
+    {
+      "id": "d5eef0daa00bbe3c",
+      "title": "Quantum Communications Demoed Across Subsea Fiber Optics",
+      "link": "https://www.tomshardware.com/news/quantum-communications-demoed-across-subsea-fiber-optics",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "Messenger qubits were made to traverse the depths of the Irish Sea, carrying information between England and Ireland, showcasing how existing infrastructure is already compatible with unhackable communications.",
+      "published": "2023-10-03T20:36:14+00:00"
+    },
+    {
+      "id": "fba7b2a3a355f718",
+      "title": "Programmable DNA Offers Way to Accelerated General-Purpose Computing",
+      "link": "https://www.tomshardware.com/news/programmable-dna-offers-way-to-accelerated-general-purpose-computing",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "If humanity's future doesn't lie solely on semiconductor-based computing, DNA-based computing could provide immense cold storage capability. But there's also value to be extracted from DNA as a general-purpose processor.",
+      "published": "2023-09-30T18:38:37+00:00"
+    },
+    {
+      "id": "69d0fa08939c86af",
+      "title": "MIT's Superconducting Qubit Breakthrough Boosts Quantum Performance",
+      "link": "https://www.tomshardware.com/news/new-superconducting-qubits-breakthrough-clears-alternative-path-to-quantum-advantage",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "This NISQ era of quantum computing is also the age where multiple approaches to quantum emerge. It's akin to the moment before we decided to follow mostly through the x86 path. New research on fluxonium qubits promises to keep more of our options open.",
+      "published": "2023-09-30T15:10:59+00:00"
+    },
+    {
+      "id": "cb00d066ccf3a574",
+      "title": "CHIPS Act Tries to Keep Quantum Away From China",
+      "link": "https://www.tomshardware.com/news/chips-act-tries-to-keep-quantum-tech-from-china",
+      "source": "Tom's Hardware Quantum",
+      "category": "Quantum",
+      "summary": "The final version of the CHIPS and Science Act introduces clarified provisions regarding what technologies can't cross the US border toward those of a \"foreign country of concern,\" and quantum is one of them.",
+      "published": "2023-09-25T20:40:51+00:00"
+    }
+  ]
+}
