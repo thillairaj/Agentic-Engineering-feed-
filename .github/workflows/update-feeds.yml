@@ -2,7 +2,7 @@ name: Update feed data
 
 on:
   schedule:
-      - cron: "09 * * * *"
+      - cron: "09 */4 * * *"
   workflow_dispatch: {}
 
 permissions:
