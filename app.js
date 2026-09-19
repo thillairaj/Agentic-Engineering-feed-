@@ -20,7 +20,6 @@ const searchEl = document.getElementById("search");
 const categoryToggleEl = document.getElementById("categoryToggle");
 const statusDot = document.getElementById("statusDot");
 const statusText = document.getElementById("statusText");
-const refreshDetailEl = document.getElementById("refreshDetail");
 const viewsTextEl = document.getElementById("viewsText");
 const footerMeta = document.getElementById("footerMeta");
 const themeToggleBtn = document.getElementById("themeToggle");
@@ -36,32 +35,10 @@ function timeAgo(iso) {
   return `${diffDay}d ago`;
 }
 
-function formatClock(date) {
-  const gmt = date.toLocaleTimeString('en-GB', { timeZone: 'UTC', hour: '2-digit', minute: '2-digit', hour12: false });
-  const ist = date.toLocaleTimeString('en-GB', { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', hour12: false });
-  return `${gmt} GMT · ${ist} IST`;
-}
-
-function nextHourlyRefresh() {
-  const now = new Date();
-  const next = new Date(now);
-  next.setMinutes(9, 0, 0);
-  if (next <= now) next.setHours(next.getHours() + 1);
-  return next;
-}
-
-function renderRefreshDetail() {
-  if (!lastGeneratedAt) {
-    refreshDetailEl.textContent = "";
-    return;
+function updateStatusText() {
+  if (lastGeneratedAt) {
+    statusText.textContent = `updated ${timeAgo(lastGeneratedAt)}`;
   }
-  const last = new Date(lastGeneratedAt);
-  const next = nextHourlyRefresh();
-  const minsUntil = Math.max(0, Math.round((next - new Date()) / 60000));
-
-  statusText.textContent = `updated ${timeAgo(lastGeneratedAt)}`;
-  refreshDetailEl.innerHTML =
-    `last: ${formatClock(last)}<br>next in ~${minsUntil}m (${formatClock(next)})`;
 }
 
 /* ---------- Theme ---------- */
@@ -233,11 +210,10 @@ async function loadData() {
     if (data.generated_at) {
       statusDot.classList.add("live");
       lastGeneratedAt = data.generated_at;
-      renderRefreshDetail();
+      updateStatusText();
       footerMeta.textContent = `${allArticles.length} articles · ${(data.sources_polled || []).length} sources polled · last run ${new Date(data.generated_at).toUTCString()}`;
     } else {
       statusText.textContent = "awaiting first bot run";
-      refreshDetailEl.textContent = "";
       footerMeta.textContent = "No automated run yet — check the GitHub Action.";
     }
   } catch (err) {
@@ -269,4 +245,4 @@ loadData();
 loadViews();
 setInterval(loadData, CLIENT_REFRESH_MS);
 setInterval(loadViews, CLIENT_REFRESH_MS);
-setInterval(renderRefreshDetail, TICK_MS);
+setInterval(updateStatusText, TICK_MS);
