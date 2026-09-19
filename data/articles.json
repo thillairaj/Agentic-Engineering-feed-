@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T22:32:38.775114+00:00",
+  "generated_at": "2026-09-19T01:08:06.309502+00:00",
   "sources_polled": [
     "The Verge \u2014 AI",
     "Simon Willison",
@@ -12,6 +12,15 @@
     "arXiv quant-ph"
   ],
   "articles": [
+    {
+      "id": "a2b68d122f77626f",
+      "title": "Gemini Hacked Three Companies in First Known Breakout by Google\u2019s AI",
+      "link": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
+      "source": "Simon Willison",
+      "category": "AI",
+      "summary": "Gemini Hacked Three Companies in First Known Breakout by Google\u2019s AI Gemini finally caught up on Felony Bench ! The hacks, which the company confirmed on Friday, occurred in May as part of a test run by the company Irregular, which was also involved in similar incidents disclosed",
+      "published": "2026-09-19T01:08:03.469130+00:00"
+    },
     {
       "id": "7456d8000ebfebb2",
       "title": "OpenAI and Microsoft knew they were starting a \u2018doom loop\u2019 for the web",
@@ -4030,15 +4039,6 @@
       "source": "arXiv quant-ph",
       "category": "Quantum",
       "summary": "arXiv:2609.19250v1 Announce Type: new Abstract: Universal fault-tolerant quantum computing combines versatile but expensive operations with specialized but cheap ones. Its efficiency depends on how much computation can be pushed onto the cheap operations and on the size of the co",
-      "published": "2026-09-18T04:00:00+00:00"
-    },
-    {
-      "id": "7d9e7a50967c523c",
-      "title": "A Square-Root Barrier to Quantum Gate Speed under Linear Coupling",
-      "link": "https://arxiv.org/abs/2609.19280",
-      "source": "arXiv quant-ph",
-      "category": "Quantum",
-      "summary": "arXiv:2609.19280v1 Announce Type: new Abstract: Faster quantum gates can suppress the decoherence accumulated during a computation, but in superconducting processors stronger microwave pulses can also increase leakage, off-resonant excitation, stray-field errors, and crosstalk. T",
       "published": "2026-09-18T04:00:00+00:00"
     }
   ]

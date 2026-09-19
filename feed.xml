@@ -4,7 +4,15 @@
     <title>AI Signal</title>
     <link>https://thillairaj.github.io/Agentic-Engineering-feed-/</link>
     <description>A self-updating feed of AI and quantum computing news, research and releases.</description>
-    <lastBuildDate>Fri, 18 Sep 2026 22:32:38 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 01:08:06 +0000</lastBuildDate>
+    <item>
+      <title>Gemini Hacked Three Companies in First Known Breakout by Google’s AI</title>
+      <link>https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/</link>
+      <guid isPermaLink="false">a2b68d122f77626f</guid>
+      <description>Gemini Hacked Three Companies in First Known Breakout by Google’s AI Gemini finally caught up on Felony Bench ! The hacks, which the company confirmed on Friday, occurred in May as part of a test run by the company Irregular, which was also involved in similar incidents disclosed</description>
+      <category>Simon Willison</category>
+      <pubDate>Sat, 19 Sep 2026 01:08:03 +0000</pubDate>
+    </item>
     <item>
       <title>OpenAI and Microsoft knew they were starting a ‘doom loop’ for the web</title>
       <link>https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero</link>
@@ -474,14 +482,6 @@
       <link>https://simonwillison.net/2026/Sep/17/how-to-write-with-an-llm/</link>
       <guid isPermaLink="false">e4addcf48f06208d</guid>
       <description>How To Write With An LLM Thomas Ptacek on using LLMs as copyeditors, not as writing assistants: Rule Number One: You may not use a single word an LLM suggests to you. [...] I think that as a form of intellectual personal protective equipment you should adopt the rule that any spe</description>
-      <category>Simon Willison</category>
-      <pubDate>Fri, 18 Sep 2026 04:21:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>Be alert: targeted attacks on prominent Rustaceans</title>
-      <link>https://simonwillison.net/2026/Sep/17/targeted-attacks-on-rustaceans/</link>
-      <guid isPermaLink="false">acc67ef32e42e5a2</guid>
-      <description>Be alert: targeted attacks on prominent Rustaceans Important warning from Adam Harvey and the crates security team: We believe that there is an ongoing campaign targeting rust-lang members and owners of popular crates that is attempting to compromise devices and accounts in order</description>
       <category>Simon Willison</category>
       <pubDate>Fri, 18 Sep 2026 04:21:14 +0000</pubDate>
     </item>
