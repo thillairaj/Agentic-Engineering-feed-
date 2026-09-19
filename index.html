@@ -3,99 +3,184 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>The Signal</title>
+
 <meta name="description" content="A self-updating feed of AI and quantum computing news, research and releases.">
+
 <meta property="og:title" content="The Signal">
 <meta property="og:description" content="A self-updating feed of AI and quantum computing news, research and releases.">
 <meta property="og:type" content="website">
+
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="The Signal">
 <meta name="twitter:description" content="A self-updating feed of AI and quantum computing news, research and releases.">
+
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+
 <link rel="alternate" type="application/rss+xml" title="The Signal RSS" href="feed.xml">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header class="masthead">
+
   <div class="masthead-left">
     <h1>The Signal</h1>
     <p class="tagline">a running feed of AI &amp; quantum engineering</p>
   </div>
+
   <div class="masthead-right">
-    <div class="sponsor-block">
-      <span class="sponsor-label">Sponsored by</span>
-      <div class="sponsor-logos">
-        <a class="sponsor-link" href="https://www.thinkcove.com" target="_blank" rel="noopener" title="Think Cove">
-        </a>
-        <a class="sponsor-link" href="https://www.networkgain.com" target="_blank" rel="noopener" title="NetworkGain">
-          <img class="sponsor-logo" alt="NetworkGain" 
-        </a>
-      </div>
-    </div>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">☾</button>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      ☾
+    </button>
+
     <div class="status-block">
       <div class="status">
         <span class="dot" id="statusDot"></span>
         <span id="statusText">connecting…</span>
       </div>
+
       <div class="refresh-detail" id="refreshDetail"></div>
     </div>
+
     <div class="views" id="viewsText"></div>
+
   </div>
+
 </header>
 
+
 <div class="layout">
+
   <aside class="panel">
+
     <div class="panel-block">
       <label class="panel-label" for="search">Search</label>
-      <input type="text" id="search" class="search-input" placeholder="filter headlines…" autocomplete="off">
+
+      <input
+        type="text"
+        id="search"
+        class="search-input"
+        placeholder="filter headlines…"
+        autocomplete="off"
+      >
     </div>
 
+
     <div class="panel-block">
+
       <p class="panel-label">Topic</p>
+
       <div class="category-toggle" id="categoryToggle">
-        <button class="cat-btn active" data-category="">All</button>
-        <button class="cat-btn" data-category="AI">AI</button>
-        <button class="cat-btn" data-category="Quantum">Quantum</button>
-        <button class="cat-btn" data-category="__bookmarked">★ Saved</button>
+
+        <button class="cat-btn active" data-category="">
+          All
+        </button>
+
+        <button class="cat-btn" data-category="AI">
+          AI
+        </button>
+
+        <button class="cat-btn" data-category="Quantum">
+          Quantum
+        </button>
+
+        <button class="cat-btn" data-category="__bookmarked">
+          ★ Saved
+        </button>
+
       </div>
+
     </div>
 
+
     <div class="panel-block">
+
       <p class="panel-label">Sources</p>
-      <ul class="source-list" id="sourceList"><!-- populated by app.js --></ul>
+
+      <ul class="source-list" id="sourceList">
+        <!-- populated by app.js -->
+      </ul>
+
     </div>
 
+
     <div class="panel-block">
+
       <p class="panel-label">Follow</p>
-      <a class="follow-link" href="https://www.linkedin.com/showcase/qu-bits/" target="_blank" rel="noopener">
+
+      <a
+        class="follow-link"
+        href="https://www.linkedin.com/showcase/qu-bits/"
+        target="_blank"
+        rel="noopener"
+      >
         LinkedIn — Qu-Bits ↗
       </a>
-      <a class="follow-link" href="https://www.linkedin.com/showcase/agentic-ai-architect/" target="_blank" rel="noopener">
+
+      <a
+        class="follow-link"
+        href="https://www.linkedin.com/showcase/agentic-ai-architect/"
+        target="_blank"
+        rel="noopener"
+      >
         LinkedIn — Agentic AI Architect ↗
       </a>
+
     </div>
+
 
     <div class="panel-block panel-note">
-      <p>This page rebuilds itself. A scheduled bot polls a set of RSS feeds automatically and republishes here — nothing on this page is typed by hand.</p>
+
+      <p>
+        This page rebuilds itself. A scheduled bot polls a set of RSS feeds
+        automatically and republishes here — nothing on this page is typed by hand.
+      </p>
+
     </div>
+
   </aside>
 
+
   <main class="feed" id="feed">
-    <p class="empty-state">Waiting on the first automated run — once the bot's GitHub Action fires, articles will appear here.</p>
+
+    <p class="empty-state">
+      Waiting on the first automated run — once the bot's GitHub Action fires,
+      articles will appear here.
+    </p>
+
   </main>
+
 </div>
 
+
 <footer class="site-footer">
+
   <span id="footerMeta">—</span>
-  <span class="credit">Built by Thillai Raj Thanam Jeya Veera Raj</span>
+
+  <span class="credit">
+    Built by Thillai Raj Thanam Jeya Veera Raj
+  </span>
+
 </footer>
 
-<script data-goatcounter="https://trttech.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+<script
+  data-goatcounter="https://trttech.goatcounter.com/count"
+  async
+  src="//gc.zgo.at/count.js">
+</script>
+
 <script src="app.js"></script>
+
 </body>
 </html>
