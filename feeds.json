@@ -1,12 +1,11 @@
 [
-  { "source": "The Verge — AI", "category": "AI", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "freshness_hours": 24 },
-  { "source": "Simon Willison", "category": "AI", "url": "https://simonwillison.net/atom/everything/", "freshness_hours": 24 },
-  { "source": "Ars Technica AI", "category": "AI", "url": "https://arstechnica.com/ai/feed/", "freshness_hours": 24 },
-  { "source": "OpenAI Blog", "category": "AI", "url": "https://openai.com/news/rss.xml", "freshness_hours": 72 },
-  { "source": "Google AI Blog", "category": "AI", "url": "https://blog.google/technology/ai/rss/", "freshness_hours": 72 },
-  { "source": "Anthropic/Claude News", "category": "AI", "url": "https://www.tomshardware.com/feeds/tag/anthropic", "freshness_hours": 72 },
-  { "source": "Microsoft AI Blog", "category": "AI", "url": "https://blogs.microsoft.com/ai/feed/", "freshness_hours": 72 },
-  { "source": "Tom's Hardware Quantum", "category": "Quantum", "url": "https://www.tomshardware.com/feeds/tag/quantum-computing", "freshness_hours": 72 },
-  { "source": "arXiv quant-ph", "category": "Quantum", "url": "http://export.arxiv.org/rss/quant-ph", "freshness_hours": 72 },
-  { "source": "InfoQ Quantum Computing", "category": "Quantum", "url": "https://feed.infoq.com/quantumcomputing/news/", "freshness_hours": 72 }
+  { "source": "The Verge — AI", "category": "AI", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml" },
+  { "source": "Simon Willison", "category": "AI", "url": "https://simonwillison.net/atom/everything/" },
+  { "source": "Ars Technica AI", "category": "AI", "url": "https://arstechnica.com/ai/feed/" },
+  { "source": "OpenAI Blog", "category": "AI", "url": "https://openai.com/news/rss.xml" },
+  { "source": "Google AI Blog", "category": "AI", "url": "https://blog.google/technology/ai/rss/" },
+  { "source": "Anthropic/Claude News", "category": "AI", "url": "https://www.tomshardware.com/feeds/tag/anthropic" },
+  { "source": "InfoQ — Microsoft", "category": "AI", "url": "https://feed.infoq.com/Microsoft" },
+  { "source": "Tom's Hardware Quantum", "category": "Quantum", "url": "https://www.tomshardware.com/feeds/tag/quantum-computing" },
+  { "source": "InfoQ Quantum Computing", "category": "Quantum", "url": "https://feed.infoq.com/quantumcomputing/news/" }
 ]
