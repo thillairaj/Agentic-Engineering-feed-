@@ -1,4 +1,4 @@
-# Signal — Agentic Engineering feed
+# The Signal — AI & Quantum 
 
 A self-updating website: a bot polls RSS feeds on a schedule, writes the results
 to `data/articles.json`, and the static site reads that file. No server, no
